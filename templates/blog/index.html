@@ -16,7 +16,7 @@
                 <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
                 <p>{{ post.text|linebreaksbr|truncatewords:30 }}</p>
                 <div class="date">
-                    <span class="glyphicon glyphicon-calendar"></span>{{ post.published_date|date:"M d, Y" }} <span class="glyphicon glyphicon-tags"></span><a href="#"> {{ post.category }}</a>
+                    <span class="glyphicon glyphicon-calendar"></span> {{ post.published_date|date:"M d, Y" }} <span class="glyphicon glyphicon-tags"></span><a href="#">  {{ post.category }}</a>
                 </div>
                 <hr>
                 {% endfor %}

@@ -4,7 +4,7 @@ from blog.models import Category, Post
 
 def index(request):
     category_list = Category.objects.order_by('name')
-    posts = Post.objects.all.order_by('published_date')
+    posts = Post.objects.all
     context_dict = {'categories': category_list, 'posts': posts }
     return render(request, 'blog/index.html', context_dict)
 
