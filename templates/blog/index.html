@@ -1,0 +1,26 @@
+{% extends 'blog/base.html' %}
+
+{% load staticfiles %}
+
+{% block title %}Index{% endblock %}
+
+{% block body_block %}
+
+    <div class="page-header">
+        <h1>Be-py blog</h1>               
+    </div>
+
+
+            <div class="post"> 
+                {% for post in posts %}
+                <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
+                <p>{{ post.text|linebreaksbr|truncatewords:30 }}</p>
+                <div class="date">
+                    <span class="glyphicon glyphicon-calendar"></span>{{ post.published_date|date:"M d, Y" }} <span class="glyphicon glyphicon-tags"></span><a href="#"> {{ post.category }}</a>
+                </div>
+                <hr>
+                {% endfor %}
+            </div>
+
+
+{% endblock %}

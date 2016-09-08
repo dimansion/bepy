@@ -1,0 +1,12 @@
+from django.contrib import admin
+from blog.models import Category, Post, Comment
+
+class PostAdmin(admin.ModelAdmin):
+    list_display = ('title', 'published_date',)
+    
+class CategoryAdmin(admin.ModelAdmin):
+    prepopulated_fields = {'slug':('name',)}
+
+admin.site.register(Category, CategoryAdmin)
+admin.site.register(Post, PostAdmin)
+admin.site.register(Comment)
