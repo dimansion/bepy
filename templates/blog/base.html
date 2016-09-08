@@ -11,8 +11,9 @@
     <link rel="icon" href="http://getbootstrap.com/favicon.ico">
 
     <title>Be-py - {% block title %}We don't talk about php{% endblock %}</title>
+    <link href="{% static 'css/bootstrap-fluid-adj.css'%} " rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link href="http://getbootstrap.com/examples/dashboard/dashboard.css" rel="stylesheet">
+    <link href="{% static 'css/bootstrap-responsive.min.css' %}" rel="stylesheet">
     <link href="{% static 'css/style.css' %}" rel="stylesheet">
 
     <!--[if lt IE 9]>
@@ -43,26 +44,61 @@
       </div>
     </div>
 
+
     <div class="container-fluid">
-      <div class="row">
-        <div class="col-sm-3 col-md-2 sidebar well">
-                {% block side_block %}
-                {% get_category_list category %}
-                {% endblock %}
+    <div class="row-fluid">
+        <div class="span3">
+            <div class="sidebar-nav">
+                  <ul class="nav nav-list">
+      <li class="nav-header">Find a Category</li>
+    </ul>
+                <ul class="nav nav-list">
+                    <li></li>
+                    <li></li>
+                    {% block side_block %}
+                    {% get_category_list category %}
+                    {% endblock %}
 
-        </div>
-        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-           <div>
-                {% block body_block %}{% endblock %}
-                </div>
-        </div>
-      </div>
+                </ul>
+
+
+
+<!---
+    <div id="cats">
+       {% if cat_list %}
+      <ul class="nav nav-list"><li>Category List</li></ul>
+         {% include 'rango/category_list.html' with cat_list=cat_list %}
+       {% endif %}
     </div>
+--->
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+            </div>
+            <!--/.well -->
+
+        </div>
+        <!--/span-->
+        <div class="span9">
+
+            {% block body_block %}
+            {% endblock %}
+
+        </div>
+        <!--/span-->
+    </div>
+    <!--/row-->
+
+</div>
+<!--/.fluid-container-->
+
+<footer id="footer">
+    <div class="container">
+        <p>&copy; Bepy 2016</p>
+    </div>
+</footer>
+
+
+    <script src="{% static 'js/jquery-2.0.3.min.js' %}"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>

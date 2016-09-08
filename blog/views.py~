@@ -18,13 +18,7 @@ def category(request, category_name_slug):
         context_dict['category'] = category
     except Category.DoesNotExist:
         pass
-
-    # Go render the response and return it to the client.
     return render(request, 'blog/category.html', context_dict)
-
-def post_list(request):
-    posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
-    return render(request, 'blog/post_list.html', {'posts': posts})
 
 def post_detail(request, pk):
     post = get_object_or_404(Post, pk=pk)
