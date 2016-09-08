@@ -22,6 +22,14 @@ class Post(models.Model):
     published_date = models.DateTimeField(
             blank=True, null=True)
     category = models.ForeignKey(Category,blank=True,null=True)
+    slug = models.SlugField()
+
+    def save(self, *args, **kwargs):
+                # Uncomment if you don't want the slug to change every time the name changes
+                #if self.id is None:
+                        #self.slug = slugify(self.name)
+            self.slug = slugify(self.title)
+            super(Post, self).save(*args, **kwargs)    
     
     def publish(self):
         self.published_date = timezone.now()

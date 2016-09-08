@@ -20,7 +20,7 @@ def category(request, category_name_slug):
         pass
     return render(request, 'blog/category.html', context_dict)
 
-def post_detail(request, pk):
-    post = get_object_or_404(Post, pk=pk)
+def post_detail(request, post_title_slug):
+    post = Post.objects.get(slug=post_title_slug)
     return render(request, 'blog/post_detail.html', {'post': post})
 
