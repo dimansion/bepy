@@ -2,12 +2,8 @@ body {
 	font-family: cursive;
 }
 
-.navbar-brand{
+.navbar-brand, .nav > li > a{
 	padding: 15px 20px;
-}
-
-.nav > li > a {
-	padding: 10px 20px;
 }
 
 #footer {
