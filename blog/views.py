@@ -6,7 +6,7 @@ def index(request):
     category_list = Category.objects.order_by('name')
     posts = Post.objects.all
     context_dict = {'categories': category_list, 'posts': posts }
-    return render(request, 'blog/index.html', context_dict)
+    return render(request, 'blog/post_list.html', context_dict)
 
 def category(request, category_name_slug):
     context_dict = {}
