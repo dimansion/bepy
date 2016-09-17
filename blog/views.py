@@ -1,12 +1,29 @@
 from django.http import HttpResponse
 from django.shortcuts import render, get_object_or_404, redirect
 from blog.models import Category, Post
+from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
+from django.db.models import Q
 
 def index(request):
     category_list = Category.objects.order_by('name')
-    posts = Post.objects.all
+    posts_lists = Post.objects.order_by('-published_date')
+    query = request.GET.get("q")
+    if query:
+        posts_lists = posts_lists.filter(Q(title__icontains=query)|Q(text__icontains=query)).distinct()
+    paginator = Paginator(posts_lists, 10) # Show 25 contacts per page
+
+    page = request.GET.get('page')
+    try:
+        posts = paginator.page(page)
+    except PageNotAnInteger:
+        # If page is not an integer, deliver first page.
+        posts = paginator.page(1)
+    except EmptyPage:
+        # If page is out of range (e.g. 9999), deliver last page of results.
+        posts = paginator.page(paginator.num_pages)
     context_dict = {'categories': category_list, 'posts': posts }
     return render(request, 'blog/post_list.html', context_dict)
+
 
 def category(request, category_name_slug):
     context_dict = {}
