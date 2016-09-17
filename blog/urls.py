@@ -1,5 +1,6 @@
 from django.conf.urls import patterns, url
 from blog import views
+from django.views.generic.base import TemplateView
 
 urlpatterns = patterns('',
         url(r'^$', views.index, name='index'),

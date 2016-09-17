@@ -1,7 +1,8 @@
 from django.conf.urls import url, include, patterns
 from django.contrib import admin
 from django.conf import settings # New Import
-from django.conf.urls.static import static # New Import
+from django.conf.urls.static import static
+from django.views.generic.base import TemplateView
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),

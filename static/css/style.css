@@ -1,11 +1,14 @@
 body {
-	font-family: cursive;
+	font-family: 'Fjord One', serif;
 }
 
 .navbar-brand, .nav > li > a{
-	padding: 15px 20px;
+	padding: 15px 30px;
 }
 
+.brands {
+	font-weight: bold;
+}
 #footer {
    position:fixed;
    left:0px;

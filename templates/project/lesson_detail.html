@@ -9,7 +9,13 @@
 <h1>{{ lessons.name }}</h1>
 <hr>
 <!-- 16:9 aspect ratio -->
+
 <div class="embed-responsive embed-responsive-4by3">
   <iframe class="embed-responsive-item" src="{{ lessons.link }}" allowfullscreen></iframe>
 </div>
+
+<hr>
+<div class="addthis_inline_share_toolbox"></div>
+
+<div class="fb-comments" data-href="{{ request.build_absolut_uri }}" data-numposts="5"></div>
 {% endblock %}
