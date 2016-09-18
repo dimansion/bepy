@@ -12,8 +12,8 @@
             <div class="post"> 
                 {% for post in posts %}
                 <h1><a href="{% url 'post_detail' post.slug  %}">{{ post.title }}</a></h1>
-                <p>{{ post.text|linebreaksbr|truncatewords:30 }}</p>
-                <div class="date">
+                <p>{{ post.text|linebreaksbr|truncatechars:200 }}</p>
+                <div class="date text-muted">
                     <span class="glyphicon glyphicon-calendar"></span> {{ post.published_date|date:"M d, Y" }} <span class="glyphicon glyphicon-tags"></span><a href="category/{% filter force_escape|lower %}{{ post.category }}{% endfilter %}">  {{ post.category }}</a>
                 </div>
                 <hr>
