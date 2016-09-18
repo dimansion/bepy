@@ -3,6 +3,8 @@ from django.shortcuts import render, get_object_or_404, redirect
 from blog.models import Category, Post
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.db.models import Q
+from django.contrib.auth.forms import UserCreationForm
+from django.http import HttpResponseRedirect
 
 def index(request):
     category_list = Category.objects.order_by('name')
@@ -41,3 +43,14 @@ def post_detail(request, post_title_slug):
     post = Post.objects.get(slug=post_title_slug)
     return render(request, 'blog/post_detail.html', {'post': post})
 
+def register(request):
+   if request.method == 'POST':
+       form = UserCreationForm(request.POST)
+       if form.is_valid():
+           new_user = form.save()
+           return HttpResponseRedirect("/login")
+   else:
+       form = UserCreationForm()
+   return render(request, "users/register.html", {
+       'form': form,
+   })

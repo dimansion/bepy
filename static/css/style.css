@@ -17,3 +17,6 @@ body {
    width:100%;
 }
 
+.errorlist {
+	color: red;
+}

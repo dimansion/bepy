@@ -3,11 +3,16 @@ from django.contrib import admin
 from django.conf import settings # New Import
 from django.conf.urls.static import static
 from django.views.generic.base import TemplateView
+from django.contrib.auth import views as auth_view
+
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^blog/', include('blog.urls')),
     url(r'^project/', include('project.urls')),
+    url(r'^register/$', 'blog.views.register', name='register'),
+    url(r'^login/$', auth_view.login, name='login', kwargs={'template_name': 'users/login.html'}),
+    url(r'^logout/$', auth_view.logout, name='logout', kwargs={'next_page': '/blog'}),
 ]
 if settings.DEBUG:
     urlpatterns += patterns(
