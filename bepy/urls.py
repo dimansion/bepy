@@ -13,6 +13,9 @@ urlpatterns = [
     url(r'^register/$', 'blog.views.register', name='register'),
     url(r'^login/$', auth_view.login, name='login', kwargs={'template_name': 'users/login.html'}),
     url(r'^logout/$', auth_view.logout, name='logout', kwargs={'next_page': '/blog'}),
+    url(r'^register_success/$', 'blog.views.register_success'),    
+    url(r'^confirm/(?P<activation_key>\w+)/$', 'blog.views.confirm'),  
+
 ]
 if settings.DEBUG:
     urlpatterns += patterns(

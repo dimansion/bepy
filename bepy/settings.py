@@ -121,7 +121,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 
 STATIC_PATH = os.path.join(BASE_DIR,'static')
-STATIC_URL = '/static/' # You may find this is already defined as such.
+STATIC_URL = '/static/' 
 
 STATICFILES_DIRS = (
     STATIC_PATH,
@@ -131,3 +131,10 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 LOGIN_URL = "/login"
 LOGIN_REDIRECT_URL = "/blog"
+
+#Host
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'dimansion.d@gmail.com'
+EMAIL_HOST_PASSWORD = 'kadoyamasahiro'
+EMAIL_PORT = 587
