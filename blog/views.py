@@ -14,6 +14,9 @@ from django.template import RequestContext
 from django.utils import timezone
 
 
+def home(request):
+    return render(request, 'blog/home.html')
+
 
 def index(request):
     category_list = Category.objects.order_by('name')
@@ -79,12 +82,12 @@ def register(request):
 
             # Send email with activation key
             email_subject = 'Aktivasi akun Be-Py'
-            email_body = "Hey {}, Terima kasih telah mendaftar. \n Untuk aktivasi akun Anda, silahkan klik link di bawah ini \n http://{}/confirm/{}".format(username, host, activation_key)
+            email_body = "\n Hey {}, Terima kasih telah mendaftar. \n Untuk aktivasi akun Anda, silahkan klik link di bawah ini \n \n http://{}/confirm/{}".format(username, host, activation_key)
 
             send_mail(email_subject, email_body, 'be-py@alviandk.com',
                 [email], fail_silently=False)
 
-            return HttpResponseRedirect('/register_success')
+            return HttpResponseRedirect('/success')
     else:
         args['form'] = RegistrationForm()
 
@@ -108,7 +111,6 @@ def confirm(request, activation_key):
     return render_to_response('users/confirm.html')
 
 
-def register_success(request):    
-    
+def register_success(request):        
     return render_to_response('users/success.html')
 

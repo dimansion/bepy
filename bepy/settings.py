@@ -136,5 +136,5 @@ LOGIN_REDIRECT_URL = "/blog"
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = 'dimansion.d@gmail.com'
-EMAIL_HOST_PASSWORD = 'kadoyamasahiro'
+EMAIL_HOST_PASSWORD = 'cutsadnasyahdia'
 EMAIL_PORT = 587
