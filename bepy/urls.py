@@ -4,18 +4,20 @@ from django.conf import settings # New Import
 from django.conf.urls.static import static
 from django.views.generic.base import TemplateView
 from django.contrib.auth import views as auth_view
+from blog.views import AboutView, HomeView
+
 
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'^$', HomeView.as_view(), name='index'), 
     url(r'^blog/', include('blog.urls')),
     url(r'^project/', include('project.urls')),
-    url(r'^register/$', 'blog.views.register', name='register'),
-    url(r'^login/$', auth_view.login, name='login', kwargs={'template_name': 'users/login.html'}),
     url(r'^logout/$', auth_view.logout, name='logout', kwargs={'next_page': '/blog'}),
-    url(r'^success/$', 'blog.views.register_success'),    
-    url(r'^confirm/(?P<activation_key>\w+)/$', 'blog.views.confirm'),  
-
+    url(r'^about/$', AboutView.as_view()),   
+    url(r'^accounts/', include('registration.backends.hmac.urls')),
+    url(r'^account/', include('allauth.urls')),
+      
 ]
 if settings.DEBUG:
     urlpatterns += patterns(

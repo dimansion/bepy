@@ -1,13 +1,15 @@
 {% extends 'project/base.html' %}
 
+{% load i18n %}
+{% load socialaccount %}
 {% block body_block %}
-	<div class="col-lg-2">
+<div class="col-lg-2">
 		
-	</div>
-	<div class="col-lg-6">
+</div>
+<div class="col-lg-6">
 		<h1>Login</h1>
 		<hr>
-		<form  action="" method="POST">
+<form  action="" method="POST">
 		{% csrf_token %} 
 		{% if form.errors %}
 		    {% for field in form %}
@@ -34,11 +36,18 @@
 		        <p class="help-text">{{ field.help_text }} </p>
 		</div>
 		{% endfor %}
-		   <input type="submit" value="Submit"  class="btn btn-primary">
-		</form>
-		<hr>
-		<p>Belum punya akun? <a href="/register">Daftar disini</a></p>
-	</div>
-	<a href="{% provider_login_url "facebook" %}">Twitter</a>
-   
- {% endblock %}
+  <input type="submit" class="btn btn-primary" value="{% trans 'Log in' %}" />
+  <input type="hidden" name="next" value="{{ next }}" />
+</form>
+<hr>	
+<p>{% trans "Lupa Password" %}? <a href="{% url 'auth_password_reset' %}">{% trans "Reset Password" %}</a>!</p>
+<p>{% trans "Belum punya akun?" %}? <a href="{% url 'registration_register' %}">{% trans "Daftar disini" %}</a>!</p>
+</div>
+<div class="col-lg-4">
+	<br>
+		<h4>atau kamu bisa login menggunakan</h4>
+		<a href="{% provider_login_url "facebook" %}" target="_blank" class="btn btn-primary btn-block" role="button">Facebook</a>
+		<a href="{% provider_login_url "google" %}" class="btn btn-danger btn-block" role="button">Google Account</a>
+</div>
+
+{% endblock %}
