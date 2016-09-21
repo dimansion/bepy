@@ -13,7 +13,8 @@
             </div>
         {% endif %}
         <h1>{{ post.title }}</h1>
-        <p>{{ post.text|linebreaksbr }}</p>
+        <hr>
+        <p>{{ post.text| safe | linebreaks}}</p>
         <hr>
         <div class="addthis_inline_share_toolbox"></div>
         <div class="fb-comments" data-href="{{ request.build_absolut_uri }}" data-numposts="5"></div>

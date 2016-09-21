@@ -15,8 +15,8 @@ urlpatterns = [
     url(r'^project/', include('project.urls')),
     url(r'^logout/$', auth_view.logout, name='logout', kwargs={'next_page': '/'}),
     url(r'^about/$', AboutView.as_view()),   
-    url(r'^accounts/', include('registration.backends.hmac.urls')),
-    url(r'^account/', include('allauth.urls')),
+    #url(r'^accounts/', include('registration.backends.hmac.urls')),
+    url(r'^accounts/', include('allauth.urls')),
       
 ]
 if settings.DEBUG:

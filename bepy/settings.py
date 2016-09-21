@@ -48,6 +48,7 @@ INSTALLED_APPS = [
 
     'allauth.socialaccount.providers.facebook',
     'allauth.socialaccount.providers.google',
+    'allauth.socialaccount.providers.twitter',
 ]
 
 SITE_ID = 1
@@ -146,7 +147,8 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 LOGIN_URL = "/login"
-LOGIN_REDIRECT_URL = "/blog"
+LOGIN_REDIRECT_URL = "/"
+
 ACCOUNT_ACTIVATION_DAYS = 7 
 
 #Host

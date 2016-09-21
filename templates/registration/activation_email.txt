@@ -1,6 +1,0 @@
-{% load i18n %}
-{% trans "Aktivasi akun anda di" %} {{ site.name }}:
-
-http://{{ site.domain }}{% url 'registration_activate' activation_key %}
-
-{% blocktrans %}Link valid untuk {{ expiration_days }} hari.{% endblocktrans %}
