@@ -7,7 +7,7 @@
 {% for brand in provider.get_brands %}
 <li>
   <a title="{{brand.name}}" 
-     class="socialaccount_provider {{provider.id}} {{brand.id}}" 
+     class="socialaccount_provider {{provider.id}} {{brand.id}} btn btn-primary btn-block"  role="button"
      href="{% provider_login_url provider.id openid=brand.openid_url process=process %}"
      >{{brand.name}}</a>
 </li>
