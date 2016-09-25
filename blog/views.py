@@ -3,13 +3,13 @@ from django.shortcuts import render, get_object_or_404, redirect, render_to_resp
 from blog.models import Category, Post
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.db.models import Q
-from django.http import HttpResponseRedirect
+from django.http import HttpResponse, HttpResponseRedirect, Http404
 from django.core.mail import send_mail
-from blog.forms import RegistrationForm
 from django.contrib.auth.models import User
 from django.template import RequestContext
 from django.utils import timezone
 from django.views.generic import TemplateView
+from .forms import PostForm
 
 class HomeView(TemplateView):
     template_name = "project/greetings.html"
@@ -55,3 +55,35 @@ def post_detail(request, post_title_slug):
     return render(request, 'blog/post_detail.html', {'post': post})
 
 
+def post_create(request):
+    if request.method == "POST":
+        form = PostForm(request.POST)
+        if form.is_valid():
+            post = form.save(commit=False)
+            post.published_date = timezone.now()
+            post.save()
+            return redirect('index')
+    else:
+        form = PostForm()
+
+    context_dict = {
+        'form': form
+    }
+    return render(request, 'blog/post_create.html', context_dict)
+
+def post_update(request, slug=None):
+    #if not request.user.is_staff or not request.user.is_superuser:
+    #    raise Http404
+    instance = get_object_or_404(Post, slug=slug)
+    form = PostForm(request.POST or None, request.FILES or None, instance=instance)
+    if form.is_valid():
+        instance = form.save(commit=False)
+        instance.save()
+        return redirect('index')
+
+    context_dict = {
+        "title": instance.title,
+        "instance": instance,
+        "form":form,
+    }
+    return render(request, 'blog/post_create.html', context_dict)

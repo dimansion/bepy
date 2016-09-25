@@ -20,3 +20,8 @@ body {
 .errorlist {
 	color: red;
 }
+
+.wmd-panel{
+	margin-right: 0px !important;
+	margin-left: 0px !important;
+}
