@@ -13,10 +13,9 @@
     <title>Be-py - {% block title %}We don't talk about php{% endblock %}</title>
     <link href="https://fonts.googleapis.com/css?family=Fjord+One" rel="stylesheet">
     <link href="{% static 'css/bootstrap-fluid-adj.css'%} " rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link href="{% static 'css/bootstrap-responsive.min.css' %}" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="{% static 'css/style.css' %}" rel="stylesheet">
-
+    
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -75,11 +74,11 @@
 
     <div class="container-fluid">
     <div class="row-fluid">
-        <div class="span3">
+        <div class="col-md-3">
             <div class="sidebar-nav">
                   <ul class="nav nav-list">
-      <li class="nav-header">Category</li>
-    </ul>
+                    <li class="nav-header">Category</li>
+                  </ul>
                 <ul class="nav nav-list">
                     <li></li>
                     <li></li>
@@ -106,7 +105,7 @@
 
         </div>
         <!--/span-->
-        <div class="span9">
+        <div class="col-md-9">
 
             {% block body_block %}
             {% endblock %}
@@ -126,10 +125,28 @@
 </footer>
 
 
-    <script src="{% static 'js/jquery-2.0.3.min.js' %}"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
     <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-57b0a2066b8e9682"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.6/marked.min.js"></script>
+
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $(".content-markdown").each(function(){
+                var content = $(this).text()
+                var markedContent = marked(content)
+                $(this).html(markedContent)
+        })
+        $(".content-markdown img").each(function(){
+                $(this).addClass("img-responsive");
+        })
+        
+        var titleValue = $("#id_title").val()
+        console.log(titleValue)
+        // preview-title
+        // preview-content
+    })
+    </script>
   </body>
 </html>

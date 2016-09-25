@@ -6,6 +6,10 @@ body {
 	padding: 15px 20px;
 }
 
+h1{
+	font-family: sans-serif;
+}
+
 .brands {
 	font-weight: bold;
 }
@@ -19,4 +23,9 @@ body {
 
 .errorlist {
 	color: red;
+}
+
+.wmd-panel{
+	margin-right: 0px !important;
+	margin-left: 0px !important;
 }
