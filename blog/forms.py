@@ -12,4 +12,5 @@ class PostForm(forms.ModelForm):
             'content',
             'published_date',
             'category',
+            
         ]

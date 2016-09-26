@@ -11,9 +11,8 @@
 
     <title>Be-py - {% block title %}We don't talk about php{% endblock %}</title>
     <link href="{% static 'css/bootstrap-fluid-adj.css'%} " rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Fjord+One" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link href="{% static 'css/bootstrap-responsive.min.css' %}" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fjord+One" rel="stylesheet">
     <link href="{% static 'css/style.css' %}" rel="stylesheet">
     {% block head_extra %} {% endblock head_extra %}
 
@@ -111,6 +110,7 @@
             var newContent = $(this).val()
             setTitle(newContent)
         })
+
         // preview-title
         // preview-content
     })

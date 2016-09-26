@@ -87,3 +87,8 @@ def post_update(request, slug=None):
         "form":form,
     }
     return render(request, 'blog/post_create.html', context_dict)
+
+def post_delete(request, slug=None):
+    instance = get_object_or_404(Post, slug=slug)
+    instance.delete()
+    return redirect("index")

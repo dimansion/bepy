@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"post",
+				"post_title_slug"
+			],
+			[
+				"pos",
+				"post_title_slug"
+			],
+			[
+				"po",
+				"post_title_slug"
+			],
+			[
 				"font",
 				"font-family"
 			],
@@ -24,10 +36,6 @@
 				"titleItem"
 			],
 			[
-				"pos",
-				"post_title_slug"
-			],
-			[
 				"fo",
 				"form"
 			],
@@ -42,10 +50,6 @@
 			[
 				"for",
 				"forms"
-			],
-			[
-				"post",
-				"post_create"
 			],
 			[
 				"use",
@@ -178,10 +182,6 @@
 			[
 				"ran",
 				"random_products"
-			],
-			[
-				"po",
-				"products"
 			],
 			[
 				"to",
@@ -520,10 +520,26 @@
 	"buffers":
 	[
 		{
+			"file": "blog/models.py",
+			"settings":
+			{
+				"buffer_size": 1419,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "bepy/settings.py",
+			"settings":
+			{
+				"buffer_size": 4392,
+				"line_ending": "Unix"
+			}
+		},
+		{
 			"file": "blog/views.py",
 			"settings":
 			{
-				"buffer_size": 2147,
+				"buffer_size": 3152,
 				"line_ending": "Unix"
 			}
 		}
@@ -580,16 +596,23 @@
 	},
 	"file_history":
 	[
-		"/home/dimansion/bepy/static/css/style.css",
-		"/home/dimansion/bepy/bepy.sublime-workspace",
-		"/home/dimansion/bepy/templates/blog/base.html",
-		"/home/dimansion/bepy/blog/urls.py",
-		"/home/dimansion/bepy/blog/views.py",
-		"/home/dimansion/bepy/templates/project/base.html",
-		"/home/dimansion/bepy/templates/blog/post_create.html",
-		"/home/dimansion/bepy/blog/forms.py",
 		"/home/dimansion/bepy/bepy/settings.py",
+		"/home/dimansion/bepy/blog/views.py",
+		"/home/dimansion/bepy/blog/urls.py",
+		"/home/dimansion/bepy/templates/blog/base.html",
+		"/home/dimansion/bepy/blog/forms.py",
+		"/home/dimansion/bepy/templates/blog/post_create.html",
 		"/home/dimansion/bepy/templates/blog/post_detail.html",
+		"/home/dimansion/bepy/templates/blog/post_list.html",
+		"/home/dimansion/bepy/templates/project/base.html",
+		"/home/dimansion/bepy/static/css/style.css",
+		"/home/dimansion/bepy/templates/registration/registration_form.html",
+		"/home/dimansion/bepy/templates/registration/login.html",
+		"/home/dimansion/bepy/bepy/urls.py",
+		"/home/dimansion/bepy/templates/registration/password_change_form.html",
+		"/home/dimansion/bepy/templates/registration/password_reset_form.html",
+		"/home/dimansion/bepy/templates/project/post_detail.html",
+		"/home/dimansion/bepy/bepy.sublime-workspace",
 		"/home/dimansion/bepy/blog/templatetags/blog_extras.py",
 		"/home/dimansion/bepy/blog/templatetags/rango_extras.py",
 		"/home/dimansion/bepy/templates/blog/about.html",
@@ -700,14 +723,7 @@
 		"/Users/jmitch/Desktop/ecommerce-2/src/orders/templates/address_select.html",
 		"/Users/jmitch/Desktop/ogg_convert.py",
 		"/Users/jmitch/Desktop/ecommerce-2/src/templates/navbar.html",
-		"/Users/jmitch/Desktop/ecommerce-2/src/products/templates/products/product_detail.html",
-		"/Users/jmitch/Desktop/ecommerce-2/src/carts/templates/carts/empty_cart.html",
-		"/Users/jmitch/Desktop/ecommerce-2/src/carts/admin.py",
-		"/Users/jmitch/Desktop/ecommerce-2/src/templates/alert.html",
-		"/Users/jmitch/Desktop/ecommerce-2/src/products/models.py",
-		"/Users/jmitch/Desktop/ecommerce-2/src/static_in_pro/our_static/js/custom.js",
-		"/Users/jmitch/Desktop/ecommerce-2/src/static_in_pro/our_static/css/custom.css",
-		"/Users/jmitch/Desktop/ecommerce-2/src/carts/templates/view.html"
+		"/Users/jmitch/Desktop/ecommerce-2/src/products/templates/products/product_detail.html"
 	],
 	"find":
 	{
@@ -735,6 +751,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"}",
 			">\n",
 			")\n",
 			" }}</",
@@ -861,8 +878,7 @@
 			"activity",
 			"Pag",
 			"quiz",
-			"middle",
-			"user_logged_in"
+			"middle"
 		],
 		"highlight": false,
 		"in_selection": false,
@@ -896,23 +912,23 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "blog/views.py",
+					"file": "blog/models.py",
 					"settings":
 					{
-						"buffer_size": 2147,
+						"buffer_size": 1419,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2147,
-								2147
+								1419,
+								1419
 							]
 						],
 						"settings":
@@ -922,7 +938,63 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 741.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "bepy/settings.py",
+					"settings":
+					{
+						"buffer_size": 4392,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4169,
+								4169
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1755.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "blog/views.py",
+					"settings":
+					{
+						"buffer_size": 3152,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2434,
+								2434
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 538.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

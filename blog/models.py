@@ -3,6 +3,7 @@ from django.utils import timezone
 from django.template.defaultfilters import slugify
 from django.contrib.auth.models import User
 from django.conf import settings
+from django.core.urlresolvers import reverse
 
 class Category(models.Model):
     name = models.CharField(max_length=128, unique=True)
@@ -37,6 +38,8 @@ class Post(models.Model):
         self.published_date = timezone.now()
         self.save()
 
+    def get_absolute_url(self):
+        return reverse("posts:detail", kwargs={"slug": self.slug})        
+
     def __str__(self):
         return self.title
-
