@@ -53,7 +53,7 @@
                   <ul class="dropdown-menu">
                     <li><a href="/logout">Sign Out</a></li>
                     <li role="separator" class="divider"></li>
-                    <li><a href="/about">About Be-Py</a></li>
+                    <li><a href="{% url 'about' %}">About Be-Py</a></li>
                   </ul>
                   {% else %}
                   <li><a href="{% url 'auth_login' %}">Sign In</a></li>

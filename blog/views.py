@@ -50,8 +50,8 @@ def category(request, category_name_slug):
         pass
     return render(request, 'blog/category.html', context_dict)
 
-def post_detail(request, post_title_slug):
-    post = Post.objects.get(slug=post_title_slug)
+def post_detail(request, slug=None):
+    post = Post.objects.get(slug=slug)
     return render(request, 'blog/post_detail.html', {'post': post})
 
 
@@ -79,7 +79,7 @@ def post_update(request, slug=None):
     if form.is_valid():
         instance = form.save(commit=False)
         instance.save()
-        return redirect('index')
+        return redirect('post_detail', slug=slug)
 
     context_dict = {
         "title": instance.title,
