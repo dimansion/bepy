@@ -52,7 +52,8 @@ INSTALLED_APPS = [
     'allauth.socialaccount.providers.google',
     'allauth.socialaccount.providers.twitter',
     'pagedown',
-    'crispy_forms'
+    'crispy_forms',
+    'rest_framework',
 ]
 
 SITE_ID = 1

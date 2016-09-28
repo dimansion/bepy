@@ -17,7 +17,7 @@ class Category(models.Model):
         return self.name
 
 class Post(models.Model):
-    author = models.ForeignKey(settings.AUTH_USER_MODEL, default=1)
+    author = models.ForeignKey('auth.User')
     title = models.CharField(max_length=200)
     content = models.TextField()
     created_date = models.DateTimeField(
