@@ -21,6 +21,7 @@ from rest_framework.permissions import (
 	IsAuthenticatedOrReadOnly,
 	)
 
+from .pagination import PostLimitOffsetPagination
 from blog.models import Post
 from .serializers import (
 	PostDetailSerializer, 
@@ -55,6 +56,7 @@ class PostListAPIView(ListAPIView):
 	serializer_class = PostListSerializer
 	filter_backends = [SearchFilter, OrderingFilter]
 	search_fields = ['title', 'content', 'author__first_name']
+	pagination_class = PostLimitOffsetPagination
 
 	def get_queryset(self, *args, **kwargs):
 		#queryset_list = super(PostListAPIView, self).get_queryset(*args, **kwargs)

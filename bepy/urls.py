@@ -12,7 +12,7 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', HomeView.as_view(), name='index'), 
     url(r'^blog/', include('blog.urls')),
-    url(r'^api/blog/', include('blog.api.urls')),
+    url(r'^api/blog/', include('blog.api.urls', namespace='blog-api')),
     url(r'^project/', include('project.urls')),
     url(r'^logout/$', auth_view.logout, name='logout', kwargs={'next_page': '/'}),
     url(r'^about/$', AboutView.as_view(), name='about'),   
