@@ -4,16 +4,24 @@
 		"selected_items":
 		[
 			[
+				"get",
+				"get_markdown"
+			],
+			[
+				"ser",
+				"SerializerMethodField"
+			],
+			[
+				"pos",
+				"post_detail_url"
+			],
+			[
 				"post",
 				"post_detail"
 			],
 			[
 				"pos_",
 				"post_title_slug"
-			],
-			[
-				"pos",
-				"post_detail"
 			],
 			[
 				"po",
@@ -137,10 +145,6 @@
 			],
 			[
 				"get_",
-				"get_transactions"
-			],
-			[
-				"get",
 				"get_transactions"
 			],
 			[
@@ -510,119 +514,11 @@
 			[
 				"del",
 				"delete_item〔variable〕"
-			],
-			[
-				"dete",
-				"delete_item〔variable〕"
 			]
 		]
 	},
 	"buffers":
 	[
-		{
-			"file": "blog/models.py",
-			"settings":
-			{
-				"buffer_size": 1526,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "bepy/settings.py",
-			"settings":
-			{
-				"buffer_size": 4401,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "blog/views.py",
-			"settings":
-			{
-				"buffer_size": 3291,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "templates/blog/cats.html",
-			"settings":
-			{
-				"buffer_size": 347,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "templates/blog/category.html",
-			"settings":
-			{
-				"buffer_size": 1058,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "templates/blog/post_list.html",
-			"settings":
-			{
-				"buffer_size": 1325,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "blog/urls.py",
-			"settings":
-			{
-				"buffer_size": 543,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "blog/forms.py",
-			"settings":
-			{
-				"buffer_size": 445,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "templates/project/base.html",
-			"settings":
-			{
-				"buffer_size": 4923,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "templates/blog/base.html",
-			"settings":
-			{
-				"buffer_size": 5610,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "blog/templatetags/rango_extras.py",
-			"settings":
-			{
-				"buffer_size": 228,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "bepy/urls.py",
-			"settings":
-			{
-				"buffer_size": 967,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "project/urls.py",
-			"settings":
-			{
-				"buffer_size": 363,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -676,29 +572,36 @@
 	},
 	"file_history":
 	[
-		"/home/dimansion/blogCFE/blog/blog.sublime-project",
-		"/home/dimansion/bepy/templates/project/base.html",
-		"/home/dimansion/bepy/templates/project/post_list.html",
-		"/home/dimansion/bepy/bepy/settings.py",
-		"/home/dimansion/bepy/blog/views.py",
-		"/home/dimansion/bepy/blog/urls.py",
-		"/home/dimansion/bepy/templates/blog/base.html",
-		"/home/dimansion/bepy/blog/forms.py",
-		"/home/dimansion/bepy/templates/blog/post_create.html",
-		"/home/dimansion/bepy/templates/blog/post_detail.html",
-		"/home/dimansion/bepy/templates/blog/post_list.html",
-		"/home/dimansion/bepy/static/css/style.css",
-		"/home/dimansion/bepy/templates/registration/registration_form.html",
 		"/home/dimansion/bepy/templates/registration/login.html",
 		"/home/dimansion/bepy/bepy/urls.py",
+		"/home/dimansion/bepy/blog/api/serializers.py",
+		"/home/dimansion/bepy/blog/api/pagination.py",
+		"/home/dimansion/bepy/blog/api/views.py",
+		"/home/dimansion/bepy/blog/api/urls.py",
+		"/home/dimansion/bepy/bepy/settings.py",
+		"/home/dimansion/bepy/project/urls.py",
+		"/home/dimansion/bepy/blog/templatetags/rango_extras.py",
+		"/home/dimansion/bepy/templates/blog/base.html",
+		"/home/dimansion/bepy/templates/project/base.html",
+		"/home/dimansion/bepy/blog/forms.py",
+		"/home/dimansion/bepy/blog/urls.py",
+		"/home/dimansion/bepy/templates/blog/post_list.html",
+		"/home/dimansion/bepy/templates/blog/category.html",
+		"/home/dimansion/bepy/templates/blog/cats.html",
+		"/home/dimansion/bepy/blog/views.py",
+		"/home/dimansion/bepy/blog/models.py",
+		"/home/dimansion/blogCFE/blog/blog.sublime-project",
+		"/home/dimansion/bepy/templates/project/post_list.html",
+		"/home/dimansion/bepy/templates/blog/post_create.html",
+		"/home/dimansion/bepy/templates/blog/post_detail.html",
+		"/home/dimansion/bepy/static/css/style.css",
+		"/home/dimansion/bepy/templates/registration/registration_form.html",
 		"/home/dimansion/bepy/templates/registration/password_change_form.html",
 		"/home/dimansion/bepy/templates/registration/password_reset_form.html",
 		"/home/dimansion/bepy/templates/project/post_detail.html",
 		"/home/dimansion/bepy/bepy.sublime-workspace",
 		"/home/dimansion/bepy/blog/templatetags/blog_extras.py",
-		"/home/dimansion/bepy/blog/templatetags/rango_extras.py",
 		"/home/dimansion/bepy/templates/blog/about.html",
-		"/home/dimansion/bepy/blog/models.py",
 		"/home/dimansion/blogCFE/try-django-19/trydjango19.sublime-workspace",
 		"/home/dimansion/blogCFE/try-django-19/src/trydjango19/wsgi.py",
 		"/home/dimansion/blogCFE/try-django-19/src/trydjango19/urls.py",
@@ -796,14 +699,7 @@
 		"/Users/jmitch/Desktop/ecommerce-2/src/orders/models.py",
 		"/Users/jmitch/Desktop/ecommerce-2/src/orders/views.py",
 		"/Users/jmitch/Desktop/ecommerce-2/src/orders/mixins.py",
-		"/Users/jmitch/Desktop/ecommerce-2/src/orders/forms.py",
-		"/Users/jmitch/Desktop/ecommerce-2/src/ecommerce2/urls.py",
-		"/Users/jmitch/Desktop/ecommerce-2/src/carts/templates/carts/view.html",
-		"/Users/jmitch/Desktop/ecommerce-2/src/orders/templates/orders/address_select.html",
-		"/Users/jmitch/Desktop/ecommerce-2/src/orders/tests.py",
-		"/Users/jmitch/Desktop/ecommerce-2/src/orders/admin.py",
-		"/Users/jmitch/Desktop/ecommerce-2/src/orders/templates/address_select.html",
-		"/Users/jmitch/Desktop/ogg_convert.py"
+		"/Users/jmitch/Desktop/ecommerce-2/src/orders/forms.py"
 	],
 	"find":
 	{
@@ -831,6 +727,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"		<",
+			"user",
 			"}",
 			">\n",
 			")\n",
@@ -956,9 +854,7 @@
 			"reset",
 			"checmicals",
 			"activity",
-			"Pag",
-			"quiz",
-			"middle"
+			"Pag"
 		],
 		"highlight": false,
 		"in_selection": false,
@@ -992,365 +888,8 @@
 	"groups":
 	[
 		{
-			"selected": 11,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "blog/models.py",
-					"settings":
-					{
-						"buffer_size": 1526,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1431,
-								1431
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 39.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "bepy/settings.py",
-					"settings":
-					{
-						"buffer_size": 4401,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3619,
-								3619
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1599.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "blog/views.py",
-					"settings":
-					{
-						"buffer_size": 3291,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2972,
-								2972
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 390.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "templates/blog/cats.html",
-					"settings":
-					{
-						"buffer_size": 347,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								220,
-								220
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 143.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "templates/blog/category.html",
-					"settings":
-					{
-						"buffer_size": 1058,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								336,
-								336
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "templates/blog/post_list.html",
-					"settings":
-					{
-						"buffer_size": 1325,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								164,
-								164
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "blog/urls.py",
-					"settings":
-					{
-						"buffer_size": 543,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								543,
-								543
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "blog/forms.py",
-					"settings":
-					{
-						"buffer_size": 445,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								435,
-								435
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "templates/project/base.html",
-					"settings":
-					{
-						"buffer_size": 4923,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2273,
-								2273
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 156.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "templates/blog/base.html",
-					"settings":
-					{
-						"buffer_size": 5610,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2747,
-								2747
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 273.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 10,
-					"file": "blog/templatetags/rango_extras.py",
-					"settings":
-					{
-						"buffer_size": 228,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								208,
-								208
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 11,
-					"file": "bepy/urls.py",
-					"settings":
-					{
-						"buffer_size": 967,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								653,
-								653
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 12,
-					"file": "project/urls.py",
-					"settings":
-					{
-						"buffer_size": 363,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								126,
-								126
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
 			]
 		}
 	],

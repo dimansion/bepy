@@ -170,10 +170,3 @@ EMAIL_HOST_PASSWORD = ''
 EMAIL_PORT = 587
 
 ACCOUNT_USERNAME_REQUIRED =True
-
-
-SOCIALACCOUNT_PROVIDERS =      { 'google':
-        { 'SCOPE': ['email'],
-          'AUTH_PARAMS': { 'access_type': 'online' }
-        }
-      }

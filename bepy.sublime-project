@@ -3,6 +3,9 @@
 	[
 		{
 			"path": "/home/dimansion/bepy"
+		},
+		{
+			"path": "/home/dimansion/appointment-reminders-django"
 		}
 	]
 }

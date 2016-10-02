@@ -35,6 +35,8 @@ class PostListSerializer(ModelSerializer):
 			'content',
 		]
 
+
+
 	def get_author(self, obj):
 		return str(obj.author.username)	
 
