@@ -22,13 +22,13 @@
     </div>
 </div>
 <hr>
-
-{% for lesson in lesson_list %}
-<div class="panel panel-default">
-  <div class="panel-body">
-    <a href="{% url 'lesson_detail' lesson.slug  %}">{{ lesson.name }}</a>
-  </div>
+<div class="col-md-6">
+    {% for lesson in lesson_list %}
+    <div class=" panel panel-default">
+      <div class="panel-body">
+        <a href="{% url 'lesson_detail' lesson.slug  %}">{{ lesson.name }}</a>
+      </div>
+    </div>
+    {% endfor %}
 </div>
-{% endfor %}
-
 {% endblock %}

@@ -519,6 +519,14 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "bepy/urls.py",
+			"settings":
+			{
+				"buffer_size": 1039,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -888,8 +896,37 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "bepy/urls.py",
+					"settings":
+					{
+						"buffer_size": 1039,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								52,
+								52
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],

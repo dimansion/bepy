@@ -22,7 +22,7 @@ def index(request):
     posts_lists = Post.objects.order_by('-published_date')
     query = request.GET.get("q")
     if query:
-        posts_lists = posts_lists.filter(Q(title__icontains=query)|Q(text__icontains=query)).distinct()
+        posts_lists = posts_lists.filter(Q(title__icontains=query)|Q(content__icontains=query)).distinct()
     paginator = Paginator(posts_lists, 10) # Show 25 contacts per page
 
     page = request.GET.get('page')
