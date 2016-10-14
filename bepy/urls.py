@@ -4,8 +4,7 @@ from django.conf import settings # New Import
 from django.conf.urls.static import static
 from django.views.generic.base import TemplateView
 from django.contrib.auth import views as auth_view
-from blog.views import AboutView, HomeView
-
+from blog.views import AboutView, HomeView, ContactView
 
 
 urlpatterns = [
@@ -16,6 +15,7 @@ urlpatterns = [
     url(r'^project/', include('project.urls')),
     url(r'^logout/$', auth_view.logout, name='logout', kwargs={'next_page': '/'}),
     url(r'^about/$', AboutView.as_view(), name='about'),   
+    url(r'^contact/$', ContactView.as_view(), name='contact'),   
     url(r'^accounts/', include('registration.backends.hmac.urls')),
     url(r'^account/', include('allauth.urls')),
       

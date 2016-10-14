@@ -1,0 +1,2171 @@
+<!DOCTYPE html>
+{% load static %}
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en-US"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en-US"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en-US"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en-US"> <!--<![endif]-->
+<head>
+ 
+    <meta charset="UTF-8"> 
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        	
+	<title>Be|Py - {% block title %}We don't talk about php{% endblock %}</title>
+	<link rel='dns-prefetch' href='//fonts.googleapis.com'>
+	<link rel='dns-prefetch' href='//s.w.org'>
+<!-- 	<link rel="alternate" type="application/rss+xml" title="E-Learning Courses &raquo; Feed" href="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/feed/" />
+	<link rel="alternate" type="application/rss+xml" title="E-Learning Courses &raquo; Comments Feed" href="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/comments/feed/" /> -->
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/www.nicdarkthemes.com\/themes\/education\/wp\/demo\/e-learning-courses\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.6"}};
+			!function(a,b,c){function d(a){var c,d,e,f,g,h=b.createElement("canvas"),i=h.getContext&&h.getContext("2d"),j=String.fromCharCode;if(!i||!i.fillText)return!1;switch(i.textBaseline="top",i.font="600 32px Arial",a){case"flag":return i.fillText(j(55356,56806,55356,56826),0,0),!(h.toDataURL().length<3e3)&&(i.clearRect(0,0,h.width,h.height),i.fillText(j(55356,57331,65039,8205,55356,57096),0,0),c=h.toDataURL(),i.clearRect(0,0,h.width,h.height),i.fillText(j(55356,57331,55356,57096),0,0),d=h.toDataURL(),c!==d);case"diversity":return i.fillText(j(55356,57221),0,0),e=i.getImageData(16,16,1,1).data,f=e[0]+","+e[1]+","+e[2]+","+e[3],i.fillText(j(55356,57221,55356,57343),0,0),e=i.getImageData(16,16,1,1).data,g=e[0]+","+e[1]+","+e[2]+","+e[3],f!==g;case"simple":return i.fillText(j(55357,56835),0,0),0!==i.getImageData(16,16,1,1).data[0];case"unicode8":return i.fillText(j(55356,57135),0,0),0!==i.getImageData(16,16,1,1).data[0];case"unicode9":return i.fillText(j(55358,56631),0,0),0!==i.getImageData(16,16,1,1).data[0]}return!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i;for(i=Array("simple","flag","unicode8","diversity","unicode9"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<!--<style type="text/css">
+			img.wp-smiley,
+			img.emoji {
+				display: inline !important;
+				border: none !important;
+				box-shadow: none !important;
+				height: 1em !important;
+				width: 1em !important;
+				margin: 0 .07em !important;
+				vertical-align: -0.1em !important;
+				background: none !important;
+				padding: 0 !important;
+			}
+		</style>-->
+	<link rel="stylesheet" href='{% static "css/font-awesome.min.css" %}'>
+	<link rel='stylesheet' href='{% static "css/styles.css" %}' type='text/css' media='all' />
+	<link rel='stylesheet' id='contact-form-7-css'  href='{% static "plugins/contact-form-7/includes/css/styles.css" %}' type='text/css' media='all' />
+	<link rel='stylesheet' id='nd_learning_style-css'  href='{% static "plugins/nd-learning/assets/css/style.css" %}' type='text/css' media='all' />
+	<link rel='stylesheet' id='nd_options_style-css'  href='{% static "plugins/nd-shortcodes/css/style.css" %}' type='text/css' media='all' />
+	<!-- <link rel='stylesheet' id='nd_options_font_family_h-css'  href='http://fonts.googleapis.com/css?family=Montserrat%3A400%2C700&#038;ver=4.6' type='text/css' media='all' /> -->
+	<!-- <link rel='stylesheet' id='nd_options_font_family_p-css'  href='http://fonts.googleapis.com/css?family=Varela+Round&#038;ver=4.6' type='text/css' media='all' /> -->
+	<link rel='stylesheet' id='nd_tds_style-css'  href='{% static "plugins/nd-theme-demos-switcher/css/style.css" %}' type='text/css' media='all' />
+	<link rel='stylesheet' id='rs-plugin-settings-css'  href='{% static "plugins/revslider/public/assets/css/settings.css" %}' type='text/css' media='all' />
+	<!--<style id='rs-plugin-settings-inline-css' type='text/css'>
+	#rs-demo-id {}
+	</style> -->
+	<link rel='stylesheet' id='nicdark-style-css'  href='{% static "themes/educationpack/style.css" %}' type='text/css' media='all' />
+	<!-- <link rel='stylesheet' id='nicdark-fonts-css'  href='//fonts.googleapis.com/css?family=Montserrat%3A400%2C700%7CVarela+Round&#038;ver=1.0.0' type='text/css' media='all' /> -->
+	<link rel='stylesheet' id='js_composer_front-css'  href='{% static "uploads/sites/7/js_composer/js_composer_front_custom.css" %}' type='text/css' media='all' />
+	<script type='text/javascript' src='{% static "js/jquery/jquery.js" %}'></script>
+	<script type='text/javascript' src='{% static "js/jquery/jquery-migrate.min.js" %}'></script>
+	<script type='text/javascript' src='{% static "plugins/revslider/public/assets/js/jquery.themepunch.tools.min.js" %}'></script>
+	<script type='text/javascript' src='{% static "plugins/revslider/public/assets/js/jquery.themepunch.revolution.min.js" %}'></script>
+	<script type="text/javascript" src='{% static "plugins/revslider/public/assets/js/extensions/revolution.extension.slideanims.min.js" %}'></script>
+	<script type="text/javascript" src='{% static "plugins/revslider/public/assets/js/extensions/revolution.extension.layeranimation.min.js" %}'></script>
+	<script type="text/javascript" src='{% static "plugins/revslider/public/assets/js/extensions/revolution.extension.kenburn.min.js" %}'></script>
+	<script type="text/javascript" src='{% static "plugins/revslider/public/assets/js/extensions/revolution.extension.navigation.min.js" %}'></script>
+	<script type="text/javascript" src='{% static "plugins/revslider/public/assets/js/extensions/revolution.extension.parallax.min.js" %}'></script>
+
+<!--START css-->
+<style type="text/css">
+
+	.nd_options_navigation_2 div > ul { list-style: none; margin: 0px; padding: 0px; text-align: right; }
+	.nd_options_navigation_2 div > ul > li { display: inline-block; padding: 0px; }
+	.nd_options_navigation_2 div > ul > li:after { content: "|"; display: inline-block; margin: 0px 20px; color: #f1f1f1; }
+	.nd_options_navigation_2 div > ul > li:last-child:after { content: ""; margin: 0px; }
+	.nd_options_navigation_2 div li a { color: #727475; font-size: 16px; line-height: 16px; font-family: Montserrat; }
+	.nd_options_navigation_2 div > ul li:hover > ul.sub-menu { display: block; }
+	.nd_options_navigation_2 div > ul li > ul.sub-menu { z-index: 999; position: absolute; margin: 0px; padding: 0px; list-style: none; display: none; margin-left: -20px; padding-top: 20px; width: 190px; }
+	.nd_options_navigation_2 div > ul li > ul.sub-menu > li { padding: 15px 20px; border-bottom: 1px solid #f1f1f1; text-align: left; background-color: #fff; position: relative; box-shadow: 0px 2px 5px #f1f1f1; float: left; width: 100%; box-sizing:border-box; }
+	.nd_options_navigation_2 div > ul li > ul.sub-menu > li:hover { background-color: #f9f9f9;  }
+	.nd_options_navigation_2 div > ul li > ul.sub-menu > li:last-child { border-bottom: 0px solid #000; }
+	.nd_options_navigation_2 div > ul li > ul.sub-menu li a { font-size: 14px; color: #727475; float: left; width: 100%; }
+	.nd_options_navigation_2 div > ul li > ul.sub-menu li > ul.sub-menu { margin-left: 170px; top: 0; padding-top: 0; padding-left: 20px; }
+	/*responsive*/
+	.nd_options_navigation_2_sidebar div > ul { list-style: none; margin: 0px; padding: 0px; }
+	.nd_options_navigation_2_sidebar div > ul > li { display: inline-block; width: 100%; padding: 0px 0px 20px 0px; }
+	.nd_options_navigation_2_sidebar div li a { font-family: Montserrat; }
+	.nd_options_navigation_2_sidebar div li > a { padding: 10px 0px; display: inline-block; font-size: 24px; font-family: Montserrat; text-transform: lowercase; color: #fff; }
+	.nd_options_navigation_2_sidebar div li > a::first-letter { text-transform: uppercase; }
+	.nd_options_navigation_2_sidebar div > ul li > ul.sub-menu { margin: 0px; padding: 0px; list-style: none; }
+	.nd_options_navigation_2_sidebar div > ul li > ul.sub-menu > li { padding: 0px 20px; text-align: left; }
+	.nd_options_navigation_2_sidebar div > ul li > ul.sub-menu li a { font-size: 14px; }
+	/*top header*/
+	.nd_options_navigation_top_header_2 { font-size: 13px; line-height: 18px; }
+	.nd_options_navigation_top_header_2 > ul { list-style: none; margin: 0px; padding: 0px; }
+	.nd_options_navigation_top_header_2 > ul > li { display: inline-block; }
+	.nd_options_navigation_top_header_2> ul > li:after { content: "|"; display: inline-block; margin: 0px 15px; font-size: 13px; }
+	.nd_options_navigation_top_header_2 > ul > li:last-child:after { content: ""; margin: 0px; }
+	.nd_options_navigation_top_header_2 li a { font-size: 13px; }
+	.nd_options_navigation_top_header_2 > ul li:hover > ul.nd_options_sub_menu { display: block; }
+	.nd_options_navigation_top_header_2 > ul li > ul.nd_options_sub_menu { padding: 10px 0px 0px 15px; position: absolute; margin: 0px; list-style: none; display: none; z-index: 9; }
+	.nd_options_navigation_top_header_2 > ul li > ul.nd_options_sub_menu > li { padding: 7px 15px; font-size: 13px; border-bottom: 1px solid #595959; background-color: #444444; }
+	.nd_options_navigation_top_header_2 > ul li > ul.nd_options_sub_menu > li:last-child { border-bottom: 0px solid #000; }
+   
+	#nd_options_navigation_top_header_2_left div:last-child div a img { margin-right: 0px; }
+	#nd_options_navigation_top_header_2_right div:last-child div a img { margin-left: 0px; }
+
+	/*arrow for item has children*/
+	.nd_options_navigation_2 .menu ul.sub-menu li.menu-item-has-children > a:after { content:""; float: right; border-style: solid; border-width: 5px 0 5px 5px; border-color: transparent transparent transparent #727475; margin-top: 3px; }
+
+</style>
+<!--END css-->
+
+    <style type="text/css">
+
+		.nd_tds_background_color_1 { background-color: #49c4af; }
+		.nd_tds_background_color_2 { background-color: #49c4af; }
+		.nd_tds_background_color_3 { background-color: #ffb730; }
+
+    </style>
+    
+
+	<meta name="generator" content="Powered by Visual Composer - drag and drop page builder for WordPress."/>
+	<!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-content/plugins/js_composer/assets/css/vc_lte_ie9.min.css" media="screen"><![endif]--><!--[if IE  8]><link rel="stylesheet" type="text/css" href="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-content/plugins/js_composer/assets/css/vc-ie8.min.css" media="screen"><![endif]--><meta name="generator" content="Powered by Slider Revolution 5.2.6 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface." />
+	<link rel="icon" href="{% static 'image/favicon.png' %}" sizes="16x16" />
+    <link rel="icon" href="{% static 'image/favicon.png' %}" sizes="192x192" />
+	<link rel="apple-touch-icon-precomposed" href="image/favicon.jpg" />
+	<meta name="msapplication-TileImage" content="image/favicon.jpg" />
+	<style type="text/css" data-type="vc_shortcodes-custom-css">.vc_custom_1470751334579{border-left-width: 0px !important;}.vc_custom_1467210882955{margin-top: 50px !important;}.vc_custom_1473943489006{margin-top: 50px !important;padding-top: 90px !important;padding-bottom: 90px !important;}.vc_custom_1467206447686{padding-top: 50px !important;padding-bottom: 50px !important;background-color: #444444 !important;}.vc_custom_1468663425443{margin-top: 60px !important;}.vc_custom_1467271127498{margin-top: 50px !important;border-top-width: 1px !important;padding-top: 30px !important;padding-bottom: 30px !important;background-color: #f9f9f9 !important;border-top-color: #f1f1f1 !important;border-top-style: solid !important;}.vc_custom_1468511468322{margin-top: 0px !important;margin-right: 0px !important;margin-bottom: 0px !important;margin-left: 0px !important;padding-top: 0px !important;padding-right: 0px !important;padding-bottom: 0px !important;padding-left: 0px !important;}.vc_custom_1473943086362{margin-top: 0px !important;margin-right: 0px !important;margin-bottom: 0px !important;margin-left: 0px !important;padding-top: 39px !important;padding-right: 40px !important;padding-bottom: 38px !important;padding-left: 40px !important;background-color: #49c4af !important;}.vc_custom_1469026316155{padding-top: 23px !important;padding-bottom: 0px !important;}.vc_custom_1467210877865{padding-top: 0px !important;}.vc_custom_1469526814588{padding-right: 0px !important;padding-left: 0px !important;}.vc_custom_1469526820967{padding-top: 0px !important;padding-right: 0px !important;padding-bottom: 0px !important;padding-left: 0px !important;}.vc_custom_1467206505540{padding-top: 10px !important;padding-bottom: 10px !important;}.vc_custom_1467206512132{padding-top: 10px !important;padding-bottom: 10px !important;}.vc_custom_1467206621506{margin-top: 10px !important;margin-bottom: 10px !important;padding-top: 0px !important;}.vc_custom_1467206625527{margin-top: 10px !important;margin-bottom: 10px !important;padding-top: 0px !important;}.vc_custom_1467206629924{margin-top: 10px !important;margin-bottom: 10px !important;padding-top: 0px !important;}.vc_custom_1468663414056{padding-top: 0px !important;}.vc_custom_1467619684642{padding-top: 0px !important;padding-right: 0px !important;padding-left: 0px !important;}.vc_custom_1467271134818{padding: 10px !important;}.vc_custom_1467271143019{padding: 10px !important;}.vc_custom_1467271150084{padding: 10px !important;}.vc_custom_1467271159725{padding: 10px !important;}.vc_custom_1467271168220{padding: 10px !important;}.vc_custom_1467271192396{padding: 10px !important;}</style><noscript><style type="text/css"> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript>	  
+</head>
+	  
+<body id="start_nicdark_framework" class="page page-id-6 page-template-default nd_options_customizer_fonts nd_options_customizer_forms wpb-js-composer js-comp-ver-4.12 vc_responsive">
+<!--START theme-->
+	<div class="nicdark_site nicdark_bg_white  ">	
+<!--START js-->
+	<script type="text/javascript">
+	//<![CDATA[
+		jQuery(document).ready(function() {
+		//START
+			jQuery(function ($) {
+			//OPEN sidebar content ( navigation 2 )
+				$('.nd_options_open_navigation_2_sidebar_content,.nd_options_open_navigation_3_sidebar_content,.nd_options_open_navigation_4_sidebar_content,.nd_options_open_navigation_5_sidebar_content').on("click",function(event){
+					$('.nd_options_navigation_2_sidebar_content,.nd_options_navigation_3_sidebar_content,.nd_options_navigation_4_sidebar_content,.nd_options_navigation_5_sidebar_content').css({
+						'right': '0px',
+					});
+				});
+			//CLOSE	sidebar content ( navigation 2 )
+				$('.nd_options_close_navigation_2_sidebar_content,.nd_options_close_navigation_3_sidebar_content,.nd_options_close_navigation_4_sidebar_content,.nd_options_close_navigation_5_sidebar_content').on("click",function(event){
+					$('.nd_options_navigation_2_sidebar_content,.nd_options_navigation_3_sidebar_content,.nd_options_navigation_4_sidebar_content,.nd_options_navigation_5_sidebar_content').css({
+						'right': '-300px'
+					});
+				});
+			///////////
+			});
+		//END
+		})
+	//]]>
+	</script>
+<!--END js-->
+<!--START js-->
+	<script type="text/javascript">
+	//<![CDATA[
+
+	jQuery(document).ready(function() {
+		//START
+		jQuery(function ($) {    
+			//OPEN search	
+			$('.nd_options_navigation_open_search_content').on("click",function(event){
+				$('.nd_options_navigation_search_content').css({
+					'z-index': '9999',
+					'opacity': '1',
+				});
+			});
+			$('.nd_options_navigation_close_search_content').on("click",function(event){
+				$('.nd_options_navigation_search_content').css({
+					'z-index': '-1',
+					'opacity': '0',
+				});
+			});
+			///////////
+		});
+		//END
+	});
+	//]]>
+	</script>
+<!--END js-->
+
+	<!--START search container-->
+	<div class="nd_options_display_table nd_options_transition_all_08_ease nd_options_navigation_search_content nd_options_bg_greydark_alpha_9 nd_options_position_fixed nd_options_width_100_percentage nd_options_height_100_percentage nd_options_z_index_1_negative nd_options_opacity_0">
+		<!--close-->
+		<div class="nd_options_cursor_zoom_out nd_options_navigation_close_search_content nd_options_width_100_percentage nd_options_height_100_percentage nd_options_position_absolute nd_options_z_index_1_negative"></div>
+		<div class="nd_options_display_table_cell nd_options_vertical_align_middle nd_options_text_align_center">
+		    <form class="nd_options_navigation_search_content_form" method="get" action="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/">
+			  <input class="nd_options_first_font" type="search" placeholder="Keyword" value="" name="s" />
+			  <input class="" type="submit" value="Search" />
+			</form>
+		</div>
+	</div>
+	<!--END search container-->
+
+	<!--START menu responsive-->
+	 <div style="background-color: #49c4af ;" class="nd_options_navigation_2_sidebar_content nd_options_padding_40 nd_options_box_sizing_border_box nd_options_overflow_hidden nd_options_overflow_y_auto nd_options_transition_all_08_ease nd_options_height_100_percentage nd_options_position_fixed nd_options_width_300 nd_options_right_300_negative nd_options_z_index_999">
+
+            <img alt="" width="25" class="nd_options_close_navigation_2_sidebar_content nd_options_cursor_pointer nd_options_right_20 nd_options_top_20 nd_options_position_absolute" src="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-content/plugins/nd-shortcodes/addons/customizer/header/header-2/img/icon-close-white.svg">
+
+            <div class="nd_options_navigation_2_sidebar">
+                <div class="menu-main-menu-container">
+                    <ul id="menu-main-menu" class="menu">
+                        <li id="menu-item-818" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-818">
+                            <a href="/">BERANDA</a>
+                        </li>
+                        <li id="menu-item-799" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-799"><a href="#">COURSES</a>
+                        </li>
+                        <li id="menu-item-807" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-807"><a href="#">TEACHERS</a>
+                        </li>
+                        <li id="menu-item-814" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-814"><a href="{% url 'index' %}">BLOG</a>
+                        </li>
+                        <li id="menu-item-806" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-45 current_page_item menu-item-806"><a href="{% url 'contact' %}">KONTAK</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+<!--END menu responsive-->
+
+	<!--start TOP header-->
+	<div class="nd_options_section">
+	    <div style="background-color: #49c4af ;" class="nd_options_section">
+	        <!--start nd_options_container-->
+	        <div class="nd_options_container nd_options_clearfix">
+	            <div style="color: #ffffff ;" class="nd_options_grid_6 nd_options_padding_botttom_10 nd_options_padding_bottom_0_responsive nd_options_padding_top_10 nd_options_text_align_center_responsive">
+	            	<div id="nd_options_navigation_top_header_2_left" class="nd_options_navigation_top_header_2 nd_options_display_inline_block_responsive">
+						<div class=" nd_options_display_none_all_iphone nd_options_display_table nd_options_float_left">
+							<div class="nd_options_display_table_cell nd_options_vertical_align_middle    ">
+								<a href=""><img alt="" width="15" height="15" class="nd_options_margin_right_10 nd_options_float_left" src="{% static 'image/share-white.svg' %}"></a>
+							</div>
+							<div class="nd_options_display_table_cell nd_options_vertical_align_middle    ">
+								<a style="color:#fff;" class="nd_options_margin_right_20" href="">OUR SOCIAL</a>
+							</div>
+						</div>
+						<div class="  nd_options_display_table nd_options_float_left">
+							<div class="nd_options_display_table_cell nd_options_vertical_align_middle    ">
+								<a href=""><i class="fa fa-facebook" aria-hidden="true" style="color: white; font-size: 20px; padding-right: 7px;"></i></a>
+							</div>
+						</div>
+						<div class="  nd_options_display_table nd_options_float_left">
+							<div class="nd_options_display_table_cell nd_options_vertical_align_middle    ">
+								<a href=""><i class="fa fa-instagram" aria-hidden="true" style="color: white; font-size: 20px; padding-right: 7px;"></i></a>
+							</div>
+						</div>
+						<div class="  nd_options_display_table nd_options_float_left">
+							<div class="nd_options_display_table_cell nd_options_vertical_align_middle    ">
+								<a href=""><i class="fa fa-youtube-play" aria-hidden="true" style="color: white; font-size: 20px; padding-right: 7px;"></i></a>
+							</div>
+						</div>
+						<div class="  nd_options_display_table nd_options_float_left">
+							<div class="nd_options_display_table_cell nd_options_vertical_align_middle    ">
+								<a href=""><i class="fa fa-at" aria-hidden="true" style="color: white; font-size: 20px; padding-right: 7px;"></i></a>
+							</div>
+						</div>
+   	            	</div>
+	            </div>
+
+	            <div style="color: #ffffff ;" class="nd_options_grid_6 nd_options_text_align_right nd_options_text_align_center_responsive nd_options_padding_top_0_responsive nd_options_padding_botttom_10 nd_options_padding_top_10">
+	           		<div id="nd_options_navigation_top_header_2_right" class="nd_options_navigation_top_header_2 nd_options_display_inline_block_responsive">
+						<div class="  nd_options_display_table nd_options_float_right">
+							<div class="nd_options_display_table_cell nd_options_vertical_align_middle    ">
+								<a href="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/learning-account/"><img alt="" width="15" height="15" class="nd_options_margin_left_20 nd_options_float_left" src="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-content/plugins/nd-shortcodes/addons/customizer/shortcodes/top-header/img/login-white.svg"></a>
+							</div>
+							<div class="nd_options_display_table_cell nd_options_vertical_align_middle    ">
+								<a style="color:#fff;" class="nd_options_margin_left_10" href="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/learning-account/">REGISTER</a>
+							</div>
+						</div>
+						<div class="  nd_options_display_table nd_options_float_right">
+							<div class="nd_options_display_table_cell nd_options_vertical_align_middle    ">
+								<a href="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/learning-account/"><img alt="" width="15" height="15" class="nd_options_margin_left_20 nd_options_float_left" src="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-content/plugins/nd-shortcodes/addons/customizer/shortcodes/top-header/img/user-white.svg"></a>
+							</div>
+							<div class="nd_options_display_table_cell nd_options_vertical_align_middle    ">
+								<a style="color:#fff;" class="nd_options_margin_left_10" href="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/learning-account/">LOGIN</a>
+							</div>
+						</div>
+	           		</div>
+	            </div>
+	        </div>
+	        <!--end container-->
+	    </div>
+	</div>
+	<!--END TOP header-->
+	<!--START navigation-->
+	<div id="nd_options_navigation_2_container" class="nd_options_section nd_options_position_relative ">
+
+            <div style="background-color: #ffffff ; border-bottom: 1px solid #f1f1f1 ;" class="nd_options_section">
+
+                <!--start nd_options_container-->
+                <div class="nd_options_container nd_options_clearfix nd_options_position_relative">
+
+                    <div class="nd_options_grid_12 nd_options_display_none_all_responsive">
+
+                        <div style="height: 10px;" class="nd_options_section"></div>
+
+                        <!--LOGO-->
+                        <a href="/" style="color: #49c4af; font-weight: bold; font-size: xx-large;">Be <span style="color: #ffb730;">|</span> Py</a>
+
+                        <div class="nd_options_navigation_2 nd_options_navigation_type nd_options_text_align_right nd_options_float_right nd_options_display_none_all_responsive">
+
+                            <div class="nd_options_display_table">
+                                <div class="nd_options_display_table_cell nd_options_vertical_align_middle">
+                                    <div class="menu-main-menu-container">
+                                        <ul id="menu-main-menu-1" class="menu">
+                                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-799"><a href="/">BERANDA</a>
+                                            </li>
+                                            </li>
+                                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-799"><a href="{% url 'page_list' %}">PROJECT</a>
+                                            </li>
+
+                                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-814"><a href="{% url 'index' %}">BLOG</a>
+                                            </li>
+                                            <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-45 current_page_item menu-item-806"><a href="{% url 'contact' %}">KONTAK</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- <div class="nd_options_display_table_cell nd_options_vertical_align_middle">
+                                    <a class="nd_options_navigation_open_search_content nd_options_margin_left_20 nd_options_float_left" href="#"><img alt="" class=" nd_options_float_left nd_options_opacity_05_hover nd_options_transition_all_08_ease" width="25" src="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-content/plugins/nd-shortcodes/addons/customizer/header/img/icon-search-grey.svg"></a>
+                                </div> -->
+                            </div>
+                        </div>
+
+
+
+
+
+                        <div style="height: 10px;" class="nd_options_section"></div>
+
+                    </div>
+
+
+
+                    <!--RESPONSIVE-->
+                    <div class="nd_options_section nd_options_text_align_center nd_options_display_none nd_options_display_block_responsive">
+                        <div class="nd_options_section nd_options_height_20"></div>
+
+                        <a href="index.html" style="color: #49c4af; font-weight: bold; font-size: xx-large;">Be <span style="color: #ffb730;">|</span> Py</a>
+
+                        <div class="nd_options_section nd_options_height_10"></div>
+
+                        <div class="nd_options_section">
+                            <a class="nd_options_open_navigation_2_sidebar_content nd_options_open_navigation_2_sidebar_content" href="#">
+                                <img alt="" class="" width="25" src="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-content/uploads/sites/7/2016/09/icon-menu-grey.png">
+                            </a>
+                        </div>
+
+                        <div class="nd_options_section nd_options_height_20"></div>
+                    </div>
+                    <!--RESPONSIVE-->
+
+
+
+                </div>
+                <!--end container-->
+
+            </div>
+
+
+        </div>
+	<!--END navigation-->
+<!--START  for post-->
+	<style type="text/css">
+
+    /*sidebar*/
+    .wpb_widgetised_column .widget { margin-bottom: 40px; }
+    .wpb_widgetised_column .widget img, .wpb_widgetised_column .widget select { max-width: 100%; }
+    .wpb_widgetised_column .widget h3 { margin-bottom: 20px; font-weight: bolder; }
+
+    /*search*/
+    .wpb_widgetised_column .widget.widget_search input[type="text"] { width: 100%; }
+    .wpb_widgetised_column .widget.widget_search input[type="submit"] { margin-top: 20px; }
+
+    /*list*/
+    .wpb_widgetised_column .widget ul { margin: 0px; padding: 0px; list-style: none; }
+    .wpb_widgetised_column .widget > ul > li { padding: 10px; border-bottom: 1px solid #f1f1f1; }
+    .wpb_widgetised_column .widget > ul > li:last-child { padding-bottom: 0px; border-bottom: 0px solid #f1f1f1; }
+    .wpb_widgetised_column .widget ul li { padding: 10px; }
+    .wpb_widgetised_column .widget ul.children { padding: 10px; }
+    .wpb_widgetised_column .widget ul.children:last-child { padding-bottom: 0px; }
+
+    /*calendar*/
+    .wpb_widgetised_column .widget.widget_calendar table { text-align: center; background-color: #fff; width: 100%; border: 1px solid #f1f1f1; line-height: 20px; }
+    .wpb_widgetised_column .widget.widget_calendar table th { padding: 10px 5px; }
+    .wpb_widgetised_column .widget.widget_calendar table td { padding: 10px 5px; }
+    .wpb_widgetised_column .widget.widget_calendar table tbody td a { color: #fff; padding: 5px; border-radius: 3px; }
+    .wpb_widgetised_column .widget.widget_calendar table tfoot td a { color: #fff; background-color: #444444; padding: 5px; border-radius: 3px; font-size: 13px; }
+    .wpb_widgetised_column .widget.widget_calendar table tfoot td { padding-bottom: 20px; }
+    .wpb_widgetised_column .widget.widget_calendar table tfoot td#prev { text-align: right; }
+    .wpb_widgetised_column .widget.widget_calendar table tfoot td#next { text-align: left; }
+    .wpb_widgetised_column .widget.widget_calendar table caption { font-size: 20px; font-weight: bolder; background-color: #f9f9f9; padding: 20px; border: 1px solid #f1f1f1; border-bottom: 0px; }
+
+    /*color calendar*/
+    .wpb_widgetised_column .widget.widget_calendar table thead { color: #727475; }
+    .wpb_widgetised_column .widget.widget_calendar table tbody td a { background-color: #49c4af; }
+    .wpb_widgetised_column .widget.widget_calendar table caption { color: #727475; font-family: 'Montserrat', sans-serif; }
+
+    /*menu*/
+    .wpb_widgetised_column .widget div ul { margin: 0px; padding: 0px; list-style: none; }
+    .wpb_widgetised_column .widget div > ul > li { padding: 10px; border-bottom: 1px solid #f1f1f1; }
+    .wpb_widgetised_column .widget div > ul > li:last-child { padding-bottom: 0px; border-bottom: 0px solid #f1f1f1; }
+    .wpb_widgetised_column .widget div ul li { padding: 10px; }
+    .wpb_widgetised_column .widget div ul.sub-menu { padding: 10px; }
+    .wpb_widgetised_column .widget div ul.sub-menu:last-child { padding-bottom: 0px; }
+
+    /*tag*/
+    .wpb_widgetised_column .widget.widget_tag_cloud a { padding: 5px 10px; border: 1px solid #f1f1f1; border-radius: 3px; display: inline-block; margin: 5px; margin-left: 0px; font-size: 13px !important; line-height: 20px; }
+
+	</style>
+	<!--END css for post-->
+	<!--page margin-->
+	<!--start nd_options_container-->
+	<div class="nd_options_container nd_options_padding_0_15 nd_options_box_sizing_border_box nd_options_clearfix">
+       <!--#post-->
+        <div style="float:left; width:100%;" id="post-6" class="post-6 page type-page status-publish hentry">
+   		<!--automatic title-->
+            <!--start content-->
+            <div class="vc_row wpb_row vc_row-fluid">
+				<div class="wpb_column vc_column_container vc_col-sm-12">
+					<div class="vc_column-inner ">
+						<div class="wpb_wrapper">
+							<div class="wpb_revslider_element wpb_content_element">
+								<link href="http://fonts.googleapis.com/css?family=Montserrat%3A700" rel="stylesheet" property="stylesheet" type="text/css" media="all" />
+								<div id="rev_slider_1_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" style="margin:0px auto;padding:0px;margin-top:0px;margin-bottom:0px;">
+								<!-- START REVOLUTION SLIDER 5.2.6 fullwidth mode -->
+									<div id="rev_slider_1_1" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.2.6">
+										<ul>	<!-- SLIDE  -->
+											<li data-index="rs-1" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="300"  data-thumb="image/parallax1-100x50.jpg"  data-rotate="0"  data-saveperformance="off"  data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+											<!-- MAIN IMAGE -->
+												<img src="{% static 'image/home1.JPG' %}"  alt="" title="parallax1"  width="1920" height="1080" data-bgposition="center bottom" data-kenburns="on" data-duration="10000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="110" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="14" class="rev-slidebg" data-no-retina>
+											<!-- LAYERS -->
+												<!-- LAYER NR. 1 -->
+												<div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme" 
+												id="slide-1-layer-4" 
+												data-x="center" data-hoffset="" 
+												data-y="center" data-voffset="" 
+												data-width="['3000']"
+												data-height="['873']"
+												data-transform_idle="o:1;"
+												data-transform_in="opacity:0;s:300;e:Power2.easeInOut;" 
+												data-transform_out="opacity:0;s:300;" 
+												data-start="0" 
+												data-responsive_offset="on" 
+												style="z-index: 5;background-color:rgba(0, 0, 0, 0.50);background:linear-gradient(to bottom, rgba(101,100,96,0.8) 0%,rgba(101,100,96,0) 35%,rgba(101,100,96,0) 45%,rgba(101,100,96,0.7) 100%);"> </div>
+												<!-- LAYER NR. 2 -->
+												<div class="tp-caption   tp-resizeme" 
+												id="slide-1-layer-8" 
+												data-x="30" 
+												data-y="bottom" data-voffset="150" 
+												data-width="['auto']"
+												data-height="['auto']"
+												data-visibility="['on','on','off','off']"
+												data-transform_idle="o:1;"
+												data-transform_in="opacity:0;s:500;e:Power2.easeInOut;" 
+												data-transform_out="opacity:0;s:300;" 
+												data-start="500" 
+												data-splitin="none" 
+												data-splitout="none" 
+												data-responsive_offset="on" 
+												style="z-index: 6; white-space: nowrap; font-size: 20px; line-height: 22px; font-weight: 400; color: rgba(255, 255, 255, 1.00);"> <h1 style="color:#ffffff; text-align:; font-size:60px; line-height:60px; font-weight:bold;" class=" nd_options_first_font ">Di sini kamu akan</h1> <div style="background-color:; height: 20px;" class="nicdark_section"></div>
+												<script type="text/javascript">
+												//<![CDATA[
+												jQuery(document).ready(function() {
+												//typed
+													jQuery(".nd_options_typed_32").typed({
+														stringsElement: jQuery(".nd_options_typed_strings_32"),
+														typeSpeed: 100,
+														backDelay: 500,
+														loop: true,
+														contentType: "html",
+														loopCount: false
+													});
+												});
+												//]]&gt;
+												</script>
+												<style type="text/css">
+												.nd_options_typewriter_32 .typed-cursor{ 
+													font-size: 40px;
+													color: #ffffff;
+												}
+												</style>
+												<!--START typed words-->
+												<div class="nd_options_display_none_all_iphone nd_options_section  nd_options_typewriter_32 ">
+													<strong style="color:#ffffff; font-size:40px; " class="nd_options_first_font">belajar </strong>
+														<div class="nd_options_typed_strings_32">
+															<p><strong style="color:#ffffff; font-size:40px;" class="nd_options_first_font"> Django</strong></p>
+															<p><strong style="color:#ffffff; font-size:40px;" class="nd_options_first_font"> Python</strong></p>
+															<p><strong style="color:#ffffff; font-size:40px;" class="nd_options_first_font"> </strong></p>
+														</div>
+													<span class="nd_options_typed_32 nd_options_padding_botttom_5" style="white-space:pre; border-bottom: 5px solid #fff; "></span>
+												</div>
+												<!--END typed words-->
+											</div>
+	</li>
+	<!-- SLIDE  -->
+	<li data-index="rs-2" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="300"  data-thumb="image/parallax2-100x50.jpg"  data-rotate="0"  data-saveperformance="off"  data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+		<!-- MAIN IMAGE -->
+		<img src="{% static 'image/home2.JPG' %}"  alt="" title="parallax2"  width="1920" height="1080" data-bgposition="center bottom" data-kenburns="on" data-duration="10000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="110" data-rotatestart="0" data-rotateend="0" data-offsetstart="500 0" data-offsetend="0 0" data-bgparallax="14" class="rev-slidebg" data-no-retina>
+		<!-- LAYERS -->
+
+		<!-- LAYER NR. 1 -->
+		<div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme" 
+			id="slide-2-layer-4" 
+			data-x="center" data-hoffset="" 
+			data-y="center" data-voffset="" 
+			data-width="['3000']"
+			data-height="['873']"
+			data-transform_idle="o:1;"
+			data-transform_in="opacity:0;s:300;e:Power2.easeInOut;" 
+			data-transform_out="opacity:0;s:300;" 
+			data-start="0" 
+			data-responsive_offset="on" 
+			style="z-index: 5;background-color:rgba(0, 0, 0, 0.50);background:linear-gradient(to bottom, rgba(101,100,96,0.6) 0%,rgba(101,100,96,0.6) 75%,rgba(101,100,96,0) 100%);"> </div>
+
+		<!-- LAYER NR. 2 -->
+		<div class="tp-caption   tp-resizeme" 
+			id="slide-2-layer-1" 
+			data-x="center" data-hoffset="" 
+			data-y="center" data-voffset="-100" 
+			data-width="['auto']"
+			data-height="['auto']"
+			data-visibility="['on','on','on','off']"
+			data-transform_idle="o:1;"
+			data-transform_in="opacity:0;s:500;e:Power2.easeInOut;" 
+			data-transform_out="opacity:0;s:300;" 
+			data-start="500" 
+			data-splitin="none" 
+			data-splitout="none" 
+			data-responsive_offset="on" 
+			style="z-index: 6; white-space: nowrap; font-size: 70px; line-height: 70px; font-weight: 700; color: rgba(255, 255, 255, 1.00);font-family:Montserrat;">We Don't Talk</div>
+
+		<!-- LAYER NR. 3 -->
+		<div class="tp-caption   tp-resizeme" 
+			id="slide-2-layer-5" 
+			data-x="center" data-hoffset="" 
+			data-y="center" data-voffset="" 
+			data-width="['auto']"
+			data-height="['auto']"
+			data-visibility="['on','on','on','off']"
+			data-transform_idle="o:1;"
+			data-transform_in="opacity:0;s:500;e:Power2.easeInOut;" 
+			data-transform_out="opacity:0;s:300;" 
+			data-start="1000" 
+			data-splitin="none" 
+			data-splitout="none" 
+			data-responsive_offset="on" 
+			style="z-index: 7; white-space: nowrap; font-size: 70px; line-height: 70px; font-weight: 700; color: rgba(255, 255, 255, 1.00);font-family:Montserrat;">About PHP!</div>
+
+		<!-- LAYER NR. 4 -->
+		<div class="tp-caption rev-btn  tp-resizeme" 
+			id="slide-2-layer-7" 
+			data-x="center" data-hoffset="90" 
+			data-y="center" data-voffset="120" 
+			data-width="['auto']"
+			data-height="['auto']"
+			data-visibility="['on','on','on','off']"
+			data-transform_idle="o:1;"
+			data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:200;e:Power0.easeIn;"
+			data-style_hover="c:rgba(255, 255, 255, 1.00);bg:rgba(255, 255, 255, 0);bc:rgba(255, 255, 255, 1.00);"
+			data-transform_in="opacity:0;s:500;e:Power2.easeInOut;" 
+			data-transform_out="opacity:0;s:300;" 
+			data-start="1500" 
+			data-splitin="none" 
+			data-splitout="none" 
+			data-responsive_offset="on" 
+			style="z-index: 9; white-space: nowrap; font-size: 16px; line-height: 16px; font-weight: 700; color: rgba(255, 255, 255, 1.00);font-family:Montserrat;background-color:rgba(255, 183, 48, 1.00);padding:12px 35px 12px 35px;border-color:rgba(255, 183, 48, 1.00);border-style:solid;border-width:2px;border-radius:3px 3px 3px 3px;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;margin: 0px 0px 0px -163px;">TENTANG KAMI</div>
+	</li>
+</ul>
+<script>
+	var htmlDiv = document.getElementById("rs-plugin-settings-inline-css"); 
+	var htmlDivCss="";
+	if(htmlDiv) {
+		htmlDiv.innerHTML = htmlDiv.innerHTML + htmlDivCss;
+	}else{
+		var htmlDiv = document.createElement("div");
+		htmlDiv.innerHTML = "<style>" + htmlDivCss + "</style>";
+		document.getElementsByTagName("head")[0].appendChild(htmlDiv.childNodes[0]);
+	}
+</script>
+<div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>	</div>
+<script>
+	var htmlDiv = document.getElementById("rs-plugin-settings-inline-css"); 
+	var htmlDivCss="";
+	if(htmlDiv) {
+		htmlDiv.innerHTML = htmlDiv.innerHTML + htmlDivCss;
+	}else{
+		var htmlDiv = document.createElement("div");
+		htmlDiv.innerHTML = "<style>" + htmlDivCss + "</style>";
+		document.getElementsByTagName("head")[0].appendChild(htmlDiv.childNodes[0]);
+	}
+</script>
+<script type="text/javascript">
+			/******************************************
+				-	PREPARE PLACEHOLDER FOR SLIDER	-
+			******************************************/
+
+			var setREVStartSize=function(){
+				try{var e=new Object,i=jQuery(window).width(),t=9999,r=0,n=0,l=0,f=0,s=0,h=0;
+					e.c = jQuery('#rev_slider_1_1');
+					e.gridwidth = [1240];
+					e.gridheight = [800];
+							
+					e.sliderLayout = "fullwidth";
+					if(e.responsiveLevels&&(jQuery.each(e.responsiveLevels,function(e,f){f>i&&(t=r=f,l=e),i>f&&f>r&&(r=f,n=e)}),t>r&&(l=n)),f=e.gridheight[l]||e.gridheight[0]||e.gridheight,s=e.gridwidth[l]||e.gridwidth[0]||e.gridwidth,h=i/s,h=h>1?1:h,f=Math.round(h*f),"fullscreen"==e.sliderLayout){var u=(e.c.width(),jQuery(window).height());if(void 0!=e.fullScreenOffsetContainer){var c=e.fullScreenOffsetContainer.split(",");if (c) jQuery.each(c,function(e,i){u=jQuery(i).length>0?u-jQuery(i).outerHeight(!0):u}),e.fullScreenOffset.split("%").length>1&&void 0!=e.fullScreenOffset&&e.fullScreenOffset.length>0?u-=jQuery(window).height()*parseInt(e.fullScreenOffset,0)/100:void 0!=e.fullScreenOffset&&e.fullScreenOffset.length>0&&(u-=parseInt(e.fullScreenOffset,0))}f=u}else void 0!=e.minHeight&&f<e.minHeight&&(f=e.minHeight);e.c.closest(".rev_slider_wrapper").css({height:f})
+					
+				}catch(d){console.log("Failure at Presize of Slider:"+d)}
+			};
+			
+			setREVStartSize();
+			
+						var tpj=jQuery;
+			
+			var revapi1;
+			tpj(document).ready(function() {
+				if(tpj("#rev_slider_1_1").revolution == undefined){
+					revslider_showDoubleJqueryError("#rev_slider_1_1");
+				}else{
+					revapi1 = tpj("#rev_slider_1_1").show().revolution({
+						sliderType:"standard",
+jsFileLocation:"//www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-content/plugins/revslider/public/assets/js/",
+						sliderLayout:"fullwidth",
+						dottedOverlay:"none",
+						delay:9000,
+						navigation: {
+							keyboardNavigation:"on",
+							keyboard_direction: "horizontal",
+							mouseScrollNavigation:"off",
+ 							mouseScrollReverse:"default",
+							onHoverStop:"off",
+							touch:{
+								touchenabled:"on",
+								swipe_threshold: 75,
+								swipe_min_touches: 1,
+								swipe_direction: "horizontal",
+								drag_block_vertical: false
+							}
+							,
+							arrows: {
+								style:"uranus",
+								enable:true,
+								hide_onmobile:true,
+								hide_under:480,
+								hide_onleave:false,
+								tmp:'',
+								left: {
+									h_align:"left",
+									v_align:"center",
+									h_offset:20,
+									v_offset:0
+								},
+								right: {
+									h_align:"right",
+									v_align:"center",
+									h_offset:20,
+									v_offset:0
+								}
+							}
+						},
+						visibilityLevels:[1240,1024,778,480],
+						gridwidth:1240,
+						gridheight:800,
+						lazyType:"none",
+						parallax: {
+							type:"mouse",
+							origo:"enterpoint",
+							speed:400,
+							levels:[5,10,15,20,25,30,35,40,45,46,47,48,49,50,51,55],
+							type:"mouse",
+						},
+						shadow:0,
+						spinner:"spinner2",
+						stopLoop:"off",
+						stopAfterLoops:-1,
+						stopAtSlide:-1,
+						shuffle:"off",
+						autoHeight:"off",
+						disableProgressBar:"on",
+						hideThumbsOnMobile:"off",
+						hideSliderAtLimit:0,
+						hideCaptionAtLimit:0,
+						hideAllCaptionAtLilmit:0,
+						debugMode:false,
+						fallbacks: {
+							simplifyAll:"off",
+							nextSlideOnWindowFocus:"off",
+							disableFocusListener:false,
+						}
+					});
+				}
+			});	/*ready*/
+		</script>
+		<script>
+					var htmlDivCss = ' #rev_slider_1_1_wrapper .tp-loader.spinner2{ background-color: #68b78e !important; } ';
+					var htmlDiv = document.getElementById('rs-plugin-settings-inline-css');
+					if(htmlDiv) {
+						htmlDiv.innerHTML = htmlDiv.innerHTML + htmlDivCss;
+					}
+					else{
+						var htmlDiv = document.createElement('div');
+						htmlDiv.innerHTML = '<style>' + htmlDivCss + '</style>';
+						document.getElementsByTagName('head')[0].appendChild(htmlDiv.childNodes[0]);
+					}
+					</script>
+					<script>
+					var htmlDivCss = unescape("%23rev_slider_1_1%20.uranus.tparrows%20%7B%0A%20%20width%3A50px%3B%0A%20%20height%3A50px%3B%0A%20%20background%3Argba%28255%2C255%2C255%2C0%29%3B%0A%20%7D%0A%20%23rev_slider_1_1%20.uranus.tparrows%3Abefore%20%7B%0A%20width%3A50px%3B%0A%20height%3A50px%3B%0A%20line-height%3A50px%3B%0A%20font-size%3A40px%3B%0A%20transition%3Aall%200.3s%3B%0A-webkit-transition%3Aall%200.3s%3B%0A%20%7D%0A%20%0A%20%20%23rev_slider_1_1%20.uranus.tparrows%3Ahover%3Abefore%20%7B%0A%20%20%20%20opacity%3A0.75%3B%0A%20%20%7D%0A");
+					var htmlDiv = document.getElementById('rs-plugin-settings-inline-css');
+					if(htmlDiv) {
+						htmlDiv.innerHTML = htmlDiv.innerHTML + htmlDivCss;
+					}
+					else{
+						var htmlDiv = document.createElement('div');
+						htmlDiv.innerHTML = '<style>' + htmlDivCss + '</style>';
+						document.getElementsByTagName('head')[0].appendChild(htmlDiv.childNodes[0]);
+					}
+				  </script>
+				</div><!-- END REVOLUTION SLIDER --></div></div></div></div></div><div class="vc_row wpb_row vc_row-fluid vc_custom_1470751334579 vc_row-has-fill"><div class="wpb_column vc_column_container vc_col-sm-3"><div class="vc_column-inner vc_custom_1468511468322"><div class="wpb_wrapper">
+
+
+	<script type="text/javascript">
+    //<![CDATA[
+    
+    jQuery(document).ready(function() {
+
+      //START masonry
+      jQuery(function ($) {
+        
+        //Masonry
+		var $nd_options_masonry_content = $(".nd_options_masonry_content").imagesLoaded( function() {
+		  // init Masonry after all images have loaded
+		  $nd_options_masonry_content.masonry({
+		    itemSelector: ".nd_options_masonry_item"
+		  });
+		});
+
+
+      });
+      //END masonry
+
+    });
+
+    //]]&gt;
+  </script>
+
+
+<div class="nd_options_section nd_options_masonry_content  ">
+    <div style="background-color: #ffb730;" class=" nd_options_width_100_percentage nd_options_float_left nd_options_padding_40 nd_options_box_sizing_border_box nd_options_masonry_item nd_options_width_100_percentage_responsive">
+	    <h3 class="nd_options_color_white nd_options_margin_0_important nd_options_padding_0"><strong>Check New Events</strong></h3>
+	    <div class="nd_options_section nd_options_height_20"></div>
+	    <p class="nd_options_color_white nd_options_margin_0_important nd_options_padding_0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ornare mattis arcu, ut.</p>
+	    <div class="nd_options_section nd_options_height_20"></div>
+	    <a class="nd_options_display_inline_block nd_options_color_white nd_options_border_1_solid_white nd_options_first_font nd_options_padding_8 nd_options_border_radius_3 nd_options_font_size_13" href="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/2016/06/06/check-new-events/">READ MORE</a>
+	</div>
+</div></div></div></div><div class="wpb_column vc_column_container vc_col-sm-3 vc_col-has-fill"><div class="vc_column-inner vc_custom_1473943086362"><div class="wpb_wrapper"> <h3 style="color:#ffffff; text-align:; font-size:px; line-height:px; font-weight:bold;" class=" nd_options_first_font ">Opening Hours</h3> <div style="background-color:; height: 10px;" class="nicdark_section"></div>
+
+
+  <div class="nd_options_section  nd_options_display_table ">
+    <div class="nd_options_display_table_cell nd_options_vertical_align_middle nd_options_width_50_percentage nd_options_text_align_left nd_options_padding_10 nd_options_box_sizing_border_box">
+      <p class="  nd_options_margin_0 nd_options_padding_0" style="color:#ffffff;">Mon - Fri</p>
+    </div>
+    <div class="nd_options_display_table_cell nd_options_vertical_align_middle nd_options_width_50_percentage nd_options_text_align_right nd_options_padding_10 nd_options_box_sizing_border_box">
+      <p class="  nd_options_margin_0 nd_options_padding_0" style="color:#ffffff;">8 - 17:00</p>
+    </div>
+  </div>
+
+
+   <div style="background-color:#44b9a5; height: 2px;" class="nicdark_section"></div>
+
+
+  <div class="nd_options_section  nd_options_display_table ">
+    <div class="nd_options_display_table_cell nd_options_vertical_align_middle nd_options_width_50_percentage nd_options_text_align_left nd_options_padding_10 nd_options_box_sizing_border_box">
+      <p class="  nd_options_margin_0 nd_options_padding_0" style="color:#ffffff;">Saturday</p>
+    </div>
+    <div class="nd_options_display_table_cell nd_options_vertical_align_middle nd_options_width_50_percentage nd_options_text_align_right nd_options_padding_10 nd_options_box_sizing_border_box">
+      <p class="  nd_options_margin_0 nd_options_padding_0" style="color:#ffffff;">9 - 17:30</p>
+    </div>
+  </div>
+
+
+   <div style="background-color:#44b9a5; height: 2px;" class="nicdark_section"></div>
+
+
+  <div class="nd_options_section  nd_options_display_table ">
+    <div class="nd_options_display_table_cell nd_options_vertical_align_middle nd_options_width_50_percentage nd_options_text_align_left nd_options_padding_10 nd_options_box_sizing_border_box">
+      <p class="  nd_options_margin_0 nd_options_padding_0" style="color:#ffffff;">Sunday</p>
+    </div>
+    <div class="nd_options_display_table_cell nd_options_vertical_align_middle nd_options_width_50_percentage nd_options_text_align_right nd_options_padding_10 nd_options_box_sizing_border_box">
+      <p class="  nd_options_margin_0 nd_options_padding_0" style="color:#ffffff;">9 - 17:30</p>
+    </div>
+  </div>
+
+
+   </div></div></div><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner vc_custom_1469026316155"><div class="wpb_wrapper"><style></style>
+
+  <div class=" nd_learning_section">
+
+    
+    <div class="nd_learning_section nd_learning_padding_15 nd_learning_box_sizing_border_box">
+      <h2><strong>Find Your Course</strong></h2>
+    </div>
+
+
+    <form class="" action="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/courses/" method="GET">
+
+      <input type="hidden" value="true" name="nd_learning_arrive_from_advsearch">
+
+    
+
+      <div id="nd_learning_search_components_tax_0" class=" nd_learning_width_100_percentage_all_iphone nd_learning_display_none nd_learning_width_33_percentage nd_learning_float_left nd_learning_float_left nd_learning_padding_15 nd_learning_box_sizing_border_box">
+
+      <select class="nd_learning_section" name="post_tag"><option value="">All Tags</option><option  value="chart">Chart</option><option  value="computer">Computer</option><option  value="ecommerce">Ecommerce</option><option  value="learning">Learning</option><option  value="marketing">Marketing</option><option  value="students">Students</option><option  value="web">Web</option></select></div>
+
+      <div id="nd_learning_search_components_tax_1" class=" nd_learning_width_100_percentage_all_iphone  nd_learning_width_33_percentage nd_learning_float_left nd_learning_float_left nd_learning_padding_15 nd_learning_box_sizing_border_box">
+
+      <select class="nd_learning_section" name="difficulty-level-course"><option value="">All Levels</option><option  value="beginner">Beginner</option><option  value="expert">Expert</option><option  value="intermediate">Intermediate</option></select></div>
+
+      <div id="nd_learning_search_components_tax_2" class=" nd_learning_width_100_percentage_all_iphone  nd_learning_width_33_percentage nd_learning_float_left nd_learning_float_left nd_learning_padding_15 nd_learning_box_sizing_border_box">
+
+      <select class="nd_learning_section" name="category-course"><option value="">All Categories</option><option  value="analytics">Analytics</option><option  value="e-learning">E-Learning</option><option  value="management">Management</option><option  value="marketing">Marketing</option><option  value="project">Project</option></select></div>
+
+      <div id="nd_learning_search_components_tax_3" class=" nd_learning_width_100_percentage_all_iphone  nd_learning_width_33_percentage nd_learning_float_left nd_learning_float_left nd_learning_padding_15 nd_learning_box_sizing_border_box">
+
+      <select class="nd_learning_section" name="location-course"><option value="">All Locations</option><option  value="headquarter">Headquarter</option><option  value="school-branch">School Branch</option></select></div>
+
+      <div id="nd_learning_search_components_tax_4" class=" nd_learning_width_100_percentage_all_iphone  nd_learning_width_33_percentage nd_learning_float_left nd_learning_float_left nd_learning_padding_15 nd_learning_box_sizing_border_box">
+
+      <select class="nd_learning_section" name="typology-course"><option value="">All Typologies</option><option  value="free">Free</option><option  value="premium">Premium</option></select></div>
+
+      <div id="nd_learning_search_components_tax_5" class=" nd_learning_width_100_percentage_all_iphone  nd_learning_width_33_percentage nd_learning_float_left nd_learning_float_left nd_learning_padding_15 nd_learning_box_sizing_border_box">
+
+      <select class="nd_learning_section" name="duration-course"><option value="">All Durations</option><option  value="1-day">1 Day</option><option  value="1-week">1 Week</option><option  value="2-days">2 Days</option><option  value="8-hours">8 Hours</option></select></div>
+
+      <div class="nd_learning_width_33_percentage nd_learning_float_left nd_learning_float_left nd_learning_width_100_percentage_all_iphone nd_learning_padding_15 nd_learning_box_sizing_border_box">
+        <input class="nd_learning_section" type="submit" value="Search">
+      </div>
+
+
+    </form>
+
+</div>
+</div></div></div></div><div class="vc_row wpb_row vc_row-fluid vc_custom_1467210882955"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner vc_custom_1467210877865"><div class="wpb_wrapper"> <h2 style="color:#727475; text-align:; font-size:50px; line-height:50px; font-weight:bold;" class=" nd_options_first_font ">Our Courses</h2> <div style="background-color:; height: 10px;" class="nicdark_section"></div> <h3 style="color:#a3a3a3; text-align:; font-size:20px; line-height:20px; font-weight:normal;" class=" nd_options_first_font "> The Best In Our School</h3> <div style="background-color:; height: 30px;" class="nicdark_section"></div></div></div></div></div><div class="vc_row wpb_row vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner vc_custom_1469526814588"><div class="wpb_wrapper">
+
+
+    <script type="text/javascript">
+    //<![CDATA[
+    
+    jQuery(document).ready(function() {
+
+      //START masonry
+      jQuery(function ($) {
+        
+        //Masonry
+        var $nd_learning_masonry_content = $(".nd_learning_masonry_content").imagesLoaded( function() {
+          // init Masonry after all images have loaded
+          $nd_learning_masonry_content.masonry({
+            itemSelector: ".nd_learning_masonry_item"
+          });
+        });
+
+
+      });
+      //END masonry
+
+    });
+
+    //]]&gt;
+  </script>
+
+
+<div class="nd_learning_section nd_learning_masonry_content  ">
+
+    <div class=" nd_learning_width_100_percentage nd_learning_padding_15 nd_learning_box_sizing_border_box nd_learning_masonry_item nd_learning_width_100_percentage_responsive">
+
+        <div class="nd_learning_section">
+            
+            <!--start preview-->
+            <div class="nd_learning_section nd_learning_border_1_solid_grey">
+                
+                <!--image-->
+                <div class="nd_learning_section nd_learning_position_relative">
+                    
+
+
+    <img class="nd_learning_section" alt="" src="{% static 'image/course3-740x416.jpg' %}">
+
+    <div class="nd_learning_bg_greydark_alpha_gradient_2 nd_learning_position_absolute nd_learning_left_0 nd_learning_height_100_percentage nd_learning_width_100_percentage nd_learning_padding_20 nd_learning_box_sizing_border_box">
+        
+
+        <div class="nd_learning_position_absolute nd_learning_right_20 nd_learning_top_20">
+
+
+    <script type="text/javascript">
+    <!--//--><![CDATA[//><!--
+      jQuery(document).ready(function($) {
+
+        //tooltip
+        $( ".nd_learning_tooltip_jquery" ).tooltip({ 
+          tooltipClass: "nd_learning_tooltip_jquery_content",
+          position: {
+            my: "center top",
+            at: "center+0 top-45",
+          }
+        });
+
+      });
+    //--><!]]&gt;
+    </script>
+  
+    
+      <div class="nd_learning_display_inline_block nd_learning_display_none_all_iphone">
+        <a title="MAKE THE LOGIN FOR BOOKMARK" href="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/learning-account/" class="nd_learning_tooltip_jquery nd_learning_margin_right_20 nd_learning_cursor_pointer nd_learning_display_inline_block  nd_learning_text_decoration_none" >
+          <img alt="" width="20" height="20" src="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-content/plugins/nd-learning/assets/img/icons/icon-heart-empty-white.svg">
+        </a>
+      </div>
+
+    
+
+    <script type="text/javascript">
+    <!--//--><![CDATA[//><!--
+      jQuery(document).ready(function($) {
+
+        //tooltip
+        $( ".nd_learning_tooltip_jquery" ).tooltip({ 
+          tooltipClass: "nd_learning_tooltip_jquery_content",
+          position: {
+            my: "center top",
+            at: "center+0 top-45",
+          }
+        });
+
+      });
+    //--><!]]&gt;
+    </script>
+  
+    
+      <div class="nd_learning_display_inline_block nd_learning_display_none_all_iphone">
+        <a title="MAKE THE LOGIN FOR COMPARE" href="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/learning-account/" class="nd_learning_tooltip_jquery nd_learning_cursor_pointer  nd_learning_display_inline_block nd_learning_text_decoration_none  " >
+          <img alt="" width="20" height="20" src="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-content/plugins/nd-learning/assets/img/icons/icon-compare-empty-white.svg">
+        </a>
+      </div>
+
+    </div>    
+
+        <div class="nd_learning_position_absolute nd_learning_bottom_20">
+            
+            <h2 class="nd_learning_color_white_important nd_learning_display_none_all_iphone">
+                <a class="nd_learning_color_white_important nd_options_first_font" href="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/courses/app-development/">
+                    App Development
+                </a>
+            </h2>
+
+            <div class="nicdark_section nicdark_height_10 nicdark_display_none_all_iphone"></div>
+
+            <div class="nd_learning_display_table nd_learning_float_left nd_learning_margin_right_20">
+
+                <div class="nd_learning_display_table_cell nd_learning_vertical_align_middle">
+                    <img alt="" class="nd_learning_float_left nd_learning_margin_right_10 nd_learning_display_table_cell nd_learning_vertical_align_middle" width="20" src="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-content/plugins/nd-learning/assets/img/icons/icon-calendar-white.svg">
+                </div>
+
+                <div class="nd_learning_display_table_cell nd_learning_vertical_align_middle">
+                    <p class="nd_learning_color_white_important nd_learning_display_table_cell nd_learning_vertical_align_middle nd_learning_font_size_13">22-06-2016</p>
+                </div>
+
+            </div>
+            <div class="nd_learning_display_table nd_learning_float_left">
+
+                <div class="nd_learning_display_table_cell nd_learning_vertical_align_middle">
+                    <img alt="" class="nd_learning_float_left nd_learning_margin_right_10 nd_learning_display_table_cell nd_learning_vertical_align_middle" width="20" src="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-content/plugins/nd-learning/assets/img/icons/icon-clock-white.svg">
+                </div>
+
+                <div class="nd_learning_display_table_cell nd_learning_vertical_align_middle">
+                    <p class="nd_learning_color_white_important nd_learning_display_table_cell nd_learning_vertical_align_middle nd_learning_font_size_13">2 Days </p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <a href="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/teachers/john-brown/"><img alt="" class="nd_learning_display_none_all_iphone nd_learning_border_3_solid_white nd_learning_border_radius_100_percentage nd_learning_position_absolute nd_learning_right_20 nd_learning_bottom_35_negative" width="70" src="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-content/uploads/sites/7/2016/08/avatar-8.jpg"></a>
+
+    </div>
+
+    
+                </div>
+                <!--image-->
+
+                <div class="nd_learning_section nd_learning_padding_20 nd_learning_box_sizing_border_box nd_learning_bg_white">
+                
+                    <h3><a class="nd_options_color_greydark nd_options_first_font" href="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/courses/app-development/">Marketing </a></h3>
+                    <div class="nd_learning_section nd_learning_height_20"></div> 
+                    <p><a class="" href="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/courses/app-development/">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean egestas magna at porttitor vehicula. Nullam augue augue.</a></p>
+
+                </div>
+
+                <div class="nd_learning_section nd_learning_padding_20 nd_learning_box_sizing_border_box nd_learning_bg_grey nd_learning_border_top_1_solid_grey">
+
+                    <div class="nd_learning_width_33_percentage nd_learning_display_none_all_iphone nd_learning_width_50_percentage_all_iphone nd_learning_float_left">
+                        <div class="nd_learning_display_table nd_learning_float_left">
+                            <img alt="" class="nd_learning_margin_right_10 nd_learning_display_table_cell nd_learning_vertical_align_middle " width="23" src="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-content/plugins/nd-learning/assets/img/icons/icon-difficulty-grey.svg">
+                            <p class="nd_learning_display_table_cell nd_learning_vertical_align_middle nd_learning_font_size_15"><a href="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/courses/app-development/">Beginner </a></p>
+                        </div>
+                    </div> 
+
+                    <div class="nd_learning_width_33_percentage nd_learning_width_50_percentage_all_iphone nd_learning_float_left">
+                        <div class="nd_learning_display_table nd_learning_float_left">
+                            <img alt="" class="nd_learning_margin_right_10 nd_learning_display_table_cell nd_learning_vertical_align_middle" width="23" src="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-content/plugins/nd-learning/addons/visualcomposer/courses/img/icon-availability.svg">
+                            <p class="nd_learning_display_table_cell nd_learning_vertical_align_middle nd_learning_font_size_15"><a href="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/courses/app-development/">26 Seats</a></p>
+                        </div>
+                    </div> 
+
+                    <div class="nd_learning_width_33_percentage nd_learning_width_50_percentage_all_iphone nd_learning_float_left nd_learning_text_align_right">
+                        
+        <a style="background-color: #49c4af;" class="nd_learning_display_inline_block nd_learning_color_white_important nd_options_first_font nd_learning_padding_8 nd_learning_border_radius_3 nd_learning_font_size_13" href="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/courses/app-development/">$ 50</a>
+    
+                    </div> 
+                    
+                </div>
+
+            </div>
+            <!--start preview-->
+
+        </div> 
+
+    </div>
+
+
+  </div></div></div></div><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner vc_custom_1469526820967"><div class="wpb_wrapper">
+
+
+    <script type="text/javascript">
+    //<![CDATA[
+    
+    jQuery(document).ready(function() {
+
+      //START masonry
+      jQuery(function ($) {
+        
+        //Masonry
+        var $nd_learning_masonry_content = $(".nd_learning_masonry_content").imagesLoaded( function() {
+          // init Masonry after all images have loaded
+          $nd_learning_masonry_content.masonry({
+            itemSelector: ".nd_learning_masonry_item"
+          });
+        });
+
+
+      });
+      //END masonry
+
+    });
+
+    //]]&gt;
+  </script>
+
+
+<div class="nd_learning_section nd_learning_masonry_content  ">
+
+    <div class=" nd_learning_width_50_percentage nd_learning_float_left nd_learning_padding_15 nd_learning_box_sizing_border_box nd_learning_masonry_item nd_learning_width_100_percentage_responsive">
+
+        <div class="nd_learning_section">
+            
+            <!--start preview-->
+            <div class="nd_learning_section nd_learning_border_1_solid_grey">
+                
+                <!--image-->
+                <div class="nd_learning_section nd_learning_position_relative">
+                    
+
+
+    <img class="nd_learning_section" alt="" src="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-content/uploads/sites/7/2016/08/course7-740x416.jpg">
+
+    <div class="nd_learning_bg_greydark_alpha_gradient_2 nd_learning_position_absolute nd_learning_left_0 nd_learning_height_100_percentage nd_learning_width_100_percentage nd_learning_padding_20 nd_learning_box_sizing_border_box">
+        
+
+        <div class="nd_learning_position_absolute nd_learning_right_20 nd_learning_top_20">
+
+
+    <script type="text/javascript">
+    <!--//--><![CDATA[//><!--
+      jQuery(document).ready(function($) {
+
+        //tooltip
+        $( ".nd_learning_tooltip_jquery" ).tooltip({ 
+          tooltipClass: "nd_learning_tooltip_jquery_content",
+          position: {
+            my: "center top",
+            at: "center+0 top-45",
+          }
+        });
+
+      });
+    //--><!]]&gt;
+    </script>
+  
+    
+      <div class="nd_learning_display_inline_block nd_learning_display_none_all_iphone">
+        <a title="MAKE THE LOGIN FOR BOOKMARK" href="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/learning-account/" class="nd_learning_tooltip_jquery nd_learning_margin_right_20 nd_learning_cursor_pointer nd_learning_display_inline_block  nd_learning_text_decoration_none" >
+          <img alt="" width="20" height="20" src="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-content/plugins/nd-learning/assets/img/icons/icon-heart-empty-white.svg">
+        </a>
+      </div>
+
+    
+
+    <script type="text/javascript">
+    <!--//--><![CDATA[//><!--
+      jQuery(document).ready(function($) {
+
+        //tooltip
+        $( ".nd_learning_tooltip_jquery" ).tooltip({ 
+          tooltipClass: "nd_learning_tooltip_jquery_content",
+          position: {
+            my: "center top",
+            at: "center+0 top-45",
+          }
+        });
+
+      });
+    //--><!]]&gt;
+    </script>
+  
+    
+      <div class="nd_learning_display_inline_block nd_learning_display_none_all_iphone">
+        <a title="MAKE THE LOGIN FOR COMPARE" href="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/learning-account/" class="nd_learning_tooltip_jquery nd_learning_cursor_pointer  nd_learning_display_inline_block nd_learning_text_decoration_none  " >
+          <img alt="" width="20" height="20" src="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-content/plugins/nd-learning/assets/img/icons/icon-compare-empty-white.svg">
+        </a>
+      </div>
+
+    </div> 
+
+
+        <div class="nd_learning_position_absolute nd_learning_bottom_20">
+            
+            <div class="nd_learning_display_table nd_learning_float_left nd_learning_margin_right_20">
+
+                <div class="nd_learning_display_table_cell nd_learning_vertical_align_middle">
+                    <img alt="" class="nd_learning_float_left nd_learning_margin_right_10 nd_learning_display_table_cell nd_learning_vertical_align_middle" width="20" src="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-content/plugins/nd-learning/assets/img/icons/icon-calendar-white.svg">
+                </div>
+
+                <div class="nd_learning_display_table_cell nd_learning_vertical_align_middle">
+                    <p class="nd_learning_color_white_important nd_learning_display_table_cell nd_learning_vertical_align_middle nd_learning_font_size_13">08-07-2016</p>
+                </div>
+
+            </div>
+            <div class="nd_learning_display_table nd_learning_float_left">
+
+                <div class="nd_learning_display_table_cell nd_learning_vertical_align_middle">
+                    <img alt="" class="nd_learning_float_left nd_learning_margin_right_10 nd_learning_display_table_cell nd_learning_vertical_align_middle" width="20" src="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-content/plugins/nd-learning/assets/img/icons/icon-clock-white.svg">
+                </div>
+
+                <div class="nd_learning_display_table_cell nd_learning_vertical_align_middle">
+                    <p class="nd_learning_color_white_important nd_learning_display_table_cell nd_learning_vertical_align_middle nd_learning_font_size_13">2 Days </p>
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+    
+                </div>
+                <!--image-->
+
+                <div class="nd_learning_section nd_learning_padding_20 nd_learning_box_sizing_border_box nd_learning_bg_white">
+                
+                    <h3><a class="nd_options_color_greydark nd_options_first_font" href="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/courses/analytics-course/">Analytics Course</a></h3>
+
+                </div>
+
+                <div class="nd_learning_section nd_learning_padding_20 nd_learning_box_sizing_border_box nd_learning_bg_grey nd_learning_border_top_1_solid_grey">
+
+                    <div class="nd_learning_width_50_percentage nd_learning_float_left">
+                        <div class="nd_learning_display_table nd_learning_float_left">
+                            <img alt="" class="nd_learning_margin_right_10 nd_learning_display_table_cell nd_learning_vertical_align_middle nd_learning_border_radius_100_percentage" width="23" src="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-content/plugins/nd-learning/addons/visualcomposer/courses/img/icon-availability.svg">
+                            <p class="nd_learning_display_table_cell nd_learning_vertical_align_middle nd_learning_font_size_15"><a href="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/courses/analytics-course/">56 Seats</a></p>
+                        </div>
+                    </div> 
+
+                    <div class="nd_learning_width_50_percentage nd_learning_float_left nd_learning_text_align_right">
+                        
+        <a style="background-color: #49c4af;" class="nd_learning_display_inline_block nd_learning_color_white_important nd_options_first_font nd_learning_padding_8 nd_learning_border_radius_3 nd_learning_font_size_13" href="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/courses/analytics-course/">$ 70</a>
+    
+                    </div> 
+                    
+                </div>
+
+            </div>
+            <!--start preview-->
+
+        </div> 
+
+    </div>
+
+
+  
+
+    <div class=" nd_learning_width_50_percentage nd_learning_float_left nd_learning_padding_15 nd_learning_box_sizing_border_box nd_learning_masonry_item nd_learning_width_100_percentage_responsive">
+
+        <div class="nd_learning_section">
+            
+            <!--start preview-->
+            <div class="nd_learning_section nd_learning_border_1_solid_grey">
+                
+                <!--image-->
+                <div class="nd_learning_section nd_learning_position_relative">
+                    
+
+
+    <img class="nd_learning_section" alt="" src="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-content/uploads/sites/7/2016/08/course6.jpg">
+
+    <div class="nd_learning_bg_greydark_alpha_gradient_2 nd_learning_position_absolute nd_learning_left_0 nd_learning_height_100_percentage nd_learning_width_100_percentage nd_learning_padding_20 nd_learning_box_sizing_border_box">
+        
+
+        <div class="nd_learning_position_absolute nd_learning_right_20 nd_learning_top_20">
+
+
+    <script type="text/javascript">
+    <!--//--><![CDATA[//><!--
+      jQuery(document).ready(function($) {
+
+        //tooltip
+        $( ".nd_learning_tooltip_jquery" ).tooltip({ 
+          tooltipClass: "nd_learning_tooltip_jquery_content",
+          position: {
+            my: "center top",
+            at: "center+0 top-45",
+          }
+        });
+
+      });
+    //--><!]]&gt;
+    </script>
+  
+    
+      <div class="nd_learning_display_inline_block nd_learning_display_none_all_iphone">
+        <a title="MAKE THE LOGIN FOR BOOKMARK" href="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/learning-account/" class="nd_learning_tooltip_jquery nd_learning_margin_right_20 nd_learning_cursor_pointer nd_learning_display_inline_block  nd_learning_text_decoration_none" >
+          <img alt="" width="20" height="20" src="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-content/plugins/nd-learning/assets/img/icons/icon-heart-empty-white.svg">
+        </a>
+      </div>
+
+    
+
+    <script type="text/javascript">
+    <!--//--><![CDATA[//><!--
+      jQuery(document).ready(function($) {
+
+        //tooltip
+        $( ".nd_learning_tooltip_jquery" ).tooltip({ 
+          tooltipClass: "nd_learning_tooltip_jquery_content",
+          position: {
+            my: "center top",
+            at: "center+0 top-45",
+          }
+        });
+
+      });
+    //--><!]]&gt;
+    </script>
+  
+    
+      <div class="nd_learning_display_inline_block nd_learning_display_none_all_iphone">
+        <a title="MAKE THE LOGIN FOR COMPARE" href="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/learning-account/" class="nd_learning_tooltip_jquery nd_learning_cursor_pointer  nd_learning_display_inline_block nd_learning_text_decoration_none  " >
+          <img alt="" width="20" height="20" src="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-content/plugins/nd-learning/assets/img/icons/icon-compare-empty-white.svg">
+        </a>
+      </div>
+
+    </div> 
+
+
+        <div class="nd_learning_position_absolute nd_learning_bottom_20">
+            
+            <div class="nd_learning_display_table nd_learning_float_left nd_learning_margin_right_20">
+
+                <div class="nd_learning_display_table_cell nd_learning_vertical_align_middle">
+                    <img alt="" class="nd_learning_float_left nd_learning_margin_right_10 nd_learning_display_table_cell nd_learning_vertical_align_middle" width="20" src="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-content/plugins/nd-learning/assets/img/icons/icon-calendar-white.svg">
+                </div>
+
+                <div class="nd_learning_display_table_cell nd_learning_vertical_align_middle">
+                    <p class="nd_learning_color_white_important nd_learning_display_table_cell nd_learning_vertical_align_middle nd_learning_font_size_13">01-06-2016</p>
+                </div>
+
+            </div>
+            <div class="nd_learning_display_table nd_learning_float_left">
+
+                <div class="nd_learning_display_table_cell nd_learning_vertical_align_middle">
+                    <img alt="" class="nd_learning_float_left nd_learning_margin_right_10 nd_learning_display_table_cell nd_learning_vertical_align_middle" width="20" src="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-content/plugins/nd-learning/assets/img/icons/icon-clock-white.svg">
+                </div>
+
+                <div class="nd_learning_display_table_cell nd_learning_vertical_align_middle">
+                    <p class="nd_learning_color_white_important nd_learning_display_table_cell nd_learning_vertical_align_middle nd_learning_font_size_13">8 Hours </p>
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+    
+                </div>
+                <!--image-->
+
+                <div class="nd_learning_section nd_learning_padding_20 nd_learning_box_sizing_border_box nd_learning_bg_white">
+                
+                    <h3><a class="nd_options_color_greydark nd_options_first_font" href="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/courses/social-media-course/">Social Media Course</a></h3>
+
+                </div>
+
+                <div class="nd_learning_section nd_learning_padding_20 nd_learning_box_sizing_border_box nd_learning_bg_grey nd_learning_border_top_1_solid_grey">
+
+                    <div class="nd_learning_width_50_percentage nd_learning_float_left">
+                        <div class="nd_learning_display_table nd_learning_float_left">
+                            <img alt="" class="nd_learning_margin_right_10 nd_learning_display_table_cell nd_learning_vertical_align_middle nd_learning_border_radius_100_percentage" width="23" src="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-content/plugins/nd-learning/addons/visualcomposer/courses/img/icon-availability.svg">
+                            <p class="nd_learning_display_table_cell nd_learning_vertical_align_middle nd_learning_font_size_15"><a href="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/courses/social-media-course/">0 Seats</a></p>
+                        </div>
+                    </div> 
+
+                    <div class="nd_learning_width_50_percentage nd_learning_float_left nd_learning_text_align_right">
+                        
+        <a class="nd_learning_bg_red nd_learning_display_inline_block nd_learning_color_white_important nd_options_first_font nd_learning_padding_8 nd_learning_border_radius_3 nd_learning_font_size_13" href="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/courses/social-media-course/">COMPLETED</a>
+    
+                    </div> 
+                    
+                </div>
+
+            </div>
+            <!--start preview-->
+
+        </div> 
+
+    </div>
+
+
+  
+
+    <div class=" nd_learning_width_50_percentage nd_learning_float_left nd_learning_padding_15 nd_learning_box_sizing_border_box nd_learning_masonry_item nd_learning_width_100_percentage_responsive">
+
+        <div class="nd_learning_section">
+            
+            <!--start preview-->
+            <div class="nd_learning_section nd_learning_border_1_solid_grey">
+                
+                <!--image-->
+                <div class="nd_learning_section nd_learning_position_relative">
+                    
+
+
+    <img class="nd_learning_section" alt="" src="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-content/uploads/sites/7/2016/08/course5.jpg">
+
+    <div class="nd_learning_bg_greydark_alpha_gradient_2 nd_learning_position_absolute nd_learning_left_0 nd_learning_height_100_percentage nd_learning_width_100_percentage nd_learning_padding_20 nd_learning_box_sizing_border_box">
+        
+
+        <div class="nd_learning_position_absolute nd_learning_right_20 nd_learning_top_20">
+
+
+    <script type="text/javascript">
+    <!--//--><![CDATA[//><!--
+      jQuery(document).ready(function($) {
+
+        //tooltip
+        $( ".nd_learning_tooltip_jquery" ).tooltip({ 
+          tooltipClass: "nd_learning_tooltip_jquery_content",
+          position: {
+            my: "center top",
+            at: "center+0 top-45",
+          }
+        });
+
+      });
+    //--><!]]&gt;
+    </script>
+  
+    
+      <div class="nd_learning_display_inline_block nd_learning_display_none_all_iphone">
+        <a title="MAKE THE LOGIN FOR BOOKMARK" href="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/learning-account/" class="nd_learning_tooltip_jquery nd_learning_margin_right_20 nd_learning_cursor_pointer nd_learning_display_inline_block  nd_learning_text_decoration_none" >
+          <img alt="" width="20" height="20" src="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-content/plugins/nd-learning/assets/img/icons/icon-heart-empty-white.svg">
+        </a>
+      </div>
+
+    
+
+    <script type="text/javascript">
+    <!--//--><![CDATA[//><!--
+      jQuery(document).ready(function($) {
+
+        //tooltip
+        $( ".nd_learning_tooltip_jquery" ).tooltip({ 
+          tooltipClass: "nd_learning_tooltip_jquery_content",
+          position: {
+            my: "center top",
+            at: "center+0 top-45",
+          }
+        });
+
+      });
+    //--><!]]&gt;
+    </script>
+  
+    
+      <div class="nd_learning_display_inline_block nd_learning_display_none_all_iphone">
+        <a title="MAKE THE LOGIN FOR COMPARE" href="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/learning-account/" class="nd_learning_tooltip_jquery nd_learning_cursor_pointer  nd_learning_display_inline_block nd_learning_text_decoration_none  " >
+          <img alt="" width="20" height="20" src="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-content/plugins/nd-learning/assets/img/icons/icon-compare-empty-white.svg">
+        </a>
+      </div>
+
+    </div> 
+
+
+        <div class="nd_learning_position_absolute nd_learning_bottom_20">
+            
+            <div class="nd_learning_display_table nd_learning_float_left nd_learning_margin_right_20">
+
+                <div class="nd_learning_display_table_cell nd_learning_vertical_align_middle">
+                    <img alt="" class="nd_learning_float_left nd_learning_margin_right_10 nd_learning_display_table_cell nd_learning_vertical_align_middle" width="20" src="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-content/plugins/nd-learning/assets/img/icons/icon-calendar-white.svg">
+                </div>
+
+                <div class="nd_learning_display_table_cell nd_learning_vertical_align_middle">
+                    <p class="nd_learning_color_white_important nd_learning_display_table_cell nd_learning_vertical_align_middle nd_learning_font_size_13">08-06-2016</p>
+                </div>
+
+            </div>
+            <div class="nd_learning_display_table nd_learning_float_left">
+
+                <div class="nd_learning_display_table_cell nd_learning_vertical_align_middle">
+                    <img alt="" class="nd_learning_float_left nd_learning_margin_right_10 nd_learning_display_table_cell nd_learning_vertical_align_middle" width="20" src="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-content/plugins/nd-learning/assets/img/icons/icon-clock-white.svg">
+                </div>
+
+                <div class="nd_learning_display_table_cell nd_learning_vertical_align_middle">
+                    <p class="nd_learning_color_white_important nd_learning_display_table_cell nd_learning_vertical_align_middle nd_learning_font_size_13">1 Week </p>
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+    
+                </div>
+                <!--image-->
+
+                <div class="nd_learning_section nd_learning_padding_20 nd_learning_box_sizing_border_box nd_learning_bg_white">
+                
+                    <h3><a class="nd_options_color_greydark nd_options_first_font" href="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/courses/photoshop-course/">Photoshop Course</a></h3>
+
+                </div>
+
+                <div class="nd_learning_section nd_learning_padding_20 nd_learning_box_sizing_border_box nd_learning_bg_grey nd_learning_border_top_1_solid_grey">
+
+                    <div class="nd_learning_width_50_percentage nd_learning_float_left">
+                        <div class="nd_learning_display_table nd_learning_float_left">
+                            <img alt="" class="nd_learning_margin_right_10 nd_learning_display_table_cell nd_learning_vertical_align_middle nd_learning_border_radius_100_percentage" width="23" src="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-content/plugins/nd-learning/addons/visualcomposer/courses/img/icon-availability.svg">
+                            <p class="nd_learning_display_table_cell nd_learning_vertical_align_middle nd_learning_font_size_15"><a href="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/courses/photoshop-course/">146 Seats</a></p>
+                        </div>
+                    </div> 
+
+                    <div class="nd_learning_width_50_percentage nd_learning_float_left nd_learning_text_align_right">
+                        
+        <a style="background-color: #49c4af;" class="nd_learning_display_inline_block nd_learning_color_white_important nd_options_first_font nd_learning_padding_8 nd_learning_border_radius_3 nd_learning_font_size_13" href="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/courses/photoshop-course/">$ 400</a>
+    
+                    </div> 
+                    
+                </div>
+
+            </div>
+            <!--start preview-->
+
+        </div> 
+
+    </div>
+
+
+  
+
+    <div class=" nd_learning_width_50_percentage nd_learning_float_left nd_learning_padding_15 nd_learning_box_sizing_border_box nd_learning_masonry_item nd_learning_width_100_percentage_responsive">
+
+        <div class="nd_learning_section">
+            
+            <!--start preview-->
+            <div class="nd_learning_section nd_learning_border_1_solid_grey">
+                
+                <!--image-->
+                <div class="nd_learning_section nd_learning_position_relative">
+                    
+
+
+    <img class="nd_learning_section" alt="" src="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-content/uploads/sites/7/2016/08/course4.jpg">
+
+    <div class="nd_learning_bg_greydark_alpha_gradient_2 nd_learning_position_absolute nd_learning_left_0 nd_learning_height_100_percentage nd_learning_width_100_percentage nd_learning_padding_20 nd_learning_box_sizing_border_box">
+        
+
+        <div class="nd_learning_position_absolute nd_learning_right_20 nd_learning_top_20">
+
+
+    <script type="text/javascript">
+    <!--//--><![CDATA[//><!--
+      jQuery(document).ready(function($) {
+
+        //tooltip
+        $( ".nd_learning_tooltip_jquery" ).tooltip({ 
+          tooltipClass: "nd_learning_tooltip_jquery_content",
+          position: {
+            my: "center top",
+            at: "center+0 top-45",
+          }
+        });
+
+      });
+    //--><!]]&gt;
+    </script>
+  
+    
+      <div class="nd_learning_display_inline_block nd_learning_display_none_all_iphone">
+        <a title="MAKE THE LOGIN FOR BOOKMARK" href="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/learning-account/" class="nd_learning_tooltip_jquery nd_learning_margin_right_20 nd_learning_cursor_pointer nd_learning_display_inline_block  nd_learning_text_decoration_none" >
+          <img alt="" width="20" height="20" src="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-content/plugins/nd-learning/assets/img/icons/icon-heart-empty-white.svg">
+        </a>
+      </div>
+
+    
+
+    <script type="text/javascript">
+    <!--//--><![CDATA[//><!--
+      jQuery(document).ready(function($) {
+
+        //tooltip
+        $( ".nd_learning_tooltip_jquery" ).tooltip({ 
+          tooltipClass: "nd_learning_tooltip_jquery_content",
+          position: {
+            my: "center top",
+            at: "center+0 top-45",
+          }
+        });
+
+      });
+    //--><!]]&gt;
+    </script>
+  
+    
+      <div class="nd_learning_display_inline_block nd_learning_display_none_all_iphone">
+        <a title="MAKE THE LOGIN FOR COMPARE" href="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/learning-account/" class="nd_learning_tooltip_jquery nd_learning_cursor_pointer  nd_learning_display_inline_block nd_learning_text_decoration_none  " >
+          <img alt="" width="20" height="20" src="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-content/plugins/nd-learning/assets/img/icons/icon-compare-empty-white.svg">
+        </a>
+      </div>
+
+    </div> 
+
+
+        <div class="nd_learning_position_absolute nd_learning_bottom_20">
+            
+            <div class="nd_learning_display_table nd_learning_float_left nd_learning_margin_right_20">
+
+                <div class="nd_learning_display_table_cell nd_learning_vertical_align_middle">
+                    <img alt="" class="nd_learning_float_left nd_learning_margin_right_10 nd_learning_display_table_cell nd_learning_vertical_align_middle" width="20" src="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-content/plugins/nd-learning/assets/img/icons/icon-calendar-white.svg">
+                </div>
+
+                <div class="nd_learning_display_table_cell nd_learning_vertical_align_middle">
+                    <p class="nd_learning_color_white_important nd_learning_display_table_cell nd_learning_vertical_align_middle nd_learning_font_size_13">15-06-2016</p>
+                </div>
+
+            </div>
+            <div class="nd_learning_display_table nd_learning_float_left">
+
+                <div class="nd_learning_display_table_cell nd_learning_vertical_align_middle">
+                    <img alt="" class="nd_learning_float_left nd_learning_margin_right_10 nd_learning_display_table_cell nd_learning_vertical_align_middle" width="20" src="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-content/plugins/nd-learning/assets/img/icons/icon-clock-white.svg">
+                </div>
+
+                <div class="nd_learning_display_table_cell nd_learning_vertical_align_middle">
+                    <p class="nd_learning_color_white_important nd_learning_display_table_cell nd_learning_vertical_align_middle nd_learning_font_size_13">2 Days </p>
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+    
+                </div>
+                <!--image-->
+
+                <div class="nd_learning_section nd_learning_padding_20 nd_learning_box_sizing_border_box nd_learning_bg_white">
+                
+                    <h3><a class="nd_options_color_greydark nd_options_first_font" href="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/courses/web-design-course/">Web Design Course</a></h3>
+
+                </div>
+
+                <div class="nd_learning_section nd_learning_padding_20 nd_learning_box_sizing_border_box nd_learning_bg_grey nd_learning_border_top_1_solid_grey">
+
+                    <div class="nd_learning_width_50_percentage nd_learning_float_left">
+                        <div class="nd_learning_display_table nd_learning_float_left">
+                            <img alt="" class="nd_learning_margin_right_10 nd_learning_display_table_cell nd_learning_vertical_align_middle nd_learning_border_radius_100_percentage" width="23" src="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-content/plugins/nd-learning/addons/visualcomposer/courses/img/icon-availability.svg">
+                            <p class="nd_learning_display_table_cell nd_learning_vertical_align_middle nd_learning_font_size_15"><a href="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/courses/web-design-course/">35 Seats</a></p>
+                        </div>
+                    </div> 
+
+                    <div class="nd_learning_width_50_percentage nd_learning_float_left nd_learning_text_align_right">
+                        
+        <a style="background-color: #49c4af;" class="nd_learning_display_inline_block nd_learning_color_white_important nd_options_first_font nd_learning_padding_8 nd_learning_border_radius_3 nd_learning_font_size_13" href="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/courses/web-design-course/">FREE</a>
+    
+                    </div> 
+                    
+                </div>
+
+            </div>
+            <!--start preview-->
+
+        </div> 
+
+    </div>
+
+
+  </div></div></div></div></div><div data-vc-full-width="true" data-vc-full-width-init="false" data-vc-parallax="1.5" data-vc-parallax-image="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-content/uploads/sites/7/2016/08/parallax8.jpg" class="vc_row wpb_row vc_row-fluid nd_options_vc_parallax_filter_1_3 vc_custom_1473943489006 vc_row-has-fill vc_row-o-equal-height vc_row-o-content-middle vc_row-flex vc_general vc_parallax vc_parallax-content-moving"><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner vc_custom_1467206505540"><div class="wpb_wrapper"> <h2 style="color:#ffffff; text-align:center; font-size:30px; line-height:30px; font-weight:normal;" class=" nd_options_second_font ">NEXT MARKETING COURSE</h2> <div style="background-color:; height: 10px;" class="nicdark_section"></div> <h2 style="color:#ffffff; text-align:center; font-size:60px; line-height:60px; font-weight:bold;" class=" nd_options_first_font ">Available Now</h2> <div style="background-color:; height: 40px;" class="nicdark_section"></div>
+  
+  
+
+
+  <script type="text/javascript">
+    //<![CDATA[
+    
+    jQuery(document).ready(function() {
+
+      //START counter
+      jQuery(function ($) {
+        
+        //variables
+        var nd_options_end_date = " June 06, 2017";
+        var nd_options_width = "nd_options_width_25_percentage nd_options_float_left";
+        
+        //insert the class nd_options_display_none in the var if you wnat to hide the visualization
+        var nd_options_display_years = "nd_options_display_none";
+        var nd_options_display_days = "yes";
+        var nd_options_display_hours = "yes";
+        var nd_options_display_minutes = "yes";
+        var nd_options_display_seconds = "yes";
+
+        //call
+        $(".nd_options_countdown").countdown({
+          date: nd_options_end_date,
+          render: function(data) {
+            $(this.el).html("<div class=\"  nd_options_section nd_options_text_align_center \"><!--***START 1***--><div class=\" nd_options_width_100_percentage_iphone_port "+ nd_options_width +" "+ nd_options_display_years +"  \"><h1 style=\" color: #ffffff \" class=\" nd_options_margin_0_important nd_options_font_size_40 nd_options_padding_20_0 \">"+ this.leadingZeros(data.years, 2) +"</h1><h5 style=\" color: ; background-color:  \" class=\" nd_options_margin_0_important nd_options_display_inline_block nd_options_padding_5 nd_options_border_radius_3 \" >YEARS</h5></div><!--***START 2***--><div class=\" nd_options_width_100_percentage_iphone_port "+ nd_options_width +" "+ nd_options_display_days +"  \"><h1 style=\" color: #ffffff \" class=\" nd_options_margin_0_important nd_options_font_size_40 nd_options_padding_20_0 \">"+ this.leadingZeros(data.days, 3) +"</h1><h5 style=\" color: #727476; background-color: #ffffff \" class=\" nd_options_margin_0_important nd_options_display_inline_block nd_options_padding_5 nd_options_border_radius_3 \" >DAYS</h5></div><!--***START 3***--><div class=\" nd_options_width_100_percentage_iphone_port "+ nd_options_width +" "+ nd_options_display_hours +"  \"><h1 style=\" color: #ffffff \" class=\" nd_options_margin_0_important nd_options_font_size_40 nd_options_padding_20_0 \">"+ this.leadingZeros(data.hours, 2) +"</h1><h5 style=\" color: #727476; background-color: #ffffff \" class=\" nd_options_margin_0_important nd_options_display_inline_block nd_options_padding_5 nd_options_border_radius_3 \" >HOURS</h5></div><!--***START 4***--><div class=\" nd_options_width_100_percentage_iphone_port "+ nd_options_width +" "+ nd_options_display_minutes +"  \"><h1 style=\" color: #ffffff \" class=\" nd_options_margin_0_important nd_options_font_size_40 nd_options_padding_20_0 \">"+ this.leadingZeros(data.min, 2) +"</h1><h5 style=\" color: #727476; background-color: #ffffff \" class=\" nd_options_margin_0_important nd_options_display_inline_block nd_options_padding_5 nd_options_border_radius_3 \" >MINUTES</h5></div><!--***START 5***--><div class=\" nd_options_width_100_percentage_iphone_port "+ nd_options_width +"  "+ nd_options_display_seconds +"  \"><h1 style=\" color: #ffffff \" class=\" nd_options_margin_0_important nd_options_font_size_40 nd_options_padding_20_0 \">"+ this.leadingZeros(data.sec, 2) +"</h1><h5 style=\" color: #727476; background-color: #ffffff \" class=\" nd_options_margin_0_important nd_options_display_inline_block nd_options_padding_5 nd_options_border_radius_3 \" >SECONDS</h5></div></div>");
+          }
+        });
+
+      });
+      //END counter
+
+    });
+
+    //]]&gt;
+  </script>
+
+  <div class="nd_options_countdown"></div></div></div></div><div class="wpb_column vc_column_container vc_col-sm-1"><div class="vc_column-inner "><div class="wpb_wrapper"></div></div></div><div class="wpb_column vc_column_container vc_col-sm-5"><div class="vc_column-inner vc_custom_1467206512132"><div class="wpb_wrapper">
+
+    <style>
+
+    #nd_options_shortcode_cf7_181 input[type="text"],
+    #nd_options_shortcode_cf7_181 input[type="email"],
+    #nd_options_shortcode_cf7_181 input[type="url"],
+    #nd_options_shortcode_cf7_181 input[type="tel"],
+    #nd_options_shortcode_cf7_181 input[type="number"],
+    #nd_options_shortcode_cf7_181 input[type="date"],
+    #nd_options_shortcode_cf7_181 input[type="checkbox"],
+    #nd_options_shortcode_cf7_181 input[type="file"],
+    #nd_options_shortcode_cf7_181 input[type="submit"],
+    #nd_options_shortcode_cf7_181 textarea,
+    #nd_options_shortcode_cf7_181 label,
+    #nd_options_shortcode_cf7_181 select
+    {
+
+      width: 100%;
+
+    }
+
+
+    .nd_options_customizer_forms span.wpcf7-not-valid-tip,
+    .nd_options_customizer_forms .wpcf7-response-output.wpcf7-validation-errors,
+    .nd_options_customizer_forms .wpcf7-response-output.wpcf7-mail-sent-ok
+    {
+
+      float: left;
+      width: 100%;
+      box-sizing: border-box;
+
+    }
+
+    </style>
+
+  
+
+    <!--start form-->
+    <div id="nd_options_shortcode_cf7_181" class="nd_options_section nd_options_border_1_solid_grey nd_options_bg_white ">
+
+      <div class="nd_options_section nd_options_padding_20 nd_options_box_sizing_border_box nd_options_bg_grey nd_options_border_bottom_1_solid_grey nd_options_text_align_center">
+        <h6 style="background-color:#ffb730;" class="nd_options_second_font nd_options_padding_5 nd_options_border_radius_3 nd_options_color_white nd_options_display_inline_block">LAST 7 SEATS</h6>
+        <div class="nd_options_section nd_options_height_5"></div>
+        <h1 class=""><strong>Register Now</strong></h1>
+      </div>
+      
+      <div class="nd_options_section nd_options_padding_20_50 nd_options_box_sizing_border_box">
+        <div role="form" class="wpcf7" id="wpcf7-f181-p6-o1" lang="en-US" dir="ltr">
+<div class="screen-reader-response"></div>
+<form action="/themes/education/wp/demo/e-learning-courses/home/#wpcf7-f181-p6-o1" method="post" class="wpcf7-form" novalidate="novalidate">
+<div style="display: none;">
+<input type="hidden" name="_wpcf7" value="181" />
+<input type="hidden" name="_wpcf7_version" value="4.5" />
+<input type="hidden" name="_wpcf7_locale" value="en_US" />
+<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f181-p6-o1" />
+<input type="hidden" name="_wpnonce" value="9e9c05ff2a" />
+</div>
+<div class="nd_options_float_left nd_options_box_sizing_border_box nd_options_width_100_percentage_all_iphone_important nd_options_padding_0_right_important_all_iphone nd_options_padding_0_left_important_all_iphone " style="padding: 10px; width:50%;" ><span class="wpcf7-form-control-wrap name"><input type="text" name="name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Name" /></span></div><div class="nd_options_float_left nd_options_box_sizing_border_box nd_options_width_100_percentage_all_iphone_important nd_options_padding_0_right_important_all_iphone nd_options_padding_0_left_important_all_iphone " style="padding: 10px; width:50%;" ><span class="wpcf7-form-control-wrap surname"><input type="text" name="surname" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Surname" /></span></div><br />
+<div class="nd_options_float_left nd_options_box_sizing_border_box nd_options_width_100_percentage_all_iphone_important nd_options_padding_0_right_important_all_iphone nd_options_padding_0_left_important_all_iphone " style="padding: 10px; width:50%;" ><span class="wpcf7-form-control-wrap email"><input type="email" name="email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Email" /></span></div><div class="nd_options_float_left nd_options_box_sizing_border_box nd_options_width_100_percentage_all_iphone_important nd_options_padding_0_right_important_all_iphone nd_options_padding_0_left_important_all_iphone " style="padding: 10px; width:50%;" ><span class="wpcf7-form-control-wrap subject"><input type="text" name="subject" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Subject" /></span></div><div class="nd_options_float_left nd_options_box_sizing_border_box nd_options_width_100_percentage_all_iphone_important nd_options_padding_0_right_important_all_iphone nd_options_padding_0_left_important_all_iphone " style="padding: 10px; width:100%;" ><span class="wpcf7-form-control-wrap message"><textarea name="message" cols="40" rows="6" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false" placeholder="Message"></textarea></span></div><div class="nd_options_float_left nd_options_box_sizing_border_box nd_options_width_100_percentage_all_iphone_important nd_options_padding_0_right_important_all_iphone nd_options_padding_0_left_important_all_iphone " style="padding: 10px; width:100%;" ><input type="submit" value="SEND NOW" class="wpcf7-form-control wpcf7-submit" /></div>
+<div class="wpcf7-response-output wpcf7-display-none"></div></form></div> 
+      </div>  
+
+    </div>
+    <!--end form-->
+
+   </div></div></div></div><div class="vc_row-full-width vc_clearfix"></div><div data-vc-full-width="true" data-vc-full-width-init="false" class="vc_row wpb_row vc_row-fluid vc_custom_1467206447686 vc_row-has-fill"><div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner vc_custom_1467206621506"><div class="wpb_wrapper">
+
+
+    <div class="nd_options_section nd_options_position_relative ">
+        <a rel=""  href="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/services/"><img alt="" class="nd_options_position_absolute nd_options_left_0" width="50" src="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-content/uploads/sites/7/2016/08/service-white1.png"></a>
+        <div class="nd_options_section nd_options_padding_left_70 nd_options_box_sizing_border_box">
+            <a rel=""  href="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/services/"><h2 style="color:#ffffff;"><strong>Maketing Courses</strong></h2></a>
+            <div class="nd_options_section nd_options_height_20"></div>
+            <p style="color:;" class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean egestas magna at porttitor vehicula nullam augue.</p>
+        </div>
+    </div>
+
+
+  </div></div></div><div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner vc_custom_1467206625527"><div class="wpb_wrapper">
+
+
+    <div class="nd_options_section nd_options_position_relative ">
+        <a rel=""  href="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/services/"><img alt="" class="nd_options_position_absolute nd_options_left_0" width="50" src="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-content/uploads/sites/7/2016/08/service-white2.png"></a>
+        <div class="nd_options_section nd_options_padding_left_70 nd_options_box_sizing_border_box">
+            <a rel=""  href="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/services/"><h2 style="color:#ffffff;"><strong>Digital Courses</strong></h2></a>
+            <div class="nd_options_section nd_options_height_20"></div>
+            <p style="color:;" class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean egestas magna at porttitor vehicula nullam augue.</p>
+        </div>
+    </div>
+
+
+  </div></div></div><div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner vc_custom_1467206629924"><div class="wpb_wrapper">
+
+
+    <div class="nd_options_section nd_options_position_relative ">
+        <a rel=""  href="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/services/"><img alt="" class="nd_options_position_absolute nd_options_left_0" width="50" src="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-content/uploads/sites/7/2016/08/service-white3.png"></a>
+        <div class="nd_options_section nd_options_padding_left_70 nd_options_box_sizing_border_box">
+            <a rel=""  href="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/services/"><h2 style="color:#ffffff;"><strong>Social Marketing</strong></h2></a>
+            <div class="nd_options_section nd_options_height_20"></div>
+            <p style="color:;" class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean egestas magna at porttitor vehicula nullam augue.</p>
+        </div>
+    </div>
+
+
+  </div></div></div></div><div class="vc_row-full-width vc_clearfix"></div><div class="vc_row wpb_row vc_row-fluid vc_custom_1468663425443"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner vc_custom_1468663414056"><div class="wpb_wrapper"> <h2 style="color:#727476; text-align:; font-size:50px; line-height:50px; font-weight:bold;" class=" nd_options_first_font ">Our Blog</h2> <div style="background-color:; height: 10px;" class="nicdark_section"></div> <h3 style="color:#a3a3a3; text-align:; font-size:20px; line-height:20px; font-weight:normal;" class=" nd_options_first_font ">Follow Our News</h3> <div style="background-color:; height: 30px;" class="nicdark_section"></div></div></div></div></div><div class="vc_row wpb_row vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner vc_custom_1467619684642"><div class="wpb_wrapper">
+
+
+	<script type="text/javascript">
+    //<![CDATA[
+    
+    jQuery(document).ready(function() {
+
+      //START masonry
+      jQuery(function ($) {
+        
+        //Masonry
+		var $nd_options_masonry_content = $(".nd_options_masonry_content").imagesLoaded( function() {
+		  // init Masonry after all images have loaded
+		  $nd_options_masonry_content.masonry({
+		    itemSelector: ".nd_options_masonry_item"
+		  });
+		});
+
+
+      });
+      //END masonry
+
+    });
+
+    //]]&gt;
+  </script>
+
+
+<!--START MASONRY--><div class="nd_options_section nd_options_masonry_content  ">
+
+
+	    <div class=" nd_options_width_33_percentage nd_options_float_left nd_options_padding_15 nd_options_box_sizing_border_box nd_options_masonry_item nd_options_width_100_percentage_responsive">
+		    <div class="nd_options_section nd_options_border_1_solid_grey">
+
+		        <div class="nd_options_section nd_options_position_relative">
+		            
+		            
+
+
+		  	<div class="nd_options_section nd_options_position_relative">
+		        <a href="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/2016/06/01/new-startup-course/"><img alt="" class="nd_options_section" src="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-content/uploads/sites/7/2016/08/blog3.jpg"></a>
+		        <div class="nd_options_bg_greydark_alpha nd_options_position_absolute nd_options_left_0 nd_options_height_100_percentage nd_options_width_100_percentage nd_options_padding_30 nd_options_box_sizing_border_box"></div>
+		        <a class="nd_options_position_absolute nd_options_right_20 nd_options_top_20 nd_options_display_inline_block nd_options_border_1_solid_white nd_options_color_white nd_options_first_font nd_options_padding_8 nd_options_border_radius_3 nd_options_font_size_13 nd_options_z_index_9 nd_options_text_transform_uppercase" href="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/2016/06/01/new-startup-course/">News</a>
+		    </div>
+
+		  	
+
+		        </div>
+
+		        <div class="nd_options_section nd_options_padding_30 nd_options_box_sizing_border_box">
+		            <h5 class="nd_options_margin_0_important nd_options_padding_0 nd_options_second_font nd_options_color_grey">June 1</h5>
+		            <div class="nd_options_section nd_options_height_10"></div>
+		            <h2 class="nd_options_margin_0_important nd_options_padding_0 ">New Startup Course</h2>
+		            <div class="nd_options_section nd_options_height_20"></div>
+		            <p class="nd_options_margin_0_important nd_options_padding_0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean egestas magna at porttitor vehicula nullam augue.</p>
+		            <div class="nd_options_section nd_options_height_20"></div>
+		            <a style="background-color: #49c4af;" class="nd_options_display_inline_block nd_options_line_height_16 nd_options_text_align_center nd_options_box_sizing_border_box  nd_options_color_white nd_options_first_font nd_options_padding_10_20 nd_options_border_radius_3 " href="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/2016/06/01/new-startup-course/">READ MORE</a>
+
+		        </div>
+
+
+
+		        <div class="nd_options_section nd_options_padding_20_30 nd_options_box_sizing_border_box nd_options_border_top_1_solid_grey">
+
+				    <div class="nd_options_width_50_percentage nd_options_width_100_percentage_all_iphone nd_options_float_left">
+				        <div class="nd_options_display_table nd_options_float_left">
+				            <img alt="" class="nd_options_margin_right_10 nd_options_display_table_cell nd_options_vertical_align_middle nd_options_border_radius_100_percentage" width="25" height="25" src="http://2.gravatar.com/avatar/240d164d512e70622cfed37027775e77?s=96&d=mm&r=g">
+				            <p class="nd_options_display_table_cell nd_options_vertical_align_middle nd_options_font_size_15"><a href="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/2016/06/01/new-startup-course/">giulsi</a></p>
+				        </div>
+				    </div> 
+
+				    <div class="nd_options_width_50_percentage nd_options_display_none_all_iphone nd_options_float_left">
+				        <div class="nd_options_display_table nd_options_float_left">
+				            <img alt="" class="nd_options_margin_right_10 nd_options_display_table_cell nd_options_vertical_align_middle " width="23" height="23" src="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-content/plugins/nd-shortcodes/img/icons/icon-comment-grey.svg">
+				            <p class="nd_options_display_table_cell nd_options_vertical_align_middle nd_options_font_size_15"><a href="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/2016/06/01/new-startup-course/">1 Comments</a></p>
+				        </div>
+				    </div> 
+				    
+				</div>
+
+		    </div>
+		</div>
+
+
+	  
+
+	 		<div class=" nd_options_width_33_percentage nd_options_float_left nd_options_padding_15 nd_options_box_sizing_border_box nd_options_masonry_item nd_options_width_100_percentage_responsive">
+
+	 			<div style="background-color: #49c4af;" class="nd_options_section nd_options_text_align_center nd_options_padding_50 nd_options_box_sizing_border_box">
+	 				
+	 				<h2 class="nd_options_color_white nd_options_line_height_35">
+	 					<a class="nd_options_color_white nd_options_first_font" href="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/2016/06/02/quote-post/">
+	 						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+	 					</a>
+	 				</h2>
+
+	 				<div class="nd_options_section nd_options_height_20"></div>
+
+	 				<div class="nd_options_display_inline_block">
+                        <div class="nd_options_display_table nd_options_float_left">
+                            <img alt="" class="nd_options_margin_right_10 nd_options_display_table_cell nd_options_vertical_align_middle" width="30" height="30" src="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-content/plugins/nd-shortcodes/img/icons/icon-quote-alpha.svg">
+                            <p class="nd_options_color_white nd_options_display_table_cell nd_options_vertical_align_middle">
+                            	John Doe	
+                            </p>
+                        </div>
+                    </div>
+
+
+
+	 			</div>
+
+	 		</div>
+
+	 	
+
+			<div class=" nd_options_width_33_percentage nd_options_float_left nd_options_padding_15 nd_options_box_sizing_border_box nd_options_masonry_item nd_options_width_100_percentage_responsive">
+			    
+
+		        <div class="nd_options_section nd_options_position_relative">
+		            
+		            
+
+
+		  	<div class="nd_options_section nd_options_position_relative">
+		        <a href="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/2016/06/03/world-best-designers/"><img alt="" class="nd_options_section" src="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-content/uploads/sites/7/2016/08/blog1.jpg"></a>
+		        
+		        <a style="background-color: #49c4af;" class="nd_options_position_absolute nd_options_right_20 nd_options_top_20 nd_options_display_inline_block nd_options_color_white nd_options_first_font nd_options_padding_8 nd_options_border_radius_3 nd_options_font_size_13 nd_options_z_index_9 nd_options_text_transform_uppercase" href="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/2016/06/03/world-best-designers/">News</a>
+
+
+		        <div class="nd_options_bg_greydark_alpha_gradient_3 nd_options_position_absolute nd_options_left_0 nd_options_height_100_percentage nd_options_width_100_percentage nd_options_padding_30 nd_options_box_sizing_border_box">
+				    <div class="nd_options_position_absolute nd_options_bottom_30">
+				        <h2 class="nd_options_color_white">
+				        	<a class="nd_options_color_white nd_options_first_font" href="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/2016/06/03/world-best-designers/">
+				        		World Best Designers
+				        	</a>
+				        </h2>
+				        <div class="nd_options_section nd_options_height_10"></div> 
+				        <div class="nd_options_display_table nd_options_float_left">
+				            <img alt="" class="nd_options_margin_right_10 nd_options_display_table_cell nd_options_vertical_align_middle" width="20" height="20" src="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-content/plugins/nd-shortcodes/img/icons/icon-calendar-white.svg">
+				            <p class=" nd_options_color_white nd_options_display_table_cell nd_options_vertical_align_middle nd_options_font_size_13">June 3</p>
+				            <img alt="" class="nd_options_margin_right_10 nd_options_margin_left_20 nd_options_display_table_cell nd_options_vertical_align_middle" width="20" height="20" src="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-content/plugins/nd-shortcodes/img/icons/icon-comment-white.svg">
+				            <p class="nd_options_color_white nd_options_display_table_cell nd_options_vertical_align_middle nd_options_font_size_13">1 Comments</p>
+				        </div>
+
+				    </div>
+
+				</div>
+
+
+		    </div>
+
+		  	
+
+		        </div>
+
+			    
+			</div>
+
+		
+
+
+	    <div class=" nd_options_width_33_percentage nd_options_float_left nd_options_padding_15 nd_options_box_sizing_border_box nd_options_masonry_item nd_options_width_100_percentage_responsive">
+		    <div class="nd_options_section nd_options_border_1_solid_grey">
+
+		        <div class="nd_options_section nd_options_position_relative">
+		            
+		            
+
+
+		  	<div class="nd_options_section nd_options_position_relative">
+		        <a href="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/2016/06/04/we-care-your-success/"><img alt="" class="nd_options_section" src="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-content/uploads/sites/7/2016/08/blog2.jpg"></a>
+		        <div class="nd_options_bg_greydark_alpha nd_options_position_absolute nd_options_left_0 nd_options_height_100_percentage nd_options_width_100_percentage nd_options_padding_30 nd_options_box_sizing_border_box"></div>
+		        <a class="nd_options_position_absolute nd_options_right_20 nd_options_top_20 nd_options_display_inline_block nd_options_border_1_solid_white nd_options_color_white nd_options_first_font nd_options_padding_8 nd_options_border_radius_3 nd_options_font_size_13 nd_options_z_index_9 nd_options_text_transform_uppercase" href="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/2016/06/04/we-care-your-success/">News</a>
+		    </div>
+
+		  	
+
+		        </div>
+
+		        <div class="nd_options_section nd_options_padding_30 nd_options_box_sizing_border_box">
+		            <h5 class="nd_options_margin_0_important nd_options_padding_0 nd_options_second_font nd_options_color_grey">June 4</h5>
+		            <div class="nd_options_section nd_options_height_10"></div>
+		            <h2 class="nd_options_margin_0_important nd_options_padding_0 ">We care your success</h2>
+		            <div class="nd_options_section nd_options_height_20"></div>
+		            <p class="nd_options_margin_0_important nd_options_padding_0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+		            <div class="nd_options_section nd_options_height_20"></div>
+		            <a style="background-color: #49c4af;" class="nd_options_display_inline_block nd_options_line_height_16 nd_options_text_align_center nd_options_box_sizing_border_box  nd_options_color_white nd_options_first_font nd_options_padding_10_20 nd_options_border_radius_3 " href="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/2016/06/04/we-care-your-success/">READ MORE</a>
+
+		        </div>
+
+
+
+		        <div class="nd_options_section nd_options_padding_20_30 nd_options_box_sizing_border_box nd_options_border_top_1_solid_grey">
+
+				    <div class="nd_options_width_50_percentage nd_options_width_100_percentage_all_iphone nd_options_float_left">
+				        <div class="nd_options_display_table nd_options_float_left">
+				            <img alt="" class="nd_options_margin_right_10 nd_options_display_table_cell nd_options_vertical_align_middle nd_options_border_radius_100_percentage" width="25" height="25" src="http://2.gravatar.com/avatar/240d164d512e70622cfed37027775e77?s=96&d=mm&r=g">
+				            <p class="nd_options_display_table_cell nd_options_vertical_align_middle nd_options_font_size_15"><a href="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/2016/06/04/we-care-your-success/">giulsi</a></p>
+				        </div>
+				    </div> 
+
+				    <div class="nd_options_width_50_percentage nd_options_display_none_all_iphone nd_options_float_left">
+				        <div class="nd_options_display_table nd_options_float_left">
+				            <img alt="" class="nd_options_margin_right_10 nd_options_display_table_cell nd_options_vertical_align_middle " width="23" height="23" src="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-content/plugins/nd-shortcodes/img/icons/icon-comment-grey.svg">
+				            <p class="nd_options_display_table_cell nd_options_vertical_align_middle nd_options_font_size_15"><a href="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/2016/06/04/we-care-your-success/">1 Comments</a></p>
+				        </div>
+				    </div> 
+				    
+				</div>
+
+		    </div>
+		</div>
+
+
+	  
+
+			<div class=" nd_options_width_33_percentage nd_options_float_left nd_options_padding_15 nd_options_box_sizing_border_box nd_options_masonry_item nd_options_width_100_percentage_responsive">
+			    
+
+		        <div class="nd_options_section nd_options_position_relative">
+		            
+		            
+
+
+		  	<div class="nd_options_section nd_options_position_relative">
+		        <a href="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/2016/06/05/meet-the-teachers/"><img alt="" class="nd_options_section" src="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-content/uploads/sites/7/2016/08/blog-vert-697x1024.jpg"></a>
+		        
+		        <a style="background-color: #49c4af;" class="nd_options_position_absolute nd_options_right_20 nd_options_top_20 nd_options_display_inline_block nd_options_color_white nd_options_first_font nd_options_padding_8 nd_options_border_radius_3 nd_options_font_size_13 nd_options_z_index_9 nd_options_text_transform_uppercase" href="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/2016/06/05/meet-the-teachers/">News</a>
+
+
+		        <div class="nd_options_bg_greydark_alpha_gradient_3 nd_options_position_absolute nd_options_left_0 nd_options_height_100_percentage nd_options_width_100_percentage nd_options_padding_30 nd_options_box_sizing_border_box">
+				    <div class="nd_options_position_absolute nd_options_bottom_30">
+				        <h2 class="nd_options_color_white">
+				        	<a class="nd_options_color_white nd_options_first_font" href="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/2016/06/05/meet-the-teachers/">
+				        		Meet the Teachers
+				        	</a>
+				        </h2>
+				        <div class="nd_options_section nd_options_height_10"></div> 
+				        <div class="nd_options_display_table nd_options_float_left">
+				            <img alt="" class="nd_options_margin_right_10 nd_options_display_table_cell nd_options_vertical_align_middle" width="20" height="20" src="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-content/plugins/nd-shortcodes/img/icons/icon-calendar-white.svg">
+				            <p class=" nd_options_color_white nd_options_display_table_cell nd_options_vertical_align_middle nd_options_font_size_13">June 5</p>
+				            <img alt="" class="nd_options_margin_right_10 nd_options_margin_left_20 nd_options_display_table_cell nd_options_vertical_align_middle" width="20" height="20" src="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-content/plugins/nd-shortcodes/img/icons/icon-comment-white.svg">
+				            <p class="nd_options_color_white nd_options_display_table_cell nd_options_vertical_align_middle nd_options_font_size_13">1 Comments</p>
+				        </div>
+
+				    </div>
+
+				</div>
+
+
+		    </div>
+
+		  	
+
+		        </div>
+
+			    
+			</div>
+
+		
+
+
+			<div class=" nd_options_width_33_percentage nd_options_float_left nd_options_padding_15 nd_options_box_sizing_border_box nd_options_masonry_item nd_options_width_100_percentage_responsive">
+
+	 			<div style="background-color: #ffb730;" class="nd_options_section nd_options_text_align_center nd_options_padding_50 nd_options_box_sizing_border_box">
+	 				
+	 				<div class="nd_options_display_inline_block">
+	                    <img alt="" class="nd_options_margin_right_10" width="20" height="20" src="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-content/plugins/nd-shortcodes/img/icons/icon-link-white.svg">
+	                    <h2 class="nd_options_color_white nd_options_line_height_35 nd_options_display_inline_block">
+	                    	<span class="nd_options_padding_botttom_5">
+	                    		<a class="nd_options_color_white nd_options_first_font" href="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/2016/06/06/check-new-events/">
+	                    			Check New Events
+	                    		</a>
+	                    	</span>
+	                    </h2>
+	                </div>
+
+	 			</div>
+
+	 		</div>
+
+
+		</div><!--CLOSE MASONRY--></div></div></div></div>
+	
+
+	        </div>
+	        <!--#post-->
+
+	    	
+
+	</div>
+	<!--end container-->
+
+	<!--page margin-->
+
+<!--START footer-->
+<div id="nd_options_footer_2" style="background-color: #49c3ae" class="nd_options_section">
+
+    <div class="nd_options_section nd_options_height_50"></div>
+
+    <!--start nd_options_container-->
+        <div class="nd_options_container nd_options_clearfix">
+    
+        
+        <div class="grid nd_options_grid_12 nd_options_text_align_center">
+            
+            <div class="nd_options_section" style="margin-bottom: 25px;">
+                <a href="index.html" style="color: #fff; font-weight: bold; font-size: 70px;">Be <span style="color:#ffb730">|</span> Py</a>
+            </div>
+            <hr style=" border-color: #ffb730; border-width: 3px; border-top: 1px solid #ffb730; max-width: 200px;">
+            <div class="nd_options_section nd_options_height_20"></div>
+            <div class="nd_options_display_inline_block" style="margin-left: 15px;">
+				<a target="_blank" href="">
+					<i class="fa fa-facebook fa-2x" style="color:#fff;margin-right: 17px"></i>
+				</a>
+				<a target="_blank" href="">
+					<i class="fa fa-instagram fa-2x" style="color:#fff; margin-right: 17px"></i>
+				</a>
+				<a target="_blank" href="">
+					<i class="fa fa-youtube-play fa-2x" style="color:#fff; margin-right: 17px"></i>
+				</a>
+				<a target="_blank" href="">
+					<i class="fa fa-at fa-2x" style="color:#fff; margin-right: 17px"></i>
+				</a>
+            </div>
+
+        </div>
+
+    </div>
+    <!--end container-->
+
+    <div class="nd_options_section nd_options_height_50"></div>
+
+</div>
+<!--END footer-->
+
+
+<!--START copyright-->
+<div style="background-color: #ffb730" class="nd_options_section">
+
+    <!--start nd_options_container-->
+        <div style="border-top: 1px solid #ffb730 " class="nd_options_container nd_options_clearfix">
+    
+        
+        <div class="grid nd_options_grid_6 nd_options_text_align_center_responsive">
+            <p class="nd_options_font_size_14" style="color: #444444">© Copyright 2016</p>
+        </div>
+
+        <div class="grid nd_options_grid_6 nd_options_text_align_right nd_options_text_align_center_responsive">
+            <p class="nd_options_font_size_14" style="color: #444444">We Don't Talk About PHP!</p>    
+        </div>
+
+   
+    </div>
+    <!--end container-->
+
+</div>
+<!--END copyright-->  
+
+</div>
+<!--END theme-->
+
+
+<!--google analytics-->
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-49425562-17', 'auto');
+    ga('send', 'pageview');
+</script>
+<!--google analytics-->
+
+
+		<script type="text/javascript">
+			function revslider_showDoubleJqueryError(sliderID) {
+				var errorMessage = "Revolution Slider Error: You have some jquery.js library include that comes after the revolution files js include.";
+				errorMessage += "<br> This includes make eliminates the revolution slider libraries, and make it not work.";
+				errorMessage += "<br><br> To fix it you can:<br>&nbsp;&nbsp;&nbsp; 1. In the Slider Settings -> Troubleshooting set option:  <strong><b>Put JS Includes To Body</b></strong> option to true.";
+				errorMessage += "<br>&nbsp;&nbsp;&nbsp; 2. Find the double jquery.js include and remove it.";
+				errorMessage = "<span style='font-size:16px;color:#BC0C06;'>" + errorMessage + "</span>";
+					jQuery(sliderID).show().html(errorMessage);
+			}
+		</script>
+		<script type='text/javascript' src='http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-content/plugins/contact-form-7/includes/js/jquery.form.min.js?ver=3.51.0-2014.06.20'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var _wpcf7 = {"loaderUrl":"http:\/\/www.nicdarkthemes.com\/themes\/education\/wp\/demo\/e-learning-courses\/wp-content\/plugins\/contact-form-7\/images\/ajax-loader.gif","recaptcha":{"messages":{"empty":"Please verify that you are not a robot."}},"sending":"Sending ..."};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=4.5'></script>
+<script type='text/javascript' src='http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-includes/js/comment-reply.min.js?ver=4.6'></script>
+<script type='text/javascript' src='http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-includes/js/wp-embed.min.js?ver=4.6'></script>
+<script type='text/javascript' src='http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-includes/js/jquery/ui/core.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-includes/js/jquery/ui/widget.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-includes/js/jquery/ui/mouse.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-includes/js/jquery/ui/resizable.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-includes/js/jquery/ui/draggable.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-includes/js/jquery/ui/button.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-includes/js/jquery/ui/position.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-includes/js/jquery/ui/dialog.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-includes/js/jquery/ui/effect.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-includes/js/jquery/ui/effect-fade.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-content/plugins/js_composer/assets/js/dist/js_composer_front.min.js?ver=4.12'></script>
+<script type='text/javascript' src='http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-content/plugins/nd-shortcodes/shortcodes/custom/typewriter/js/typewriter.js?ver=4.6'></script>
+<script type='text/javascript' src='http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-includes/js/imagesloaded.min.js?ver=3.2.0'></script>
+<script type='text/javascript' src='http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-includes/js/masonry.min.js?ver=3.3.2'></script>
+<script type='text/javascript' src='http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-includes/js/jquery/ui/tooltip.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-content/plugins/js_composer/assets/lib/bower/skrollr/dist/skrollr.min.js?ver=4.12'></script>
+<script type='text/javascript' src='http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-content/plugins/nd-shortcodes/shortcodes/custom/countdown/js/countdown.js?ver=4.6'></script>
+	
+</body>  
+</html>

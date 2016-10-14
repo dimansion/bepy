@@ -12,10 +12,13 @@ from django.views.generic import TemplateView
 from .forms import PostForm
 
 class HomeView(TemplateView):
-    template_name = "project/greetings.html"
+    template_name = "home.html"
 
 class AboutView(TemplateView):
     template_name = "blog/about.html"
+
+class ContactView(TemplateView):
+    template_name = "blog/contact.html"    
 
 def index(request):
     category_list = Category.objects.order_by('name')
