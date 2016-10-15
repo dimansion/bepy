@@ -527,11 +527,13 @@
                         <li id="menu-item-818" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-818">
                             <a href="/">BERANDA</a>
                         </li>
-                        <li id="menu-item-799" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-799"><a href="#">COURSES</a>
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-799"><a href="{% url 'project' %}">PROJECT</a>
+                            <ul class="sub-menu">
+                                <li class="nd_options_new_label menu-item menu-item-type-custom menu-item-object-custom menu-item-955"><a href="{% url 'index' %}">Step by step</a></li> 
+                                <li class="nd_options_new_label menu-item menu-item-type-custom menu-item-object-custom menu-item-955"><a href="{% url 'page_list' %}">Video</a></li>  
+                            </ul>
                         </li>
-                        <li id="menu-item-807" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-807"><a href="#">TEACHERS</a>
-                        </li>
-                        <li id="menu-item-814" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-814"><a href="{% url 'index' %}">BLOG</a>
+                        <li id="menu-item-814" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-814"><a href="{% url 'blog:list' %}">BLOG</a>
                         </li>
                         <li id="menu-item-806" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-45 current_page_item menu-item-806"><a href="{% url 'contact' %}">KONTAK</a></li>
                     </ul>
@@ -644,10 +646,13 @@
                                             <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-799"><a href="/">BERANDA</a>
                                             </li>
                                             </li>
-                                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-799"><a href="{% url 'page_list' %}">PROJECT</a>
+                                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-799"><a href="{% url 'project' %}">PROJECT</a>
+                                                <ul class="sub-menu">
+                                                    <li class="nd_options_new_label menu-item menu-item-type-custom menu-item-object-custom menu-item-955"><a href="{% url 'index' %}">Step by step</a></li> 
+                                                    <li class="nd_options_new_label menu-item menu-item-type-custom menu-item-object-custom menu-item-955"><a href="{% url 'page_list' %}">Video</a></li>  
+                                                </ul>
                                             </li>
-
-                                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-814"><a href="{% url 'index' %}">BLOG</a>
+                                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-814"><a href="{% url 'blog:list' %}">BLOG</a>
                                             </li>
                                             <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-45 current_page_item menu-item-806"><a href="{% url 'contact' %}">KONTAK</a></li>
                                         </ul>
@@ -673,7 +678,7 @@
                     <div class="nd_options_section nd_options_text_align_center nd_options_display_none nd_options_display_block_responsive">
                         <div class="nd_options_section nd_options_height_20"></div>
 
-                        <a href="index.html" style="color: #49c4af; font-weight: bold; font-size: xx-large;">Be <span style="color: #ffb730;">|</span> Py</a>
+                        <a href="/" style="color: #49c4af; font-weight: bold; font-size: xx-large;">Be <span style="color: #ffb730;">|</span> Py</a>
 
                         <div class="nd_options_section nd_options_height_10"></div>
 
@@ -910,7 +915,7 @@
 
 
 
-        <div class="nd_options_section nd_options_bg_grey nd_options_border_bottom_1_solid_grey">
+        <div class="nd_options_section nd_options_bg_grey nd_options_border_bottom_1_solid_grey" >
 
             <!--start nd_options_container-->
             <div class="nd_options_container nd_options_clearfix">
@@ -931,27 +936,19 @@
         <!--page margin-->
 
         <!--start nd_options_container content goes here-->
-        <div class="nd_options_container nd_options_padding_0_15 nd_options_box_sizing_border_box nd_options_clearfix">
-            
+        <div class="nd_options_container nd_options_clearfix">
 
-            <!--automatic title-->
-                <div class="vc_row wpb_row vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner "><div class="wpb_wrapper"> <h1 class=" nd_options_first_font "></h1> <div class="nicdark_section"></div>
-                <div class="wpb_text_column wpb_content_element "></div></div></div>
-                    </div>
+                <div class="nd_options_section nd_options_padding_15 nd_options_box_sizing_border_box">
+
+                    <div class="nd_options_section nd_options_height_20"></div>
+
+                                {% block body_block %}{% endblock %}
+
                 </div>
-      
-            {% block body_block %}
-            {% endblock %}
-            <!--#post-->
-            <div style="float:left; width:100%;" id="post-45" class="post-45 page type-page status-publish hentry">
-                <!--start content-->
-                <div class="vc_row wpb_row vc_row-fluid vc_custom_1467214661838">
-                   
-                </div>
-                <!--end content-->
+
             </div>
-            <!--#post-->
-        </div>
+
+
 
         <!--page margin-->
 

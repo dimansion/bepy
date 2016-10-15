@@ -10,7 +10,8 @@ from blog.views import AboutView, HomeView, ContactView
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', HomeView.as_view(), name='index'), 
-    url(r'^blog/', include('blog.urls')),
+    url(r'^blog/', include('article.urls', namespace='blog')),
+    url(r'^project/step/', include('blog.urls')),
     url(r'^api/blog/', include('blog.api.urls', namespace='blog-api')),
     url(r'^project/', include('project.urls')),
     url(r'^logout/$', auth_view.logout, name='logout', kwargs={'next_page': '/'}),

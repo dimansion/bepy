@@ -18,8 +18,8 @@
   <input type="hidden" name="next" value="{{ next }}" />
 </form>
 <hr>	
-<p>{% trans "Lupa Password" %}? <a href="{% url 'auth_password_reset' %}">{% trans "Reset Password" %}</a>!</p>
-<p>{% trans "Belum punya akun?" %}? <a href="{% url 'registration_register' %}">{% trans "Daftar disini" %}</a>!</p>
+<p>{% trans "Lupa Password" %}? <a href="{% url 'auth_password_reset' %}" class="text-primary">{% trans "Reset Password" %}</a>!</p>
+<p>{% trans "Belum punya akun?" %}? <a href="{% url 'registration_register' %}" class="text-primary">{% trans "Daftar disini" %}</a>!</p>
 </div>
 <!-- <div class="col-lg-4">
 	<br>

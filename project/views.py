@@ -1,5 +1,9 @@
 from django.shortcuts import render
 from project.models import Page, Content
+from django.views.generic import TemplateView
+
+class ProjectView(TemplateView):
+    template_name = "project/project.html"    
 
 def page_list(request):
     posts = Page.objects.all

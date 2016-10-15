@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     #local
     'blog',
     'project',
+    'article',
 
     #third party lib
     'django.contrib.sites',
@@ -54,6 +55,7 @@ INSTALLED_APPS = [
     'pagedown',
     'crispy_forms',
     'rest_framework',
+    'markdown_deux'
 ]
 
 SITE_ID = 1

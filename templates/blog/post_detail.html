@@ -4,7 +4,7 @@
 {% block title %}{% if post.title %}{{ post.title }}{% endif %}{% endblock %}
 
 {% block breadcrumb %}
-<span class="nd_learning_current_breadcrumb"><a href="{% url 'index' %}">Blog </a></span><i class="fa fa-angle-right" aria-hidden="true"></i>
+<span class="nd_learning_current_breadcrumb"><a href="{% url 'index' %}">Step </a></span><i class="fa fa-angle-right" aria-hidden="true"></i>
 <span class="nd_learning_current_breadcrumb"><a href="{% url 'index' %}category/{{ post.category|lower }}">{{ post.category }} </a></span><i class="fa fa-angle-right" aria-hidden="true"></i>
 <span class="nd_learning_current_breadcrumb">{{ post.title }}</span>
 {% endblock breadcrumb %}
