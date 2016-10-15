@@ -590,7 +590,7 @@
                                     <a href="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/learning-account/"><img alt="" width="15" height="15" class="nd_options_margin_left_20 nd_options_float_left" src="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-content/plugins/nd-shortcodes/addons/customizer/shortcodes/top-header/img/login-white.svg"></a>
                                 </div>
                                 <div class="nd_options_display_table_cell nd_options_vertical_align_middle    ">
-                                    <a style="color:#fff;" class="nd_options_margin_left_10" href="#">REGISTER</a>
+                                    <a style="color:#fff;" class="nd_options_margin_left_10" href="{% url 'registration_register' %}">REGISTER</a>
                                 </div>
                             </div>
                             <div class="  nd_options_display_table nd_options_float_right">
@@ -598,7 +598,7 @@
                                     <a href="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/learning-account/"><img alt="" width="15" height="15" class="nd_options_margin_left_20 nd_options_float_left" src="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-content/plugins/nd-shortcodes/addons/customizer/shortcodes/top-header/img/user-white.svg"></a>
                                 </div>
                                 <div class="nd_options_display_table_cell nd_options_vertical_align_middle    ">
-                                    <a style="color:#fff;" class="nd_options_margin_left_10" href="#">LOGIN</a>
+                                    <a style="color:#fff;" class="nd_options_margin_left_10" href="{% url 'auth_login' %}">LOGIN</a>
                                 </div>
                             </div>
                         </div>
@@ -920,6 +920,14 @@
 
         <!--start nd_options_container content goes here-->
         <div class="nd_options_container nd_options_padding_0_15 nd_options_box_sizing_border_box nd_options_clearfix">
+            
+
+            <!--automatic title-->
+                <div class="vc_row wpb_row vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner "><div class="wpb_wrapper"> <h1 class=" nd_options_first_font "></h1> <div class="nicdark_section"></div>
+                <div class="wpb_text_column wpb_content_element "></div></div></div>
+                    </div>
+                </div>
+      
             {% block body_block %}
             {% endblock %}
             <!--#post-->

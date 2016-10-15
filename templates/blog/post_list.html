@@ -11,42 +11,33 @@
         <h1>Be-py Blog</h1>               
     </div>
  -->
-    <div class="nd_options_container nd_options_padding_0_15 nd_options_box_sizing_border_box nd_options_clearfix">
-
-            
-        <!--#post-->
-        <div style="float:left; width:100%;" id="post-45" class="post-45 page type-page status-publish hentry">
-
-            <!--automatic title-->
-            <div class="vc_row wpb_row vc_row-fluid vc_custom_1467214661838"><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner vc_custom_1467214267244"><div class="wpb_wrapper"> <h3 style="color:; text-align:; font-size:20px; line-height:20px; font-weight:bold;" class=" nd_options_first_font ">Step by step tutorial</h3> <div style="background-color:; height: 20px;" class="nicdark_section"></div>
-            <div class="wpb_text_column wpb_content_element ">
-                <div class="wpb_wrapper">
-                    <p>Disini berisikan tutorial secara step by step untuk membuat aplikasi web menggunakan django - python.</p></div></div></div></div>
-                    
-                    <div class="dropdown">
-                      <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                        Category
-                        <span class="caret"></span>
-                      </button>
-                      <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                        <li><a href="{% url 'index' %}">All Category</a></li>
-                        {% block side_block %}
-                        {% get_category_list category %}
-                        {% endblock %}
-                      </ul>
-                    </div>
-                    <form class="navbar-form navbar-left" method='GET' action=''>
-                        <div class="form-group">
-                        <input type="text" name ='q' class="form-control" placeholder="Search" value="">
-                        </div>
-                        <button type="submit" class="btn btn-default">Cari</button>
-                      </form>
-
-                </div>
+    <div class="row">
+        <div class="col-md-4">
+            <h1>step by step tutorial</h1>
+            <p>disini kamu akan belajar blablabla</p>
+        </div>
+        <div class="col-md-6">
+             <div class="dropdown">
+              <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                Category
+                <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                <li><a href="{% url 'index' %}">All Category</a></li>
+                {% block side_block %}
+                {% get_category_list category %}
+                {% endblock %}
+              </ul>
             </div>
+            <form class="navbar-form navbar-left" method='GET' action=''>
+                <div class="form-group">
+                <input type="text" name ='q' class="form-control" placeholder="Search" value="">
+                </div>
+                <button type="submit" class="btn btn-default">Cari</button>
+            </form>
         </div>
     </div>
-
+    <hr>
     <div class="post"> 
         {% for post in posts %}
         <h1><a href="{% url 'post_detail' post.slug  %}">{{ post.title }}</a></h1>

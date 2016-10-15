@@ -1,7 +1,10 @@
-{% extends 'project/base.html' %}
+{% extends 'base.html' %}
 {% load crispy_forms_tags %}
 {% load i18n %}
 {% load socialaccount %}
+{% block breadcrumb %}
+<span class="nd_learning_current_breadcrumb">Login</span>
+{% endblock breadcrumb %}
 {% block body_block %}
 <div class="col-lg-2">
 		
@@ -18,12 +21,12 @@
 <p>{% trans "Lupa Password" %}? <a href="{% url 'auth_password_reset' %}">{% trans "Reset Password" %}</a>!</p>
 <p>{% trans "Belum punya akun?" %}? <a href="{% url 'registration_register' %}">{% trans "Daftar disini" %}</a>!</p>
 </div>
-<div class="col-lg-4">
+<!-- <div class="col-lg-4">
 	<br>
 		<h4>atau kamu bisa login menggunakan</h4>
 		<a href="{% provider_login_url "facebook" %}" class="btn btn-primary btn-block" role="button">Facebook</a>
 		<a href="{% provider_login_url "google" %}" class="btn btn-danger btn-block" role="button">Google Account</a>
 		<a href="{% provider_login_url "twitter" %}" class="btn btn-info btn-block" role="button">Twitter</a>
-</div>
+</div> -->
 
 {% endblock %}

@@ -1,6 +1,11 @@
-{% extends 'project/base.html' %}
+R{% extends 'base.html' %}
 
-{% load staticfiles %}
+{% block breadcrumb %}
+<span class="nd_learning_current_breadcrumb"><a href="{% url 'page_list' %}">Project </a></span><i class="fa fa-angle-right" aria-hidden="true"></i>
+<span class="nd_learning_current_breadcrumb"><a href="{% url 'page_list' %}">{{ lessons.lesson }} </a></span><i class="fa fa-angle-right" aria-hidden="true"></i>
+<span class="nd_learning_current_breadcrumb">{{ lessons.name }}</span>
+
+{% endblock breadcrumb %}
 
 {% block title %}{% if lessons.name %}{{ lessons.name }}{% endif %}{% endblock %}
 
@@ -17,7 +22,7 @@
 <div class="addthis_inline_share_toolbox"></div>
 
 
- 	<div id="disqus_thread"></div>
+    <div id="disqus_thread"></div>
 </div>
 
 <script>
@@ -39,5 +44,6 @@ var disqus_config = function () {
 })();
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
 
 {% endblock %}

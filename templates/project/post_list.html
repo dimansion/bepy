@@ -1,25 +1,33 @@
-{% extends 'project/base.html' %}
+{% extends 'base.html' %}
 
-{% load staticfiles %}
+{% block breadcrumb %}
+<span class="nd_learning_current_breadcrumb">Project</span>
+{% endblock breadcrumb %}
 
 {% block body_block %}
 
-<h2>Yang bisa kamu pelajari disini</h2>
+<div class="row">
+        <div class="col-md-4">
+            <h1>Video tutorial</h1>
+            <p>disini kamu akan belajar blablabla</p>
+        </div>
+        <div class="col-md-6">
+        </div>
+    </div>
+
 <hr>
 <div class="row">
   {% for post in posts %}
-  <div class="col-sm-6 col-md-4">
+  <div class="col-md-4">
     <div class="thumbnail">
       <a href="{% url 'page_detail' post.slug  %}"><img class="img-thumbnail" src="{{ post.image.url }}" alt="{{ post.title }}"></a>
       <div class="caption">
         <h3>{{ post.title }}</h3>
         <p>{{ post.description|linebreaksbr|truncatechars:90 }}</p>
-        <p><a href="{% url 'page_detail' post.slug  %}" class="btn btn-primary" role="button">View</a></p>
+        <p><a href="{% url 'page_detail' post.slug  %}" class="btn btn-success" role="button">View</a></p>
       </div>
     </div>
   </div>
   {% endfor %}
 </div>
-
-
 {% endblock %}

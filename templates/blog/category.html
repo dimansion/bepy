@@ -8,32 +8,22 @@
 
 {% block body_block %}
 
-        <div style="float:left; width:100%;" id="post-45" class="post-45 page type-page status-publish hentry">
-            <!--automatic title-->
-            <div class="vc_row wpb_row vc_row-fluid vc_custom_1467214661838">
-                <div class="wpb_column vc_column_container vc_col-sm-6">
-                    <div class="vc_column-inner">
-                        <div class="wpb_wrapper"> 
-                            <div class="dropdown vc_custom_1467214272039">
-                              <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                Category
-                                <span class="caret"></span>
-                              </button>
-                              <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                                <li><a href="{% url 'index' %}">All Category</a></li>
-                                {% block side_block %}
-                                {% get_category_list category %}
-                                {% endblock %}
-                              </ul>
-                            </div>
-                            <h1 class=" nd_options_first_font ">{{ category_name }}</h1>
-                        </div>
-                    </div>
-                </div>
-            </div>
+ 
+        <div class="dropdown vc_custom_1467214272039">
+          <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            Category
+            <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+            <li><a href="{% url 'index' %}">All Category</a></li>
+            {% block side_block %}
+            {% get_category_list category %}
+            {% endblock %}
+          </ul>
         </div>
 
         {% if category %}
+        <h1 class=" nd_options_first_font ">{{ category_name }}</h1>
         <hr>
             {% if posts %}
             <div class="post"> 
