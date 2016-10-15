@@ -585,6 +585,17 @@
 
                     <div style="color: #ffffff ;" class="nd_options_grid_6 nd_options_text_align_right nd_options_text_align_center_responsive nd_options_padding_top_0_responsive nd_options_padding_botttom_10 nd_options_padding_top_10">
                         <div id="nd_options_navigation_top_header_2_right" class="nd_options_navigation_top_header_2 nd_options_display_inline_block_responsive">
+                            {% if request.user.is_authenticated %}                            
+                            <ul class="">
+                                <li class="dropdown">
+                                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:#fff;">{{request.user.username}} <span class="caret"></span></a>
+                                  <ul class="dropdown-menu">
+                                    <li><a href="/logout">Sign Out</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="{% url 'about' %}">About Be-Py</a></li>
+                                  </ul>
+                            </ul>
+                            {% else %}                                  
                             <div class="  nd_options_display_table nd_options_float_right">
                                 <div class="nd_options_display_table_cell nd_options_vertical_align_middle    ">
                                     <a href="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/learning-account/"><img alt="" width="15" height="15" class="nd_options_margin_left_20 nd_options_float_left" src="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-content/plugins/nd-shortcodes/addons/customizer/shortcodes/top-header/img/login-white.svg"></a>
@@ -600,6 +611,7 @@
                                 <div class="nd_options_display_table_cell nd_options_vertical_align_middle    ">
                                     <a style="color:#fff;" class="nd_options_margin_left_10" href="{% url 'auth_login' %}">LOGIN</a>
                                 </div>
+                                {% endif %}
                             </div>
                         </div>
                     </div>

@@ -33,6 +33,7 @@
 				padding: 0 !important;
 			}
 		</style>-->
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" href='{% static "css/font-awesome.min.css" %}'>
 	<link rel='stylesheet' href='{% static "css/styles.css" %}' type='text/css' media='all' />
 	<link rel='stylesheet' id='contact-form-7-css'  href='{% static "plugins/contact-form-7/includes/css/styles.css" %}' type='text/css' media='all' />
@@ -255,24 +256,35 @@
 
 	            <div style="color: #ffffff ;" class="nd_options_grid_6 nd_options_text_align_right nd_options_text_align_center_responsive nd_options_padding_top_0_responsive nd_options_padding_botttom_10 nd_options_padding_top_10">
 	           		<div id="nd_options_navigation_top_header_2_right" class="nd_options_navigation_top_header_2 nd_options_display_inline_block_responsive">
-						<div class="  nd_options_display_table nd_options_float_right">
-							<div class="nd_options_display_table_cell nd_options_vertical_align_middle    ">
-								<a href="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/learning-account/"><img alt="" width="15" height="15" class="nd_options_margin_left_20 nd_options_float_left" src="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-content/plugins/nd-shortcodes/addons/customizer/shortcodes/top-header/img/login-white.svg"></a>
-							</div>
-							 <div class="nd_options_display_table_cell nd_options_vertical_align_middle    ">
-                                <a style="color:#fff;" class="nd_options_margin_left_10" href="{% url 'registration_register' %}">REGISTER</a>
-                            </div>
-						</div>
-						<div class="  nd_options_display_table nd_options_float_right">
-							<div class="nd_options_display_table_cell nd_options_vertical_align_middle    ">
-								<a href="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/learning-account/"><img alt="" width="15" height="15" class="nd_options_margin_left_20 nd_options_float_left" src="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-content/plugins/nd-shortcodes/addons/customizer/shortcodes/top-header/img/user-white.svg"></a>
-							</div>
-							<div class="nd_options_display_table_cell nd_options_vertical_align_middle    ">
-                                <a style="color:#fff;" class="nd_options_margin_left_10" href="{% url 'auth_login' %}">LOGIN</a>
-                            </div>
-						</div>
-	           		</div>
-	            </div>
+                    {% if request.user.is_authenticated %}                            
+                    <ul class="">
+                        <li class="dropdown">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:#fff;">{{request.user.username}} <span class="caret"></span></a>
+                          <ul class="dropdown-menu">
+                            <li><a href="/logout">Sign Out</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="{% url 'about' %}">About Be-Py</a></li>
+                          </ul>
+                    </ul>
+                    {% else %}                                  
+                    <div class="  nd_options_display_table nd_options_float_right">
+                        <div class="nd_options_display_table_cell nd_options_vertical_align_middle    ">
+                            <a href="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/learning-account/"><img alt="" width="15" height="15" class="nd_options_margin_left_20 nd_options_float_left" src="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-content/plugins/nd-shortcodes/addons/customizer/shortcodes/top-header/img/login-white.svg"></a>
+                        </div>
+                        <div class="nd_options_display_table_cell nd_options_vertical_align_middle    ">
+                            <a style="color:#fff;" class="nd_options_margin_left_10" href="{% url 'registration_register' %}">REGISTER</a>
+                        </div>
+                    </div>
+                    <div class="  nd_options_display_table nd_options_float_right">
+                        <div class="nd_options_display_table_cell nd_options_vertical_align_middle    ">
+                            <a href="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/learning-account/"><img alt="" width="15" height="15" class="nd_options_margin_left_20 nd_options_float_left" src="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-content/plugins/nd-shortcodes/addons/customizer/shortcodes/top-header/img/user-white.svg"></a>
+                        </div>
+                        <div class="nd_options_display_table_cell nd_options_vertical_align_middle    ">
+                            <a style="color:#fff;" class="nd_options_margin_left_10" href="{% url 'auth_login' %}">LOGIN</a>
+                        </div>
+                        {% endif %}
+                    </div>
+                </div>
 	        </div>
 	        <!--end container-->
 	    </div>
@@ -2166,6 +2178,7 @@ var _wpcf7 = {"loaderUrl":"http:\/\/www.nicdarkthemes.com\/themes\/education\/wp
 <script type='text/javascript' src='http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-includes/js/jquery/ui/tooltip.min.js?ver=1.11.4'></script>
 <script type='text/javascript' src='http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-content/plugins/js_composer/assets/lib/bower/skrollr/dist/skrollr.min.js?ver=4.12'></script>
 <script type='text/javascript' src='http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-content/plugins/nd-shortcodes/shortcodes/custom/countdown/js/countdown.js?ver=4.6'></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	
 </body>  
 </html>
