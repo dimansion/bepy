@@ -1,10 +1,19 @@
 {% extends "base.html" %}
+{% block title %}Blog{% endblock %}
+
+{% block breadcrumb %}
+<span class="nd_learning_current_breadcrumb">Blog </span>
+{% endblock breadcrumb %}
 
 {% block body_block %}
-<div class='col-sm-6 col-sm-offset-3'>
-    <h1>{{ title }}</h1>
-<form method='GET' action='' class='row'>
-        <div class='col-sm-6'>
+
+
+
+<form method='GET' action='' class='form-inline'>
+        <div class="form-group">
+            <h1>{{ title }}</h1>
+        </div>
+        <div class='form-group'>
             <div class='input-group'>
                 <input class='form-control' type='text' name='q' placeholder='Search posts' value='{{ request.GET.q }}'/>
                 <span class='input-group-btn'>
@@ -14,9 +23,11 @@
             </div>
         </div>
 </form>
-{% for obj in object_list %}
+<hr>
 <div class="row">
-  <div class="col-sm-12">
+{% for obj in object_list %}
+
+  <div class="col-sm-3">
     <div class="thumbnail">
         {% if obj.image %}
          <img src='{{ obj.image.url }}' class='img-responsive' />
@@ -25,15 +36,14 @@
         {% if obj.draft %}<h3>Staff only: Draft</h3>{% endif %} {% if obj.publish > today %}<h3>Staff Only: Future Post</h3>{% endif %}
         <h3><a href='{{ obj.get_absolute_url }}'>{{ obj.title }}</a> <small>{{ obj.publish }}</small></h3>
         {% if obj.user.get_full_name %}<p>Author: {{ obj.user.get_full_name }}</p>{% endif %}
-        {{ obj.get_markdown|truncatechars_html:120 }}
-        <p><a href="{{ obj.get_absolute_url }}" class="btn btn-primary" role="button">View</a></p>
+        {{ obj.get_markdown|truncatechars_html:100 }}
+        <p><a href="{{ obj.get_absolute_url }}" class="btn btn-primary" role="button">Baca</a></p>
       </div>
     </div>
   </div>
-<hr/>
-</div>
-{% endfor %}
 
+{% endfor %}
+</div>
 
 <div class="pagination">
     <span class="step-links">
@@ -54,6 +64,5 @@
 
 
 
-</div>
 
 {% endblock body_block %}
