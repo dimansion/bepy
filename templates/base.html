@@ -901,11 +901,14 @@
                 font-size: 13px !important;
                 line-height: 20px;
             }
-            .footer {
-              position: absolute;
-              right: 0;
-              bottom: 0;
-              left: 0;
+            #content {
+                padding-bottom: 100px;
+            }
+            #footer {
+                width: 100%;
+                position: relative;
+                bottom: 0;
+                left: 0;
             }
         </style>
         <!--END css for post-->
@@ -936,7 +939,7 @@
         </div>
 
 
-
+        {% block body %}{% endblock %}
 
 
         <!--page margin-->
@@ -948,7 +951,9 @@
 
                     <div class="nd_options_section nd_options_height_20"></div>
 
-                                {% block body_block %}{% endblock %}
+                        <div id="content">
+                            {% block body_block %}{% endblock %}
+                        </div>
 
                 </div>
 
@@ -991,7 +996,7 @@
         END footer-->
 
         <!--START copyright-->
-        <div style="background-color: #ffb730" class="nd_options_section">
+        <div style="background-color: #ffb730" class="nd_options_section" id="footer">
             <!--start nd_options_container-->
             <div style="border-top: 1px solid #ffb730 " class="nd_options_container nd_options_clearfix">
                 <div class="grid nd_options_grid_6 nd_options_text_align_center_responsive">
