@@ -99,6 +99,8 @@
     <link rel='stylesheet' id='nicdark-style-css' href='{% static "themes/educationpack/style.css" %}' type='text/css' media='all' />
     <!--<link rel='stylesheet' id='nicdark-fonts-css'  href='//fonts.googleapis.com/css?family=Montserrat%3A400%2C700%7CVarela+Round&#038;ver=1.0.0' type='text/css' media='all' />-->
     <link rel='stylesheet' id='js_composer_front-css' href='{% static "uploads/sites/7/js_composer/js_composer_front_custom.css" %}' type='text/css' media='all' />
+    {{ form.media }}
+
     <script type='text/javascript' src='{% static ''%}js/jquery/jquery.js'></script>
     <script type='text/javascript' src='{% static ''%}js/jquery/jquery-migrate.min.js'></script>
     <script type='text/javascript'>
@@ -421,7 +423,7 @@
 
 <body id="start_nicdark_framework" class="page page-id-45 page-template-default nd_options_customizer_fonts nd_options_customizer_forms wpb-js-composer js-comp-ver-4.12 vc_responsive">
 
-
+<div id="wrapper">
     <!--START theme-->
     <div class="nicdark_site nicdark_bg_white  ">
 
@@ -901,8 +903,20 @@
                 font-size: 13px !important;
                 line-height: 20px;
             }
+            #wrapper {
+                min-height:100%;
+                position:relative;
+            }
+            .btn-custom {
+                background-color: #49c4af;
+                color: #fff;
+            }
+            .wmd-panel{
+                margin-right: 0px !important;
+                margin-left: 0px !important;
+            }
             #content {
-                padding-bottom: 100px;
+                padding-bottom: 225px;
             }
             #footer {
                 width: 100%;
@@ -1013,7 +1027,7 @@
 
     </div>
     <!--END theme-->
-
+</div>
 
     <!--google analytics-->
     <script>
@@ -1092,6 +1106,61 @@
 
     <script id="dsq-count-scr" src="//be-py.disqus.com/count.js" async></script>
 
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.5/marked.min.js'></script>
+    
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $(".content-markdown").each(function(){
+                var content = $(this).text()
+                var markedContent = marked(content)
+                $(this).html(markedContent)
+        })
+        $(".post-detail-item img").each(function(){
+                $(this).addClass("img-responsive");
+        })
+
+        
+
+        var contentInput = $("#id_content");
+
+        function setContent(value){
+            var markedContent = marked(value)
+            $("#preview-content").html(markedContent)
+            $("#preview-content img").each(function(){
+                $(this).addClass("img-responsive")
+            })
+        }
+        setContent(contentInput.val())
+
+        contentInput.keyup(function(){
+            var newContent = $(this).val()
+            setContent(newContent)
+        })
+
+        var titleInput = $("#id_title");
+        
+
+
+        function setTitle(value) {
+            $("#preview-title").text(value)
+        }
+        setTitle(titleInput.val())
+
+        titleInput.keyup(function(){
+            var newContent = $(this).val()
+            setTitle(newContent)
+        })
+
+
+
+        // preview-title
+        // preview-content
+
+    })
+
+    </script>
+
     <script type="text/javascript">
     $(document).ready(function(){
         $(".content-markdown").each(function(){
@@ -1108,6 +1177,7 @@
     })
     </script>
     {% block script_extra %} {% endblock script_extra %}
+
 
 </body>
 

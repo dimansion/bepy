@@ -15,10 +15,10 @@
         </div>
         <div class='form-group'>
             <div class='input-group'>
-                <input class='form-control' type='text' name='q' placeholder='Search posts' value='{{ request.GET.q }}'/>
+                <input class='form-control' type='text' name='q' placeholder='Cari Artikel' value='{{ request.GET.q }}'/>
                 <span class='input-group-btn'>
                     <!-- <input class='btn btn-default' type='submit' value='Search' /> -->
-                    <button class='btn btn-default' type='submit'>Search <i class="fa fa-search"></i></button>
+                    <button class='btn btn-default' type='submit'>Cari <i class="fa fa-search"></i></button>
                 </span>
             </div>
         </div>
@@ -37,7 +37,7 @@
         <h3><a href='{{ obj.get_absolute_url }}'>{{ obj.title }}</a> <small>{{ obj.publish }}</small></h3>
         {% if obj.user.get_full_name %}<p>Author: {{ obj.user.get_full_name }}</p>{% endif %}
         {{ obj.get_markdown|truncatechars_html:100 }}
-        <p><a href="{{ obj.get_absolute_url }}" class="btn btn-primary" role="button">Baca</a></p>
+        <p><a href="{{ obj.get_absolute_url }}" class="btn btn-custom" role="button">Baca</a></p>
       </div>
     </div>
   </div>
