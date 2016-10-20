@@ -11,6 +11,7 @@ class PostForm(forms.ModelForm):
     class Meta:
         model = Article
         fields = [
+            "author",
             "title",
             "content",
             "image",

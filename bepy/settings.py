@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'blog',
     'project',
     'article',
+    'showcase',
 
     #third party lib
     'django.contrib.sites',
@@ -167,8 +168,8 @@ ACCOUNT_ACTIVATION_DAYS = 7
 #Host
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = ''
-EMAIL_HOST_PASSWORD = ''
+EMAIL_HOST_USER = 'dimansion.d@gmail.com'
+EMAIL_HOST_PASSWORD = 'cutsadnasyahdia'
 EMAIL_PORT = 587
 
 ACCOUNT_USERNAME_REQUIRED =True

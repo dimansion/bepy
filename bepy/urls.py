@@ -11,6 +11,7 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', HomeView.as_view(), name='index'), 
     url(r'^blog/', include('article.urls', namespace='blog')),
+    url(r'^showcase/', include('showcase.urls', namespace='showcase')),
     url(r'^project/step/', include('blog.urls')),
     url(r'^api/blog/', include('blog.api.urls', namespace='blog-api')),
     url(r'^project/', include('project.urls')),

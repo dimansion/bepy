@@ -1,87 +1,20 @@
 <!DOCTYPE html>
-{% load blog_extras %} 
 {% load static %}
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en-US"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en-US"> <![endif]-->
 <!--[if IE 8 ]><html class="ie ie8" lang="en-US"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!-->
-<html lang="en-US">
-<!--<![endif]-->
-
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en-US"> <!--<![endif]-->
 <head>
-
-    <meta charset="UTF-8">
+ 
+    <meta charset="UTF-8"> 
     <meta name="author" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Be|Py - {% block title %}We don't talk about php{% endblock %}</title>
-    <link rel='dns-prefetch' href='//fonts.googleapis.com'>
-    <link rel='dns-prefetch' href='//s.w.org'>
-    <script type="text/javascript">
-        window._wpemojiSettings = {
-            "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/2\/72x72\/",
-            "ext": ".png",
-            "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/2\/svg\/",
-            "svgExt": ".svg",
-            "source": {
-                "concatemoji": "http:\/\/www.nicdarkthemes.com\/themes\/education\/wp\/demo\/e-learning-courses\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.6"
-            }
-        };
-        ! function (a, b, c) {
-            function d(a) {
-                var c, d, e, f, g, h = b.createElement("canvas"),
-                    i = h.getContext && h.getContext("2d"),
-                    j = String.fromCharCode;
-                if (!i || !i.fillText) return !1;
-                switch (i.textBaseline = "top", i.font = "600 32px Arial", a) {
-                case "flag":
-                    return i.fillText(j(55356, 56806, 55356, 56826), 0, 0), !(h.toDataURL().length < 3e3) && (i.clearRect(0, 0, h.width, h.height), i.fillText(j(55356, 57331, 65039, 8205, 55356, 57096), 0, 0), c = h.toDataURL(), i.clearRect(0, 0, h.width, h.height), i.fillText(j(55356, 57331, 55356, 57096), 0, 0), d = h.toDataURL(), c !== d);
-                case "diversity":
-                    return i.fillText(j(55356, 57221), 0, 0), e = i.getImageData(16, 16, 1, 1).data, f = e[0] + "," + e[1] + "," + e[2] + "," + e[3], i.fillText(j(55356, 57221, 55356, 57343), 0, 0), e = i.getImageData(16, 16, 1, 1).data, g = e[0] + "," + e[1] + "," + e[2] + "," + e[3], f !== g;
-                case "simple":
-                    return i.fillText(j(55357, 56835), 0, 0), 0 !== i.getImageData(16, 16, 1, 1).data[0];
-                case "unicode8":
-                    return i.fillText(j(55356, 57135), 0, 0), 0 !== i.getImageData(16, 16, 1, 1).data[0];
-                case "unicode9":
-                    return i.fillText(j(55358, 56631), 0, 0), 0 !== i.getImageData(16, 16, 1, 1).data[0]
-                }
-                return !1
-            }
-
-            function e(a) {
-                var c = b.createElement("script");
-                c.src = a, c.type = "text/javascript", b.getElementsByTagName("head")[0].appendChild(c)
-            }
-            var f, g, h, i;
-            for (i = Array("simple", "flag", "unicode8", "diversity", "unicode9"), c.supports = {
-                    everything: !0,
-                    everythingExceptFlag: !0
-                }, h = 0; h < i.length; h++) c.supports[i[h]] = d(i[h]), c.supports.everything = c.supports.everything && c.supports[i[h]], "flag" !== i[h] && (c.supports.everythingExceptFlag = c.supports.everythingExceptFlag && c.supports[i[h]]);
-            c.supports.everythingExceptFlag = c.supports.everythingExceptFlag && !c.supports.flag, c.DOMReady = !1, c.readyCallback = function () {
-                c.DOMReady = !0
-            }, c.supports.everything || (g = function () {
-                c.readyCallback()
-            }, b.addEventListener ? (b.addEventListener("DOMContentLoaded", g, !1), a.addEventListener("load", g, !1)) : (a.attachEvent("onload", g), b.attachEvent("onreadystatechange", function () {
-                "complete" === b.readyState && c.readyCallback()
-            })), f = c.source || {}, f.concatemoji ? e(f.concatemoji) : f.wpemoji && f.twemoji && (e(f.twemoji), e(f.wpemoji)))
-        }(window, document, window._wpemojiSettings);
-    </script>
-    <!--<style type="text/css">
-		img.wp-smiley,
-		img.emoji {
-			display: inline !important;
-			border: none !important;
-			box-shadow: none !important;
-			height: 1em !important;
-			width: 1em !important;
-			margin: 0 .07em !important;
-			vertical-align: -0.1em !important;
-			background: none !important;
-			padding: 0 !important;
-		}{% static ''%}
-		</style>-->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href='{% static "css/font-awesome.min.css" %}'>
+        	
+	<title>Contact - Be | Py</title>
+	<link rel='dns-prefetch' href='//fonts.googleapis.com'>
+	<link rel='dns-prefetch' href='//s.w.org'>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href='{% static "css/font-awesome.min.css" %}'>
     <link rel='stylesheet' href='{% static "css/styles.css' type='text/css' media='all" %}' />
     <link rel='stylesheet' id='woocommerce-layout-css' href='{% static "plugins/woocommerce/assets/css/woocommerce-layout.css" %}' type='text/css' media='all' />
     <link rel='stylesheet' id='woocommerce-smallscreen-css' href='{% static "plugins/woocommerce/assets/css/woocommerce-smallscreen.css" %}' type='text/css' media='only screen and (max-width: 768px)' />
@@ -89,437 +22,224 @@
     <link rel='stylesheet' id='contact-form-7-css' href='{% static "plugins/contact-form-7/includes/css/styles.css" %}' type='text/css' media='all' />
     <link rel='stylesheet' id='nd_learning_style-css' href='{% static "plugins/nd-learning/assets/css/style.css" %}' type='text/css' media='all' />
     <link rel='stylesheet' id='nd_options_style-css' href='{% static "plugins/nd-shortcodes/css/style.css" %}' type='text/css' media='all' />
-    <!--<link rel='stylesheet' id='nd_options_font_family_h-css'  href='http://fonts.googleapis.com/css?family=Montserrat%3A400%2C700&#038;ver=4.6' type='text/css' media='all' />-->
-    <!--<link rel='stylesheet' id='nd_options_font_family_p-css'  href='http://fonts.googleapis.com/css?family=Varela+Round&#038;ver=4.6' type='text/css' media='all' />-->
-    <link rel='stylesheet' id='nd_tds_style-css' href='{% static "plugins/nd-theme-demos-switcher/css/style.css?ver=4.6" %}' type='text/css' media='all' />
+	<!--<link rel='stylesheet' id='nd_options_font_family_h-css'  href='http://fonts.googleapis.com/css?family=Montserrat%3A400%2C700&#038;ver=4.6' type='text/css' media='all' />-->
+	<!--<link rel='stylesheet' id='nd_options_font_family_p-css'  href='http://fonts.googleapis.com/css?family=Varela+Round&#038;ver=4.6' type='text/css' media='all' />-->
+	<link rel='stylesheet' id='nd_tds_style-css' href='{% static "plugins/nd-theme-demos-switcher/css/style.css?ver=4.6" %}' type='text/css' media='all' />
     <link rel='stylesheet' id='rs-plugin-settings-css' href='{% static "plugins/revslider/public/assets/css/settings.css" %}' type='text/css' media='all' />
-    <!--<style id='rs-plugin-settings-inline-css' type='text/css'>
+	<!--<style id='rs-plugin-settings-inline-css' type='text/css'>
 	#rs-demo-id {}
 	</style>-->
-    <link rel='stylesheet' id='nicdark-style-css' href='{% static "themes/educationpack/style.css" %}' type='text/css' media='all' />
-    <!--<link rel='stylesheet' id='nicdark-fonts-css'  href='//fonts.googleapis.com/css?family=Montserrat%3A400%2C700%7CVarela+Round&#038;ver=1.0.0' type='text/css' media='all' />-->
-    <link rel='stylesheet' id='js_composer_front-css' href='{% static "uploads/sites/7/js_composer/js_composer_front_custom.css" %}' type='text/css' media='all' />
-    {{ form.media }}
+	<link rel='stylesheet' id='nicdark-style-css' href='{% static "themes/educationpack/style.css" %}' type='text/css' media='all' />
+	<!--<link rel='stylesheet' id='nicdark-fonts-css'  href='//fonts.googleapis.com/css?family=Montserrat%3A400%2C700%7CVarela+Round&#038;ver=1.0.0' type='text/css' media='all' />-->
+	<link rel='stylesheet' id='js_composer_front-css' href='{% static "uploads/sites/7/js_composer/js_composer_front_custom.css" %}' type='text/css' media='all' />
+	{% block head_extra %} 
+	{% endblock head_extra %}
+    <script type='text/javascript' src='{% static "js/jquery/jquery.js" %}'></script>
+    <script type='text/javascript' src='{% static "js/jquery/jquery-migrate.min.js" %}'></script>
+	<script type='text/javascript'>
+	/* <![CDATA[ */
+	var wc_add_to_cart_params = {"ajax_url":"\/themes\/education\/wp\/demo\/e-learning-courses\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/themes\/education\/wp\/demo\/e-learning-courses\/contact\/?wc-ajax=%%endpoint%%","i18n_view_cart":"View Cart","cart_url":"http:\/\/www.nicdarkthemes.com\/themes\/education\/wp\/demo\/e-learning-courses\/cart\/","is_cart":"","cart_redirect_after_add":"no"};
+	/* ]]> */
+	</script>
 
-    <script type='text/javascript' src='{% static ''%}js/jquery/jquery.js'></script>
-    <script type='text/javascript' src='{% static ''%}js/jquery/jquery-migrate.min.js'></script>
-    <script type='text/javascript'>
-        /* <![CDATA[ */
-        var wc_add_to_cart_params = {
-            "ajax_url": "\/themes\/education\/wp\/demo\/e-learning-courses\/wp-admin\/admin-ajax.php",
-            "wc_ajax_url": "\/themes\/education\/wp\/demo\/e-learning-courses\/contact\/?wc-ajax=%%endpoint%%",
-            "i18n_view_cart": "View Cart",
-            "cart_url": "http:\/\/www.nicdarkthemes.com\/themes\/education\/wp\/demo\/e-learning-courses\/cart\/",
-            "is_cart": "",
-            "cart_redirect_after_add": "no"
-        };
-        /* ]]> */
-    </script>
-    <script type='text/javascript' src='{% static "plugins/woocommerce/assets/js/frontend/add-to-cart.min.js" %}'></script>
-    <script type='text/javascript' src='{% static "plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js" %}'></script>
-    <script type='text/javascript' src='{% static "plugins/revslider/public/assets/js/jquery.themepunch.tools.min.js" %}'></script>
-    <script type='text/javascript' src='{% static "plugins/revslider/public/assets/js/jquery.themepunch.revolution.min.js" %}'></script>
-    <script type='text/javascript' src='{% static "plugins/js_composer/assets/js/vendors/woocommerce-add-to-cart.js" %}'></script>
+<!--START css-->
+<style type="text/css">
+	.nd_options_customizer_forms input[type="submit"] {
+		background-color: #49c4af;
+		border-width: 0px;
+		border-color: #ffffff;
+		border-radius: 3px;
+		border-style: solid;
+		padding: 10px 20px;
+		-webkit-appearance: none;
+		color: #ffffff;
+		cursor: pointer;
+		font-family: 'Montserrat', sans-serif;
+		}
+	
+	#nd_options_shortcode_cf7_206 input[type="text"],
+	#nd_options_shortcode_cf7_206 input[type="email"],
+	#nd_options_shortcode_cf7_206 textarea {
+		width: 100%;
+		}
+	
+	.nd_options_customizer_forms input[type="text"],
+	.nd_options_customizer_forms input[type="email"],
+	.nd_options_customizer_forms textarea {
+		background-color: #ffffff;
+		border-width: 2px;
+		border-color: #f1f1f1;
+		border-radius: 0px;
+		border-style: solid;
+		padding: 10px 20px;
+		-webkit-appearance: none;
+		color: #a3a3a3;
+		border-top-width: 0px;
+		border-left-width: 0px;
+		border-right-width: 0px;
+		}
+</style>
 
+<style type="text/css">
 
-    <link rel='https://api.w.org/' href='http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-json/' />
-    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/xmlrpc.php?rsd" />
-    <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-includes/wlwmanifest.xml" />
-    <meta name="generator" content="WordPress 4.6" />
-    <meta name="generator" content="WooCommerce 2.6.4" />
-    <!--<link rel="canonical" href="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/contact/" />-->
-    <!--<link rel='shortlink' href='http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/?p=45' />-->
-    <link rel="alternate" type="application/json+oembed" href="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.nicdarkthemes.com%2Fthemes%2Feducation%2Fwp%2Fdemo%2Fe-learning-courses%2Fcontact%2F" />
-    <link rel="alternate" type="text/xml+oembed" href="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.nicdarkthemes.com%2Fthemes%2Feducation%2Fwp%2Fdemo%2Fe-learning-courses%2Fcontact%2F&#038;format=xml" />
+	.nd_options_navigation_2 div > ul { list-style: none; margin: 0px; padding: 0px; text-align: right; }
+	.nd_options_navigation_2 div > ul > li { display: inline-block; padding: 0px; }
+	.nd_options_navigation_2 div > ul > li:after { content: "|"; display: inline-block; margin: 0px 20px; color: #f1f1f1; }
+	.nd_options_navigation_2 div > ul > li:last-child:after { content: ""; margin: 0px; }
+	.nd_options_navigation_2 div li a { color: #727475; font-size: 16px; line-height: 16px; font-family: Montserrat; }
+	.nd_options_navigation_2 div > ul li:hover > ul.sub-menu { display: block; }
+	.nd_options_navigation_2 div > ul li > ul.sub-menu { z-index: 999; position: absolute; margin: 0px; padding: 0px; list-style: none; display: none; margin-left: -20px; padding-top: 20px; width: 190px; }
+	.nd_options_navigation_2 div > ul li > ul.sub-menu > li { padding: 15px 20px; border-bottom: 1px solid #f1f1f1; text-align: left; background-color: #fff; position: relative; box-shadow: 0px 2px 5px #f1f1f1; float: left; width: 100%; box-sizing:border-box; }
+	.nd_options_navigation_2 div > ul li > ul.sub-menu > li:hover { background-color: #f9f9f9;  }
+	.nd_options_navigation_2 div > ul li > ul.sub-menu > li:last-child { border-bottom: 0px solid #000; }
+	.nd_options_navigation_2 div > ul li > ul.sub-menu li a { font-size: 14px; color: #727475; float: left; width: 100%; }
+	.nd_options_navigation_2 div > ul li > ul.sub-menu li > ul.sub-menu { margin-left: 170px; top: 0; padding-top: 0; padding-left: 20px; }
+	/*responsive*/
+	.nd_options_navigation_2_sidebar div > ul { list-style: none; margin: 0px; padding: 0px; }
+	.nd_options_navigation_2_sidebar div > ul > li { display: inline-block; width: 100%; padding: 0px 0px 20px 0px; }
+	.nd_options_navigation_2_sidebar div li a { font-family: Montserrat; }
+	.nd_options_navigation_2_sidebar div li > a { padding: 10px 0px; display: inline-block; font-size: 24px; font-family: Montserrat; text-transform: lowercase; color: #fff; }
+	.nd_options_navigation_2_sidebar div li > a::first-letter { text-transform: uppercase; }
+	.nd_options_navigation_2_sidebar div > ul li > ul.sub-menu { margin: 0px; padding: 0px; list-style: none; }
+	.nd_options_navigation_2_sidebar div > ul li > ul.sub-menu > li { padding: 0px 20px; text-align: left; }
+	.nd_options_navigation_2_sidebar div > ul li > ul.sub-menu li a { font-size: 14px; }
+	/*top header*/
+	.nd_options_navigation_top_header_2 { font-size: 13px; line-height: 18px; }
+	.nd_options_navigation_top_header_2 > ul { list-style: none; margin: 0px; padding: 0px; }
+	.nd_options_navigation_top_header_2 > ul > li { display: inline-block; }
+	.nd_options_navigation_top_header_2> ul > li:after { content: "|"; display: inline-block; margin: 0px 15px; font-size: 13px; }
+	.nd_options_navigation_top_header_2 > ul > li:last-child:after { content: ""; margin: 0px; }
+	.nd_options_navigation_top_header_2 li a { font-size: 13px; }
+	.nd_options_navigation_top_header_2 > ul li:hover > ul.nd_options_sub_menu { display: block; }
+	.nd_options_navigation_top_header_2 > ul li > ul.nd_options_sub_menu { padding: 10px 0px 0px 15px; position: absolute; margin: 0px; list-style: none; display: none; z-index: 9; }
+	.nd_options_navigation_top_header_2 > ul li > ul.nd_options_sub_menu > li { padding: 7px 15px; font-size: 13px; border-bottom: 1px solid #595959; background-color: #444444; }
+	.nd_options_navigation_top_header_2 > ul li > ul.nd_options_sub_menu > li:last-child { border-bottom: 0px solid #000; }
+   
+	#nd_options_navigation_top_header_2_left div:last-child div a img { margin-right: 0px; }
+	#nd_options_navigation_top_header_2_right div:last-child div a img { margin-left: 0px; }
 
-    <!--START css-->
+	/*arrow for item has children*/
+	.nd_options_navigation_2 .menu ul.sub-menu li.menu-item-has-children > a:after { content:""; float: right; border-style: solid; border-width: 5px 0 5px 5px; border-color: transparent transparent transparent #727475; margin-top: 3px; }
+
+</style>
+<!--END css-->
+	
     <style type="text/css">
-        .nd_options_customizer_forms input[type="submit"] {
-            background-color: #49c4af;
-            border-width: 0px;
-            border-color: #ffffff;
-            border-radius: 3px;
-            border-style: solid;
-            padding: 10px 20px;
-            -webkit-appearance: none;
-            color: #ffffff;
-            cursor: pointer;
-            font-family: 'Montserrat', sans-serif;
-        }
-        
-        #nd_options_shortcode_cf7_206 input[type="text"],
-        #nd_options_shortcode_cf7_206 input[type="email"],
-        #nd_options_shortcode_cf7_206 textarea {
-            width: 100%;
-        }
-        
-        .nd_options_customizer_forms input[type="text"],
-        .nd_options_customizer_forms input[type="email"],
-        .nd_options_customizer_forms textarea {
-            background-color: #ffffff;
-            border-width: 2px;
-            border-color: #f1f1f1;
-            border-radius: 0px;
-            border-style: solid;
-            padding: 10px 20px;
-            -webkit-appearance: none;
-            color: #a3a3a3;
-            border-top-width: 0px;
-            border-left-width: 0px;
-            border-right-width: 0px;
-        }
+
+		.nd_tds_background_color_1 { background-color: #49c4af; }
+		.nd_tds_background_color_2 { background-color: #49c4af; }
+		.nd_tds_background_color_3 { background-color: #ffb730; }
+
     </style>
+    
 
-    <style type="text/css">
-        .nd_options_navigation_2 div > ul {
-            list-style: none;
-            margin: 0px;
-            padding: 0px;
-            text-align: right;
-        }
-        
-        .nd_options_navigation_2 div > ul > li {
-            display: inline-block;
-            padding: 0px;
-        }
-        
-        .nd_options_navigation_2 div > ul > li:after {
-            content: "|";
-            display: inline-block;
-            margin: 0px 20px;
-            color: #f1f1f1;
-        }
-        
-        .nd_options_navigation_2 div > ul > li:last-child:after {
-            content: "";
-            margin: 0px;
-        }
-        
-        .nd_options_navigation_2 div li a {
-            color: #727475;
-            font-size: 16px;
-            line-height: 16px;
-            font-family: Montserrat;
-        }
-        
-        .nd_options_navigation_2 div > ul li:hover > ul.sub-menu {
-            display: block;
-        }
-        
-        .nd_options_navigation_2 div > ul li > ul.sub-menu {
-            z-index: 999;
-            position: absolute;
-            margin: 0px;
-            padding: 0px;
-            list-style: none;
-            display: none;
-            margin-left: -20px;
-            padding-top: 20px;
-            width: 190px;
-        }
-        
-        .nd_options_navigation_2 div > ul li > ul.sub-menu > li {
-            padding: 15px 20px;
-            border-bottom: 1px solid #f1f1f1;
-            text-align: left;
-            background-color: #fff;
-            position: relative;
-            box-shadow: 0px 2px 5px #f1f1f1;
-            float: left;
-            width: 100%;
-            box-sizing: border-box;
-        }
-        
-        .nd_options_navigation_2 div > ul li > ul.sub-menu > li:hover {
-            background-color: #f9f9f9;
-        }
-        
-        .nd_options_navigation_2 div > ul li > ul.sub-menu > li:last-child {
-            border-bottom: 0px solid #000;
-        }
-        
-        .nd_options_navigation_2 div > ul li > ul.sub-menu li a {
-            font-size: 14px;
-            color: #727475;
-            float: left;
-            width: 100%;
-        }
-        
-        .nd_options_navigation_2 div > ul li > ul.sub-menu li > ul.sub-menu {
-            margin-left: 170px;
-            top: 0;
-            padding-top: 0;
-            padding-left: 20px;
-        }
-        /*responsive*/
-        
-        .nd_options_navigation_2_sidebar div > ul {
-            list-style: none;
-            margin: 0px;
-            padding: 0px;
-        }
-        
-        .nd_options_navigation_2_sidebar div > ul > li {
-            display: inline-block;
-            width: 100%;
-            padding: 0px 0px 20px 0px;
-        }
-        
-        .nd_options_navigation_2_sidebar div li a {
-            font-family: Montserrat;
-        }
-        
-        .nd_options_navigation_2_sidebar div li > a {
-            padding: 10px 0px;
-            display: inline-block;
-            font-size: 24px;
-            font-family: Montserrat;
-            text-transform: lowercase;
-            color: #fff;
-        }
-        
-        .nd_options_navigation_2_sidebar div li > a::first-letter {
-            text-transform: uppercase;
-        }
-        
-        .nd_options_navigation_2_sidebar div > ul li > ul.sub-menu {
-            margin: 0px;
-            padding: 0px;
-            list-style: none;
-        }
-        
-        .nd_options_navigation_2_sidebar div > ul li > ul.sub-menu > li {
-            padding: 0px 20px;
-            text-align: left;
-        }
-        
-        .nd_options_navigation_2_sidebar div > ul li > ul.sub-menu li a {
-            font-size: 14px;
-        }
-        /*top header*/
-        
-        .nd_options_navigation_top_header_2 {
-            font-size: 13px;
-            line-height: 18px;
-        }
-        
-        .nd_options_navigation_top_header_2 > ul {
-            list-style: none;
-            margin: 0px;
-            padding: 0px;
-        }
-        
-        .nd_options_navigation_top_header_2 > ul > li {
-            display: inline-block;
-        }
-        
-        .nd_options_navigation_top_header_2> ul > li:after {
-            content: "|";
-            display: inline-block;
-            margin: 0px 15px;
-            font-size: 13px;
-        }
-        
-        .nd_options_navigation_top_header_2 > ul > li:last-child:after {
-            content: "";
-            margin: 0px;
-        }
-        
-        .nd_options_navigation_top_header_2 li a {
-            font-size: 13px;
-        }
-        
-        .nd_options_navigation_top_header_2 > ul li:hover > ul.nd_options_sub_menu {
-            display: block;
-        }
-        
-        .nd_options_navigation_top_header_2 > ul li > ul.nd_options_sub_menu {
-            padding: 10px 0px 0px 15px;
-            position: absolute;
-            margin: 0px;
-            list-style: none;
-            display: none;
-            z-index: 9;
-        }
-        
-        .nd_options_navigation_top_header_2 > ul li > ul.nd_options_sub_menu > li {
-            padding: 7px 15px;
-            font-size: 13px;
-            border-bottom: 1px solid #595959;
-            background-color: #444444;
-        }
-        
-        .nd_options_navigation_top_header_2 > ul li > ul.nd_options_sub_menu > li:last-child {
-            border-bottom: 0px solid #000;
-        }
-        
-        #nd_options_navigation_top_header_2_left div:last-child div a img {
-            margin-right: 0px;
-        }
-        
-        #nd_options_navigation_top_header_2_right div:last-child div a img {
-            margin-left: 0px;
-        }
-        /*arrow for item has children*/
-        
-        .nd_options_navigation_2 .menu ul.sub-menu li.menu-item-has-children > a:after {
-            content: "";
-            float: right;
-            border-style: solid;
-            border-width: 5px 0 5px 5px;
-            border-color: transparent transparent transparent #727475;
-            margin-top: 3px;
-        }
-    </style>
-    <!--END css-->
-
-    <style type="text/css">
-        .nd_tds_background_color_1 {
-            background-color: #49c4af;
-        }
-        
-        .nd_tds_background_color_2 {
-            background-color: #49c4af;
-        }
-        
-        .nd_tds_background_color_3 {
-            background-color: #ffb730;
-        }
-    </style>
-
-
-    <meta name="generator" content="Powered by Visual Composer - drag and drop page builder for WordPress." />
-    <!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-content/plugins/js_composer/assets/css/vc_lte_ie9.min.css" media="screen"><![endif]-->
-    <!--[if IE  8]><link rel="stylesheet" type="text/css" href="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-content/plugins/js_composer/assets/css/vc-ie8.min.css" media="screen"><![endif]-->
-    <meta name="generator" content="Powered by Slider Revolution 5.2.6 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface." />
-    <link rel="icon" href="{% static 'image/favicon.png' %}" sizes="16x16" />
-    <link rel="icon" href="{% static 'image/favicon.png' %}" sizes="192x192" />
-    <link rel="apple-touch-icon-precomposed" href="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-content/uploads/sites/7/2016/07/favicon.jpg" />
-    <meta name="msapplication-TileImage" content="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-content/uploads/sites/7/2016/07/favicon.jpg" />
-    <style type="text/css" data-type="vc_shortcodes-custom-css">
-        .vc_custom_1467214661838 {
-            margin-top: 40px !important;
-            margin-bottom: 40px !important;
-        }
-        
-        .vc_custom_1467214267244 {
-            padding-top: 10px !important;
-            padding-bottom: 10px !important;
-        }
-        
-        .vc_custom_1467214272039 {
-            padding-top: 10px !important;
-            padding-bottom: 10px !important;
-        }
-    </style>
-    <noscript>
-        <style type="text/css">
-            .wpb_animate_when_almost_visible {
-                opacity: 1;
-            }
-        </style>
-    </noscript>
-</head>
-
+<meta name="generator" content="Powered by Visual Composer - drag and drop page builder for WordPress."/>
+<!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-content/plugins/js_composer/assets/css/vc_lte_ie9.min.css" media="screen"><![endif]--><!--[if IE  8]><link rel="stylesheet" type="text/css" href="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-content/plugins/js_composer/assets/css/vc-ie8.min.css" media="screen"><![endif]--><meta name="generator" content="Powered by Slider Revolution 5.2.6 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface." />
+<link rel="icon" href="{% static 'image/favicon.png' %}" sizes="16x16" />
+<link rel="icon" href="{% static 'image/favicon.png' %}" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-content/uploads/sites/7/2016/07/favicon.jpg" />
+<meta name="msapplication-TileImage" content="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-content/uploads/sites/7/2016/07/favicon.jpg" />
+<style type="text/css" data-type="vc_shortcodes-custom-css">.vc_custom_1467214661838{margin-top: 50px !important;margin-bottom: 60px !important;}.vc_custom_1467214267244{padding-top: 10px !important;padding-bottom: 10px !important;}.vc_custom_1467214272039{padding-top: 10px !important;padding-bottom: 10px !important;}</style><noscript><style type="text/css"> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript>	  
+</head>  
 <body id="start_nicdark_framework" class="page page-id-45 page-template-default nd_options_customizer_fonts nd_options_customizer_forms wpb-js-composer js-comp-ver-4.12 vc_responsive">
 
-<div id="wrapper">
-    <!--START theme-->
-    <div class="nicdark_site nicdark_bg_white  ">
 
-        <!--START js-->
-        <script type="text/javascript">
-            //<![CDATA[
+<!--START theme-->
+<div class="nicdark_site nicdark_bg_white  ">	
 
-            jQuery(document).ready(function () {
+<!--START js-->
+<script type="text/javascript">
+//<![CDATA[
 
-                //START
-                jQuery(function ($) {
+jQuery(document).ready(function() {
 
-                    //OPEN sidebar content ( navigation 2 )
-                    $('.nd_options_open_navigation_2_sidebar_content,.nd_options_open_navigation_3_sidebar_content,.nd_options_open_navigation_4_sidebar_content,.nd_options_open_navigation_5_sidebar_content').on("click", function (event) {
-                        $('.nd_options_navigation_2_sidebar_content,.nd_options_navigation_3_sidebar_content,.nd_options_navigation_4_sidebar_content,.nd_options_navigation_5_sidebar_content').css({
-                            'right': '0px',
-                        });
-                    });
-                    //CLOSE	sidebar content ( navigation 2 )
-                    $('.nd_options_close_navigation_2_sidebar_content,.nd_options_close_navigation_3_sidebar_content,.nd_options_close_navigation_4_sidebar_content,.nd_options_close_navigation_5_sidebar_content').on("click", function (event) {
-                        $('.nd_options_navigation_2_sidebar_content,.nd_options_navigation_3_sidebar_content,.nd_options_navigation_4_sidebar_content,.nd_options_navigation_5_sidebar_content').css({
-                            'right': '-300px'
-                        });
-                    });
-                    ///////////
-
-
-                });
-                //END
-
-            });
-
-            //]]>
-        </script>
-        <!--END js-->
-
-        <!--START js-->
-        <script type="text/javascript">
-            //<![CDATA[
-
-            jQuery(document).ready(function () {
-
-                //START
-                jQuery(function ($) {
-
-                    //OPEN search	
-                    $('.nd_options_navigation_open_search_content').on("click", function (event) {
-                        $('.nd_options_navigation_search_content').css({
-                            'z-index': '9999',
-                            'opacity': '1',
-                        });
-                    });
-                    $('.nd_options_navigation_close_search_content').on("click", function (event) {
-                        $('.nd_options_navigation_search_content').css({
-                            'z-index': '-1',
-                            'opacity': '0',
-                        });
-                    });
-                    ///////////
-
-                });
-                //END
-
-            });
-
-            //]]>
-        </script>
-        <!--END js-->
+  //START
+  jQuery(function ($) {
+    
+    //OPEN sidebar content ( navigation 2 )
+	$('.nd_options_open_navigation_2_sidebar_content,.nd_options_open_navigation_3_sidebar_content,.nd_options_open_navigation_4_sidebar_content,.nd_options_open_navigation_5_sidebar_content').on("click",function(event){
+		$('.nd_options_navigation_2_sidebar_content,.nd_options_navigation_3_sidebar_content,.nd_options_navigation_4_sidebar_content,.nd_options_navigation_5_sidebar_content').css({
+			'right': '0px',
+		});
+	});
+	//CLOSE	sidebar content ( navigation 2 )
+	$('.nd_options_close_navigation_2_sidebar_content,.nd_options_close_navigation_3_sidebar_content,.nd_options_close_navigation_4_sidebar_content,.nd_options_close_navigation_5_sidebar_content').on("click",function(event){
+		$('.nd_options_navigation_2_sidebar_content,.nd_options_navigation_3_sidebar_content,.nd_options_navigation_4_sidebar_content,.nd_options_navigation_5_sidebar_content').css({
+			'right': '-300px'
+		});
+	});
+	///////////
 
 
-        <!--START search container-->
-        <div class="nd_options_display_table nd_options_transition_all_08_ease nd_options_navigation_search_content nd_options_bg_greydark_alpha_9 nd_options_position_fixed nd_options_width_100_percentage nd_options_height_100_percentage nd_options_z_index_1_negative nd_options_opacity_0">
+  });
+  //END
 
-            <!--close-->
-            <div class="nd_options_cursor_zoom_out nd_options_navigation_close_search_content nd_options_width_100_percentage nd_options_height_100_percentage nd_options_position_absolute nd_options_z_index_1_negative"></div>
+});
+
+//]]>
+</script>
+<!--END js-->
+
+		<!--START js-->
+		<script type="text/javascript">
+		//<![CDATA[
+
+		jQuery(document).ready(function() {
+
+		  //START
+		  jQuery(function ($) {
+		    
+			//OPEN search	
+			$('.nd_options_navigation_open_search_content').on("click",function(event){
+				$('.nd_options_navigation_search_content').css({
+					'z-index': '9999',
+					'opacity': '1',
+				});
+			});
+			$('.nd_options_navigation_close_search_content').on("click",function(event){
+				$('.nd_options_navigation_search_content').css({
+					'z-index': '-1',
+					'opacity': '0',
+				});
+			});
+			///////////
+
+		  });
+		  //END
+
+		});
+
+		//]]>
+		</script>
+		<!--END js-->
 
 
-            <div class="nd_options_display_table_cell nd_options_vertical_align_middle nd_options_text_align_center">
+		<!--START search container-->
+		<div class="nd_options_display_table nd_options_transition_all_08_ease nd_options_navigation_search_content nd_options_bg_greydark_alpha_9 nd_options_position_fixed nd_options_width_100_percentage nd_options_height_100_percentage nd_options_z_index_1_negative nd_options_opacity_0">
+
+		    <!--close-->
+		    <div class="nd_options_cursor_zoom_out nd_options_navigation_close_search_content nd_options_width_100_percentage nd_options_height_100_percentage nd_options_position_absolute nd_options_z_index_1_negative"></div>
 
 
-                <form class="nd_options_navigation_search_content_form" method="get" action="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/">
-                    <input class="nd_options_first_font" type="search" placeholder="Keyword" value="" name="s" />
-                    <input class="" type="submit" value="Search" />
-                </form>
+		    <div class="nd_options_display_table_cell nd_options_vertical_align_middle nd_options_text_align_center">
+		        
+
+		    	<form class="nd_options_navigation_search_content_form" method="get" action="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/">
+				  <input class="nd_options_first_font" type="search" placeholder="Keyword" value="" name="s" />
+				  <input class="" type="submit" value="Search" />
+				</form>
 
 
-            </div>
+		    </div>
+		          
+		</div>
+		<!--END search container-->
 
-        </div>
-        <!--END search container-->
+	
 
 
-
-
-        <!--START menu responsive-->
-        <div style="background-color: #49c4af ;" class="nd_options_navigation_2_sidebar_content nd_options_padding_40 nd_options_box_sizing_border_box nd_options_overflow_hidden nd_options_overflow_y_auto nd_options_transition_all_08_ease nd_options_height_100_percentage nd_options_position_fixed nd_options_width_300 nd_options_right_300_negative nd_options_z_index_999">
+<!--START menu responsive-->
+<div style="background-color: #49c4af ;" class="nd_options_navigation_2_sidebar_content nd_options_padding_40 nd_options_box_sizing_border_box nd_options_overflow_hidden nd_options_overflow_y_auto nd_options_transition_all_08_ease nd_options_height_100_percentage nd_options_position_fixed nd_options_width_300 nd_options_right_300_negative nd_options_z_index_999">
 
             <img alt="" width="25" class="nd_options_close_navigation_2_sidebar_content nd_options_cursor_pointer nd_options_right_20 nd_options_top_20 nd_options_position_absolute" src="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-content/plugins/nd-shortcodes/addons/customizer/header/header-2/img/icon-close-white.svg">
 
@@ -529,11 +249,13 @@
                         <li id="menu-item-818" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-818">
                             <a href="/">BERANDA</a>
                         </li>
-                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-799"><a href="{% url 'project' %}">PROJECT</a>
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-799"><a href="{% url 'project' %}">BELAJAR</a>
                             <ul class="sub-menu">
                                 <li class="nd_options_new_label menu-item menu-item-type-custom menu-item-object-custom menu-item-955"><a href="{% url 'index' %}">Step by step</a></li> 
                                 <li class="nd_options_new_label menu-item menu-item-type-custom menu-item-object-custom menu-item-955"><a href="{% url 'page_list' %}">Video</a></li>  
                             </ul>
+                        </li>
+                        <li id="menu-item-814" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-814"><a href="{% url 'showcase:student_list' %}">SHOWCASE</a>
                         </li>
                         <li id="menu-item-814" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-814"><a href="{% url 'blog:list' %}">BLOG</a>
                         </li>
@@ -543,89 +265,88 @@
             </div>
 
         </div>
-        <!--END menu responsive-->
+<!--END menu responsive-->
 
 
 
 
 
-        <!--start TOP header-->
-        <div class="nd_options_section">
-            <div style="background-color: #49c4af ;" class="nd_options_section">
-                <!--start nd_options_container-->
-                <div class="nd_options_container nd_options_clearfix">
-                    <div style="color: #ffffff ;" class="nd_options_grid_6 nd_options_padding_botttom_10 nd_options_padding_bottom_0_responsive nd_options_padding_top_10 nd_options_text_align_center_responsive">
-                        <div id="nd_options_navigation_top_header_2_left" class="nd_options_navigation_top_header_2 nd_options_display_inline_block_responsive">
-                            <div class=" nd_options_display_none_all_iphone nd_options_display_table nd_options_float_left">
-                                <div class="nd_options_display_table_cell nd_options_vertical_align_middle    ">
-                                    <a href=""><img alt="" width="15" height="15" class="nd_options_margin_right_10 nd_options_float_left" src="{% static 'image/share-white.svg' %}"></a>
-                                </div>
-                                <div class="nd_options_display_table_cell nd_options_vertical_align_middle    ">
-                                    <a style="color:#fff;" class="nd_options_margin_right_20" href="">OUR SOCIAL</a>
-                                </div>
-                            </div>
-                            <div class="  nd_options_display_table nd_options_float_left">
-                                <div class="nd_options_display_table_cell nd_options_vertical_align_middle    ">
-                                    <a href=""><i class="fa fa-facebook" aria-hidden="true" style="color: white; font-size: 20px; padding-right: 7px;"></i></a>
-                                </div>
-                            </div>
-                            <div class="  nd_options_display_table nd_options_float_left">
-                                <div class="nd_options_display_table_cell nd_options_vertical_align_middle    ">
-                                    <a href=""><i class="fa fa-instagram" aria-hidden="true" style="color: white; font-size: 20px; padding-right: 7px;"></i></a>
-                                </div>
-                            </div>
-                            <div class="  nd_options_display_table nd_options_float_left">
-                                <div class="nd_options_display_table_cell nd_options_vertical_align_middle    ">
-                                    <a href=""><i class="fa fa-youtube-play" aria-hidden="true" style="color: white; font-size: 20px; padding-right: 7px;"></i></a>
-                                </div>
-                            </div>
-                            <div class="  nd_options_display_table nd_options_float_left">
-                                <div class="nd_options_display_table_cell nd_options_vertical_align_middle    ">
-                                    <a href=""><i class="fa fa-at" aria-hidden="true" style="color: white; font-size: 20px; padding-right: 7px;"></i></a>
-                                </div>
-                            </div>
+	<!--start TOP header-->
+	<div class="nd_options_section">
+	    <div style="background-color: #49c4af ;" class="nd_options_section">
+	        <!--start nd_options_container-->
+	        <div class="nd_options_container nd_options_clearfix">
+	            <div style="color: #ffffff ;" class="nd_options_grid_6 nd_options_padding_botttom_10 nd_options_padding_bottom_0_responsive nd_options_padding_top_10 nd_options_text_align_center_responsive">
+	            	<div id="nd_options_navigation_top_header_2_left" class="nd_options_navigation_top_header_2 nd_options_display_inline_block_responsive">
+						<div class=" nd_options_display_none_all_iphone nd_options_display_table nd_options_float_left">
+							<div class="nd_options_display_table_cell nd_options_vertical_align_middle    ">
+								<a href=""><img alt="" width="15" height="15" class="nd_options_margin_right_10 nd_options_float_left" src="{% static 'image/share-white.svg' %}"></a>
+							</div>
+							<div class="nd_options_display_table_cell nd_options_vertical_align_middle    ">
+								<a style="color:#fff;" class="nd_options_margin_right_20" href="">OUR SOCIAL</a>
+							</div>
+						</div>
+						<div class="  nd_options_display_table nd_options_float_left">
+							<div class="nd_options_display_table_cell nd_options_vertical_align_middle    ">
+								<a href=""><i class="fa fa-facebook" aria-hidden="true" style="color: white; font-size: 20px; padding-right: 7px;"></i></a>
+							</div>
+						</div>
+						<div class="  nd_options_display_table nd_options_float_left">
+							<div class="nd_options_display_table_cell nd_options_vertical_align_middle    ">
+								<a href=""><i class="fa fa-instagram" aria-hidden="true" style="color: white; font-size: 20px; padding-right: 7px;"></i></a>
+							</div>
+						</div>
+						<div class="  nd_options_display_table nd_options_float_left">
+							<div class="nd_options_display_table_cell nd_options_vertical_align_middle    ">
+								<a href=""><i class="fa fa-youtube-play" aria-hidden="true" style="color: white; font-size: 20px; padding-right: 7px;"></i></a>
+							</div>
+						</div>
+						<div class="  nd_options_display_table nd_options_float_left">
+							<div class="nd_options_display_table_cell nd_options_vertical_align_middle    ">
+								<a href=""><i class="fa fa-at" aria-hidden="true" style="color: white; font-size: 20px; padding-right: 7px;"></i></a>
+							</div>
+						</div>
+   	            	</div>
+	            </div>
+
+	            <div style="color: #ffffff ;" class="nd_options_grid_6 nd_options_text_align_right nd_options_text_align_center_responsive nd_options_padding_top_0_responsive nd_options_padding_botttom_10 nd_options_padding_top_10">
+	           		<div id="nd_options_navigation_top_header_2_right" class="nd_options_navigation_top_header_2 nd_options_display_inline_block_responsive">
+                    {% if request.user.is_authenticated %}                            
+                    <ul class="">
+                        <li class="dropdown">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:#fff;">{{request.user.username}} <span class="caret"></span></a>
+                          <ul class="dropdown-menu">
+                            <li><a href="#">My Profile</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="/logout">Sign Out</a></li>
+                          </ul>
+                    </ul>
+                    {% else %}                                  
+                    <div class="  nd_options_display_table nd_options_float_right">
+                        <div class="nd_options_display_table_cell nd_options_vertical_align_middle    ">
+                            <a href="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/learning-account/"><img alt="" width="15" height="15" class="nd_options_margin_left_20 nd_options_float_left" src="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-content/plugins/nd-shortcodes/addons/customizer/shortcodes/top-header/img/login-white.svg"></a>
+                        </div>
+                        <div class="nd_options_display_table_cell nd_options_vertical_align_middle    ">
+                            <a style="color:#fff;" class="nd_options_margin_left_10" href="{% url 'registration_register' %}">REGISTER</a>
                         </div>
                     </div>
-
-                    <div style="color: #ffffff ;" class="nd_options_grid_6 nd_options_text_align_right nd_options_text_align_center_responsive nd_options_padding_top_0_responsive nd_options_padding_botttom_10 nd_options_padding_top_10">
-                        <div id="nd_options_navigation_top_header_2_right" class="nd_options_navigation_top_header_2 nd_options_display_inline_block_responsive">
-                            {% if request.user.is_authenticated %}                            
-                            <ul class="">
-                                <li class="dropdown">
-                                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:#fff;">{{request.user.username}} <span class="caret"></span></a>
-                                  <ul class="dropdown-menu">
-                                    <li><a href="/logout">Sign Out</a></li>
-                                    <li role="separator" class="divider"></li>
-                                    <li><a href="{% url 'about' %}">About Be-Py</a></li>
-                                  </ul>
-                            </ul>
-                            {% else %}                                  
-                            <div class="  nd_options_display_table nd_options_float_right">
-                                <div class="nd_options_display_table_cell nd_options_vertical_align_middle    ">
-                                    <a href="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/learning-account/"><img alt="" width="15" height="15" class="nd_options_margin_left_20 nd_options_float_left" src="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-content/plugins/nd-shortcodes/addons/customizer/shortcodes/top-header/img/login-white.svg"></a>
-                                </div>
-                                <div class="nd_options_display_table_cell nd_options_vertical_align_middle    ">
-                                    <a style="color:#fff;" class="nd_options_margin_left_10" href="{% url 'registration_register' %}">REGISTER</a>
-                                </div>
-                            </div>
-                            <div class="  nd_options_display_table nd_options_float_right">
-                                <div class="nd_options_display_table_cell nd_options_vertical_align_middle    ">
-                                    <a href="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/learning-account/"><img alt="" width="15" height="15" class="nd_options_margin_left_20 nd_options_float_left" src="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-content/plugins/nd-shortcodes/addons/customizer/shortcodes/top-header/img/user-white.svg"></a>
-                                </div>
-                                <div class="nd_options_display_table_cell nd_options_vertical_align_middle    ">
-                                    <a style="color:#fff;" class="nd_options_margin_left_10" href="{% url 'auth_login' %}">LOGIN</a>
-                                </div>
-                                {% endif %}
-                            </div>
+                    <div class="  nd_options_display_table nd_options_float_right">
+                        <div class="nd_options_display_table_cell nd_options_vertical_align_middle    ">
+                            <a href="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/learning-account/"><img alt="" width="15" height="15" class="nd_options_margin_left_20 nd_options_float_left" src="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-content/plugins/nd-shortcodes/addons/customizer/shortcodes/top-header/img/user-white.svg"></a>
                         </div>
+                        <div class="nd_options_display_table_cell nd_options_vertical_align_middle    ">
+                            <a style="color:#fff;" class="nd_options_margin_left_10" href="{% url 'auth_login' %}">LOGIN</a>
+                        </div>
+                        {% endif %}
                     </div>
                 </div>
-                <!--end container-->
-            </div>
-        </div>
-        <!--END TOP header-->
-        <!--START navigation-->
-        <div id="nd_options_navigation_2_container" class="nd_options_section nd_options_position_relative ">
+	        </div>
+	        <!--end container-->
+	    </div>
+	</div>
+	<!--END TOP header-->
+<!--START navigation-->
+<div id="nd_options_navigation_2_container" class="nd_options_section nd_options_position_relative ">
 
             <div style="background-color: #ffffff ; border-bottom: 1px solid #f1f1f1 ;" class="nd_options_section">
 
@@ -648,11 +369,13 @@
                                             <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-799"><a href="/">BERANDA</a>
                                             </li>
                                             </li>
-                                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-799"><a href="{% url 'project' %}">PROJECT</a>
-                                                <ul class="sub-menu">
+                                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-799"><a href="{% url 'project' %}">BELAJAR</a>
+                                            	<ul class="sub-menu">
                                                     <li class="nd_options_new_label menu-item menu-item-type-custom menu-item-object-custom menu-item-955"><a href="{% url 'index' %}">Step by step</a></li> 
                                                     <li class="nd_options_new_label menu-item menu-item-type-custom menu-item-object-custom menu-item-955"><a href="{% url 'page_list' %}">Video</a></li>  
                                                 </ul>
+                                            </li>
+                                            <li id="menu-item-814" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-814"><a href="{% url 'showcase:student_list' %}">SHOWCASE</a>
                                             </li>
                                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-814"><a href="{% url 'blog:list' %}">BLOG</a>
                                             </li>
@@ -666,21 +389,14 @@
                             </div>
                         </div>
 
-
-
-
-
                         <div style="height: 10px;" class="nd_options_section"></div>
-
                     </div>
-
-
 
                     <!--RESPONSIVE-->
                     <div class="nd_options_section nd_options_text_align_center nd_options_display_none nd_options_display_block_responsive">
                         <div class="nd_options_section nd_options_height_20"></div>
 
-                        <a href="/" style="color: #49c4af; font-weight: bold; font-size: xx-large;">Be <span style="color: #ffb730;">|</span> Py</a>
+                        <a href="index.html" style="color: #49c4af; font-weight: bold; font-size: xx-large;">Be <span style="color: #ffb730;">|</span> Py</a>
 
                         <div class="nd_options_section nd_options_height_10"></div>
 
@@ -693,252 +409,108 @@
                         <div class="nd_options_section nd_options_height_20"></div>
                     </div>
                     <!--RESPONSIVE-->
-
-
-
                 </div>
                 <!--end container-->
-
             </div>
-
-
         </div>
-        <!--END navigation-->
+<!--END navigation-->
+		
+		<script type="text/javascript">
+        //<![CDATA[
 
-        <script type="text/javascript">
-            //<![CDATA[
+        jQuery(document).ready(function() {
 
-            jQuery(document).ready(function () {
+          jQuery( "#nd_tds_dialog_content_dialog" ).dialog({
+            autoOpen: false,
+            draggable: false,
+            width: 700,
+            modal: false,
+            resizable: false,
+            dialogClass: "nd_tds_dialog",
+            show: {
+              effect: "fade",
+              duration: 800
+            },
+            hide: {
+              effect: "fade",
+              duration: 800
+            }
+          });
 
-                jQuery("#nd_tds_dialog_content_dialog").dialog({
-                    autoOpen: false,
-                    draggable: false,
-                    width: 700,
-                    modal: false,
-                    resizable: false,
-                    dialogClass: "nd_tds_dialog",
-                    show: {
-                        effect: "fade",
-                        duration: 800
-                    },
-                    hide: {
-                        effect: "fade",
-                        duration: 800
-                    }
-                });
+          jQuery( ".nd_tds_dialog_open_content_dialog" ).click(function() {
+            jQuery( "#nd_tds_dialog_content_dialog" ).dialog( "open" );
+            jQuery( ".nd_tds_dialog" ).addClass( "nd_tds_dialog_filter_bg" );
+          });
 
-                jQuery(".nd_tds_dialog_open_content_dialog").click(function () {
-                    jQuery("#nd_tds_dialog_content_dialog").dialog("open");
-                    jQuery(".nd_tds_dialog").addClass("nd_tds_dialog_filter_bg");
-                });
+          jQuery( ".nd_tds_dialog_btn_close_content_dialog" ).click(function() {
+            jQuery( "#nd_tds_dialog_content_dialog" ).dialog( "close" );
+          });
 
-                jQuery(".nd_tds_dialog_btn_close_content_dialog").click(function () {
-                    jQuery("#nd_tds_dialog_content_dialog").dialog("close");
-                });
+        });
 
-            });
-
-            //]]>
+        //]]>
         </script>
 
-        <!--START  for post-->
-        <style type="text/css">
-            /*sidebar*/
-            
-            .wpb_widgetised_column .widget {
-                margin-bottom: 40px;
-            }
-            
-            .wpb_widgetised_column .widget img,
-            .wpb_widgetised_column .widget select {
-                max-width: 100%;
-            }
-            
-            .wpb_widgetised_column .widget h3 {
-                margin-bottom: 20px;
-                font-weight: bolder;
-            }
-            /*search*/
-            
-            .wpb_widgetised_column .widget.widget_search input[type="text"] {
-                width: 100%;
-            }
-            
-            .wpb_widgetised_column .widget.widget_search input[type="submit"] {
-                margin-top: 20px;
-            }
-            /*list*/
-            
-            .wpb_widgetised_column .widget ul {
-                margin: 0px;
-                padding: 0px;
-                list-style: none;
-            }
-            
-            .wpb_widgetised_column .widget > ul > li {
-                padding: 10px;
-                border-bottom: 1px solid #f1f1f1;
-            }
-            
-            .wpb_widgetised_column .widget > ul > li:last-child {
-                padding-bottom: 0px;
-                border-bottom: 0px solid #f1f1f1;
-            }
-            
-            .wpb_widgetised_column .widget ul li {
-                padding: 10px;
-            }
-            
-            .wpb_widgetised_column .widget ul.children {
-                padding: 10px;
-            }
-            
-            .wpb_widgetised_column .widget ul.children:last-child {
-                padding-bottom: 0px;
-            }
-            /*calendar*/
-            
-            .wpb_widgetised_column .widget.widget_calendar table {
-                text-align: center;
-                background-color: #fff;
-                width: 100%;
-                border: 1px solid #f1f1f1;
-                line-height: 20px;
-            }
-            
-            .wpb_widgetised_column .widget.widget_calendar table th {
-                padding: 10px 5px;
-            }
-            
-            .wpb_widgetised_column .widget.widget_calendar table td {
-                padding: 10px 5px;
-            }
-            
-            .wpb_widgetised_column .widget.widget_calendar table tbody td a {
-                color: #fff;
-                padding: 5px;
-                border-radius: 3px;
-            }
-            
-            .wpb_widgetised_column .widget.widget_calendar table tfoot td a {
-                color: #fff;
-                background-color: #444444;
-                padding: 5px;
-                border-radius: 3px;
-                font-size: 13px;
-            }
-            
-            .wpb_widgetised_column .widget.widget_calendar table tfoot td {
-                padding-bottom: 20px;
-            }
-            
-            .wpb_widgetised_column .widget.widget_calendar table tfoot td#prev {
-                text-align: right;
-            }
-            
-            .wpb_widgetised_column .widget.widget_calendar table tfoot td#next {
-                text-align: left;
-            }
-            
-            .wpb_widgetised_column .widget.widget_calendar table caption {
-                font-size: 20px;
-                font-weight: bolder;
-                background-color: #f9f9f9;
-                padding: 20px;
-                border: 1px solid #f1f1f1;
-                border-bottom: 0px;
-            }
-            /*color calendar*/
-            
-            .wpb_widgetised_column .widget.widget_calendar table thead {
-                color: #727475;
-            }
-            
-            .wpb_widgetised_column .widget.widget_calendar table tbody td a {
-                background-color: #49c4af;
-            }
-            
-            .wpb_widgetised_column .widget.widget_calendar table caption {
-                color: #727475;
-                font-family: 'Montserrat', sans-serif;
-            }
-            /*menu*/
-            
-            .wpb_widgetised_column .widget div ul {
-                margin: 0px;
-                padding: 0px;
-                list-style: none;
-            }
-            
-            .wpb_widgetised_column .widget div > ul > li {
-                padding: 10px;
-                border-bottom: 1px solid #f1f1f1;
-            }
-            
-            .wpb_widgetised_column .widget div > ul > li:last-child {
-                padding-bottom: 0px;
-                border-bottom: 0px solid #f1f1f1;
-            }
-            
-            .wpb_widgetised_column .widget div ul li {
-                padding: 10px;
-            }
-            
-            .wpb_widgetised_column .widget div ul.sub-menu {
-                padding: 10px;
-            }
-            
-            .wpb_widgetised_column .widget div ul.sub-menu:last-child {
-                padding-bottom: 0px;
-            }
-            /*tag*/
-            
-            .wpb_widgetised_column .widget.widget_tag_cloud a {
-                padding: 5px 10px;
-                border: 1px solid #f1f1f1;
-                border-radius: 3px;
-                display: inline-block;
-                margin: 5px;
-                margin-left: 0px;
-                font-size: 13px !important;
-                line-height: 20px;
-            }
-            #wrapper {
-                min-height:100%;
-                position:relative;
-            }
-            .btn-custom {
-                background-color: #49c4af;
-                color: #fff;
-            }
-            .wmd-panel{
-                margin-right: 0px !important;
-                margin-left: 0px !important;
-            }
-            #content {
-                padding-bottom: 225px;
-            }
-            #footer {
-                width: 100%;
-                position: relative;
-                bottom: 0;
-                left: 0;
-            }
-        </style>
-        <!--END css for post-->
+<!--START  for post-->
+<style type="text/css">
 
+    /*sidebar*/
+    .wpb_widgetised_column .widget { margin-bottom: 40px; }
+    .wpb_widgetised_column .widget img, .wpb_widgetised_column .widget select { max-width: 100%; }
+    .wpb_widgetised_column .widget h3 { margin-bottom: 20px; font-weight: bolder; }
 
+    /*search*/
+    .wpb_widgetised_column .widget.widget_search input[type="text"] { width: 100%; }
+    .wpb_widgetised_column .widget.widget_search input[type="submit"] { margin-top: 20px; }
 
+    /*list*/
+    .wpb_widgetised_column .widget ul { margin: 0px; padding: 0px; list-style: none; }
+    .wpb_widgetised_column .widget > ul > li { padding: 10px; border-bottom: 1px solid #f1f1f1; }
+    .wpb_widgetised_column .widget > ul > li:last-child { padding-bottom: 0px; border-bottom: 0px solid #f1f1f1; }
+    .wpb_widgetised_column .widget ul li { padding: 10px; }
+    .wpb_widgetised_column .widget ul.children { padding: 10px; }
+    .wpb_widgetised_column .widget ul.children:last-child { padding-bottom: 0px; }
 
-        <div class="nd_options_section nd_options_background_size_cover nd_options_background_position_center" style="background-image:url(image/python.jpg);">
+    /*calendar*/
+    .wpb_widgetised_column .widget.widget_calendar table { text-align: center; background-color: #fff; width: 100%; border: 1px solid #f1f1f1; line-height: 20px; }
+    .wpb_widgetised_column .widget.widget_calendar table th { padding: 10px 5px; }
+    .wpb_widgetised_column .widget.widget_calendar table td { padding: 10px 5px; }
+    .wpb_widgetised_column .widget.widget_calendar table tbody td a { color: #fff; padding: 5px; border-radius: 3px; }
+    .wpb_widgetised_column .widget.widget_calendar table tfoot td a { color: #fff; background-color: #444444; padding: 5px; border-radius: 3px; font-size: 13px; }
+    .wpb_widgetised_column .widget.widget_calendar table tfoot td { padding-bottom: 20px; }
+    .wpb_widgetised_column .widget.widget_calendar table tfoot td#prev { text-align: right; }
+    .wpb_widgetised_column .widget.widget_calendar table tfoot td#next { text-align: left; }
+    .wpb_widgetised_column .widget.widget_calendar table caption { font-size: 20px; font-weight: bolder; background-color: #f9f9f9; padding: 20px; border: 1px solid #f1f1f1; border-bottom: 0px; }
 
+    /*color calendar*/
+    .wpb_widgetised_column .widget.widget_calendar table thead { color: #727475; }
+    .wpb_widgetised_column .widget.widget_calendar table tbody td a { background-color: #49c4af; }
+    .wpb_widgetised_column .widget.widget_calendar table caption { color: #727475; font-family: 'Montserrat', sans-serif; }
 
-        </div>
+    /*menu*/
+    .wpb_widgetised_column .widget div ul { margin: 0px; padding: 0px; list-style: none; }
+    .wpb_widgetised_column .widget div > ul > li { padding: 10px; border-bottom: 1px solid #f1f1f1; }
+    .wpb_widgetised_column .widget div > ul > li:last-child { padding-bottom: 0px; border-bottom: 0px solid #f1f1f1; }
+    .wpb_widgetised_column .widget div ul li { padding: 10px; }
+    .wpb_widgetised_column .widget div ul.sub-menu { padding: 10px; }
+    .wpb_widgetised_column .widget div ul.sub-menu:last-child { padding-bottom: 0px; }
 
+    /*tag*/
+    .wpb_widgetised_column .widget.widget_tag_cloud a { padding: 5px 10px; border: 1px solid #f1f1f1; border-radius: 3px; display: inline-block; margin: 5px; margin-left: 0px; font-size: 13px !important; line-height: 20px; }
+    .wmd-panel{
+	    margin-right: 0px !important;
+	    margin-left: 0px !important;
+	}
 
+</style>
+<!--END css for post-->
 
+	
+	{% block header %} {% endblock header %}
 
-        <div class="nd_options_section nd_options_bg_grey nd_options_border_bottom_1_solid_grey" >
+    
+
+      <div class="nd_options_section nd_options_bg_grey nd_options_border_bottom_1_solid_grey" >
 
             <!--start nd_options_container-->
             <div class="nd_options_container nd_options_clearfix">
@@ -951,234 +523,193 @@
             </div>
             <!--end container-->
         </div>
-
-
-        {% block body %}{% endblock %}
-
-
-        <!--page margin-->
-
-        <!--start nd_options_container content goes here-->
-        <div class="nd_options_container nd_options_clearfix">
-
-                <div class="nd_options_section nd_options_padding_15 nd_options_box_sizing_border_box">
-
-                    <div class="nd_options_section nd_options_height_20"></div>
-
-                        <div id="content">
-                            {% block body_block %}{% endblock %}
-                        </div>
-
-                </div>
-
-            </div>
-
-
-
-        <!--page margin-->
-
-        <!--START footer-
-        <div id="nd_options_footer_2" style="background-color: #49c3ae" class="nd_options_section">
-            <div class="nd_options_section nd_options_height_50"></div>
-                start nd_options_container
-            <div class="nd_options_container nd_options_clearfix">
-                <div class="grid nd_options_grid_12 nd_options_text_align_center">
-                    <div class="nd_options_section" style="margin-bottom: 25px;">
-                        <a href="index.html" style="color: #fff; font-weight: bold; font-size: 70px;">Be <span style="color:#ffb730">|</span> Py</a>
-                    </div>
-                    <hr style=" border-color: #ffb730; border-width: 3px; border-top: 1px solid #ffb730; max-width: 200px;">
-                    <div class="nd_options_section nd_options_height_20"></div>
-                    <div class="nd_options_display_inline_block" style="margin-left: 15px;">
-                        <a target="_blank" href="">
-                            <i class="fa fa-facebook fa-2x" style="color:#fff;margin-right: 17px"></i>
-                        </a>
-                        <a target="_blank" href="">
-                            <i class="fa fa-instagram fa-2x" style="color:#fff; margin-right: 17px"></i>
-                        </a>
-                        <a target="_blank" href="">
-                            <i class="fa fa-youtube-play fa-2x" style="color:#fff; margin-right: 17px"></i>
-                        </a>
-                        <a target="_blank" href="">
-                            <i class="fa fa-at fa-2x" style="color:#fff; margin-right: 17px"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-                end container
-            <div class="nd_options_section nd_options_height_50"></div>
-        </div>
-        END footer-->
-
-        <!--START copyright-->
-        <div style="background-color: #ffb730" class="nd_options_section" id="footer">
-            <!--start nd_options_container-->
-            <div style="border-top: 1px solid #ffb730 " class="nd_options_container nd_options_clearfix">
-                <div class="grid nd_options_grid_6 nd_options_text_align_center_responsive">
-                    <p class="nd_options_font_size_14" style="color: #444444">© Be|Py 2016</p>
-                </div>
-                <div class="grid nd_options_grid_6 nd_options_text_align_right nd_options_text_align_center_responsive">
-                    <p class="nd_options_font_size_14" style="color: #444444">We Don't Talk About PHP!</p>
-                </div>
-            </div>
-            <!--end container-->
-        </div>
-        <!--END copyright-->
-
-
-    </div>
-    <!--END theme-->
-</div>
-
-    <!--google analytics-->
-    <script>
-        (function (i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r;
-            i[r] = i[r] || function () {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date();
-            a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0];
-            a.async = 1;
-            a.src = g;
-            m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-
-        ga('create', 'UA-49425562-17', 'auto');
-        ga('send', 'pageview');
-    </script>
-    <!--google analytics-->
-
-
-    <script type='text/javascript' src='//www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js?ver=2.70'></script>
-    <script type='text/javascript'>
-        /* <![CDATA[ */
-        var woocommerce_params = {
-            "ajax_url": "\/themes\/education\/wp\/demo\/e-learning-courses\/wp-admin\/admin-ajax.php",
-            "wc_ajax_url": "\/themes\/education\/wp\/demo\/e-learning-courses\/contact\/?wc-ajax=%%endpoint%%"
-        };
-        /* ]]> */
-    </script>
-    <script type='text/javascript' src='//www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?ver=2.6.4'></script>
-    <script type='text/javascript' src='//www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-content/plugins/woocommerce/assets/js/jquery-cookie/jquery.cookie.min.js?ver=1.4.1'></script>
-    <script type='text/javascript'>
-        /* <![CDATA[ */
-        var wc_cart_fragments_params = {
-            "ajax_url": "\/themes\/education\/wp\/demo\/e-learning-courses\/wp-admin\/admin-ajax.php",
-            "wc_ajax_url": "\/themes\/education\/wp\/demo\/e-learning-courses\/contact\/?wc-ajax=%%endpoint%%",
-            "fragment_name": "wc_fragments"
-        };
-        /* ]]> */
-    </script>
-    <script type='text/javascript' src='//www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.min.js?ver=2.6.4'></script>
-    <script type='text/javascript' src='http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-content/plugins/contact-form-7/includes/js/jquery.form.min.js?ver=3.51.0-2014.06.20'></script>
-    <script type='text/javascript'>
-        /* <![CDATA[ */
-        var _wpcf7 = {
-            "loaderUrl": "http:\/\/www.nicdarkthemes.com\/themes\/education\/wp\/demo\/e-learning-courses\/wp-content\/plugins\/contact-form-7\/images\/ajax-loader.gif",
-            "recaptcha": {
-                "messages": {
-                    "empty": "Please verify that you are not a robot."
-                }
-            },
-            "sending": "Sending ..."
-        };
-        /* ]]> */
-    </script>
-    <script type='text/javascript' src='http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=4.5'></script>
-    <script type='text/javascript' src='http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-includes/js/comment-reply.min.js?ver=4.6'></script>
-    <script type='text/javascript' src='http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-includes/js/wp-embed.min.js?ver=4.6'></script>
-    <script type='text/javascript' src='http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-includes/js/jquery/ui/core.min.js?ver=1.11.4'></script>
-    <script type='text/javascript' src='http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-includes/js/jquery/ui/widget.min.js?ver=1.11.4'></script>
-    <script type='text/javascript' src='http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-includes/js/jquery/ui/mouse.min.js?ver=1.11.4'></script>
-    <script type='text/javascript' src='http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-includes/js/jquery/ui/resizable.min.js?ver=1.11.4'></script>
-    <script type='text/javascript' src='http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-includes/js/jquery/ui/draggable.min.js?ver=1.11.4'></script>
-    <script type='text/javascript' src='http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-includes/js/jquery/ui/button.min.js?ver=1.11.4'></script>
-    <script type='text/javascript' src='http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-includes/js/jquery/ui/position.min.js?ver=1.11.4'></script>
-    <script type='text/javascript' src='http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-includes/js/jquery/ui/dialog.min.js?ver=1.11.4'></script>
-    <script type='text/javascript' src='http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-includes/js/jquery/ui/effect.min.js?ver=1.11.4'></script>
-    <script type='text/javascript' src='http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-includes/js/jquery/ui/effect-fade.min.js?ver=1.11.4'></script>
-    <script type='text/javascript' src='http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-content/plugins/js_composer/assets/js/dist/js_composer_front.min.js?ver=4.12'></script>
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-57b0a2066b8e9682"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.6/marked.min.js"></script>
-
-    <script id="dsq-count-scr" src="//be-py.disqus.com/count.js" async></script>
-
-
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.5/marked.min.js'></script>
     
-    <script type="text/javascript">
-    $(document).ready(function(){
-        $(".content-markdown").each(function(){
-                var content = $(this).text()
-                var markedContent = marked(content)
-                $(this).html(markedContent)
-        })
-        $(".post-detail-item img").each(function(){
-                $(this).addClass("img-responsive");
-        })
-
-        
-
-        var contentInput = $("#id_content");
-
-        function setContent(value){
-            var markedContent = marked(value)
-            $("#preview-content").html(markedContent)
-            $("#preview-content img").each(function(){
-                $(this).addClass("img-responsive")
-            })
-        }
-        setContent(contentInput.val())
-
-        contentInput.keyup(function(){
-            var newContent = $(this).val()
-            setContent(newContent)
-        })
-
-        var titleInput = $("#id_title");
-        
-
-
-        function setTitle(value) {
-            $("#preview-title").text(value)
-        }
-        setTitle(titleInput.val())
-
-        titleInput.keyup(function(){
-            var newContent = $(this).val()
-            setTitle(newContent)
-        })
 
 
 
-        // preview-title
-        // preview-content
 
+	
+	<!--start nd_options_container-->
+	<div class="nd_options_container nd_options_padding_0_15 nd_options_box_sizing_border_box nd_options_clearfix">
+
+		        
+	        <!--#post-->
+	        <div style="float:left; width:100%;" id="post-45" class="post-45 page type-page status-publish hentry">
+
+	       		<!--automatic title-->
+	        	<div class="nd_options_section nd_options_height_20"></div>	        	
+	            <!--start content-->
+	            {% block body_block %}{% endblock body_block %}
+	            <!--end content-->
+
+	        </div>
+	        <!--#post-->
+
+	    	
+
+	</div>
+	<!--end container-->
+
+	<!--page margin-->
+
+<!--START footer-->
+<div id="nd_options_footer_2" style="background-color: #49c3ae;margin-top:50px" class="nd_options_section">
+    <div class="nd_options_section nd_options_height_50"></div>
+    <!--start nd_options_container-->
+        <div class="nd_options_container nd_options_clearfix"> 
+        <div class="grid nd_options_grid_12 nd_options_text_align_center">            
+            <div class="nd_options_section" style="margin-bottom: 25px;">
+                <a href="index.html" style="color: #fff; font-weight: bold; font-size: 70px;">Be <span style="color:#ffb730">|</span> Py</a>
+            </div>
+            <hr style=" border-color: #ffb730; border-width: 3px; border-top: 1px solid #ffb730; max-width: 200px;">
+            <div class="nd_options_section nd_options_height_20"></div>
+            <div class="nd_options_display_inline_block" style="margin-left: 15px;">
+				<a target="_blank" href="">
+					<i class="fa fa-facebook fa-2x" style="color:#fff;margin-right: 17px"></i>
+				</a>
+				<a target="_blank" href="">
+					<i class="fa fa-instagram fa-2x" style="color:#fff; margin-right: 17px"></i>
+				</a>
+				<a target="_blank" href="">
+					<i class="fa fa-youtube-play fa-2x" style="color:#fff; margin-right: 17px"></i>
+				</a>
+				<a target="_blank" href="">
+					<i class="fa fa-at fa-2x" style="color:#fff; margin-right: 17px"></i>
+				</a>
+            </div>
+        </div>
+    </div>
+    <!--end container-->
+    <div class="nd_options_section nd_options_height_50"></div>
+</div>
+<!--END footer-->
+
+<!--START copyright-->
+<div style="background-color: #ffb730" class="nd_options_section">
+    <!--start nd_options_container-->
+        <div style="border-top: 1px solid #ffb730 " class="nd_options_container nd_options_clearfix">       
+        <div class="grid nd_options_grid_6 nd_options_text_align_center_responsive">
+            <p class="nd_options_font_size_14" style="color: #fff">© Bepy 2016</p>
+        </div>
+        <div class="grid nd_options_grid_6 nd_options_text_align_right nd_options_text_align_center_responsive">
+            <p class="nd_options_font_size_14" style="color: #fff">We Don't Talk About PHP!</p>    
+        </div>  
+    </div>
+    <!--end container-->
+</div>
+<!--END copyright-->  
+
+
+</div>
+<!--END theme-->
+
+
+<!--google analytics-->
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-49425562-17', 'auto');
+    ga('send', 'pageview');
+</script>
+<!--google analytics-->
+
+
+<script type='text/javascript' src='//www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js?ver=2.70'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var woocommerce_params = {"ajax_url":"\/themes\/education\/wp\/demo\/e-learning-courses\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/themes\/education\/wp\/demo\/e-learning-courses\/contact\/?wc-ajax=%%endpoint%%"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='//www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?ver=2.6.4'></script>
+<script type='text/javascript' src='//www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-content/plugins/woocommerce/assets/js/jquery-cookie/jquery.cookie.min.js?ver=1.4.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wc_cart_fragments_params = {"ajax_url":"\/themes\/education\/wp\/demo\/e-learning-courses\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/themes\/education\/wp\/demo\/e-learning-courses\/contact\/?wc-ajax=%%endpoint%%","fragment_name":"wc_fragments"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='//www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.min.js?ver=2.6.4'></script>
+<script type='text/javascript' src='http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-content/plugins/contact-form-7/includes/js/jquery.form.min.js?ver=3.51.0-2014.06.20'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var _wpcf7 = {"loaderUrl":"http:\/\/www.nicdarkthemes.com\/themes\/education\/wp\/demo\/e-learning-courses\/wp-content\/plugins\/contact-form-7\/images\/ajax-loader.gif","recaptcha":{"messages":{"empty":"Please verify that you are not a robot."}},"sending":"Sending ..."};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=4.5'></script>
+<script type='text/javascript' src='http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-includes/js/comment-reply.min.js?ver=4.6'></script>
+<script type='text/javascript' src='http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-includes/js/wp-embed.min.js?ver=4.6'></script>
+<script type='text/javascript' src='http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-includes/js/jquery/ui/core.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-includes/js/jquery/ui/widget.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-includes/js/jquery/ui/mouse.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-includes/js/jquery/ui/resizable.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-includes/js/jquery/ui/draggable.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-includes/js/jquery/ui/button.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-includes/js/jquery/ui/position.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-includes/js/jquery/ui/dialog.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-includes/js/jquery/ui/effect.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-includes/js/jquery/ui/effect-fade.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-content/plugins/js_composer/assets/js/dist/js_composer_front.min.js?ver=4.12'></script>
+<!-- add script -->
+<script   src="http://code.jquery.com/jquery-1.12.2.min.js"   integrity="sha256-lZFHibXzMHo3GGeehn1hudTAP3Sc0uKXBXAzHX1sjtk="   crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.5/marked.min.js'></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+    $(".content-markdown").each(function(){
+            var content = $(this).text()
+            var markedContent = marked(content)
+            $(this).html(markedContent)
+    })
+    $(".post-detail-item img").each(function(){
+            $(this).addClass("img-responsive");
     })
 
-    </script>
+    
 
-    <script type="text/javascript">
-    $(document).ready(function(){
-        $(".content-markdown").each(function(){
-                var content = $(this).text()
-                var markedContent = marked(content)
-                $(this).html(markedContent)
+    var contentInput = $("#id_content");
+
+    function setContent(value){
+        var markedContent = marked(value)
+        $("#preview-content").html(markedContent)
+        $("#preview-content img").each(function(){
+            $(this).addClass("img-responsive")
         })
-        $(".content-markdown img").each(function(){
-                $(this).addClass("img-responsive");
-        })
-        
-        // preview-title
-        // preview-content
+    }
+    setContent(contentInput.val())
+
+    contentInput.keyup(function(){
+        var newContent = $(this).val()
+        setContent(newContent)
     })
-    </script>
-    {% block script_extra %} {% endblock script_extra %}
+
+    var titleInput = $("#id_title");
+    
 
 
-</body>
+    function setTitle(value) {
+        $("#preview-title").text(value)
+    }
+    setTitle(titleInput.val())
 
+    titleInput.keyup(function(){
+        var newContent = $(this).val()
+        setTitle(newContent)
+    })
+
+    $(".comment-reply-btn").click(function(event){
+        event.preventDefault();
+        $(this).parent().next(".comment-reply").fadeToggle();
+    })
+
+
+    // preview-title
+    // preview-content
+
+})
+
+</script>
+</body>  
 </html>

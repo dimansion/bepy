@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{% block title %}Showcase{% endblock %}
+
+{% block breadcrumb %}
+<span class="nd_learning_current_breadcrumb">Showcase</span>
+{% endblock breadcrumb %}
+
+
+{% block body_block %}
+
+{% for student in students %}
+<div class="col-sm-3">
+    <div class="thumbnail">
+        {% if student.profile_image %}
+         <img src='{{ student.profile_image.url }}' class='img-responsive' />
+        {% endif %}
+      <div class="caption">
+        <h3>{{ student.name }}</h3>
+      </div>
+    </div>
+</div>
+{% endfor%}
+
+{% endblock body_block %}

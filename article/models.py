@@ -41,7 +41,7 @@ def upload_location(instance, filename):
     return "%s/%s" %(new_id, filename)
 
 class Article(models.Model):
-    user = models.ForeignKey(settings.AUTH_USER_MODEL, default=1)
+    author = models.ForeignKey(settings.AUTH_USER_MODEL, default=1)
     title = models.CharField(max_length=120)
     slug = models.SlugField(unique=True)
     image = models.ImageField( 
