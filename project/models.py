@@ -13,6 +13,7 @@ class Page(models.Model):
     slug = models.SlugField()
 
     def save(self, *args, **kwargs):
+            self.slug = slugify(self.title)
             super(Page, self).save(*args, **kwargs)    
     
     def publish(self):

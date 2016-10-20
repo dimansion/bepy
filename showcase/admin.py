@@ -2,5 +2,9 @@ from django.contrib import admin
 from showcase.models import UserProfile, UserProject
 
 
-admin.site.register(UserProfile)
+class UserProfileAdmin(admin.ModelAdmin):
+    prepopulated_fields = {'slug':('user',)}
+
+
+admin.site.register(UserProfile,UserProfileAdmin)
 admin.site.register(UserProject)

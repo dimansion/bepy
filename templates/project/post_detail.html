@@ -21,7 +21,7 @@
         </div>
     </div>
     <div class="col-md-6">
-        <img src="{{ post.image.url }}" alt="{{ post.title }}" class="img-responsive">
+        <a href="{% url 'lesson_detail' lesson.slug  %}"><img src="{{ post.image.url }}" alt="{{ post.title }}" class="img-responsive"></a>
     </div>
 </div>
 <hr>

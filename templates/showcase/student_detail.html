@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{% block title %}Showcase{% endblock %}
+
+{% block breadcrumb %}
+<span class="nd_learning_current_breadcrumb">Showcase</span>
+{% endblock breadcrumb %}
+
+
+{% block body_block %}
+
+<div class="row">
+	<div class="col-md-2">
+        <img src="{{ projects.profile_image.url }}" alt="{{ projects.name }}" class="img-responsive">
+    </div>
+    <div class="col-md-6">
+        <div class="post">
+            <h1>{{ projects.name }}</h1>
+        </div>
+    </div>
+</div>
+<hr>
+<h3>project yang diselesaikan :</h3>
+<hr>
+<div class="col-md-3">
+    {% for project in project_lists %}
+    <div class="thumbnail">
+        {% if project.image %}
+         <a href="{{ project.url }}" target="_blank"><img src='{{ project.image.url }}' class='img-responsive' /></a>
+        {% endif %}
+      <div class="caption">
+        <h3><a href="{{ project.url }}" target="_blank">{{ project.title }}</a></h3>
+      </div>
+    </div>
+    {% endfor %}
+</div>
+
+{% endblock body_block %}
