@@ -4,7 +4,7 @@
 {% block title %}Showcase{% endblock %}
 
 {% block breadcrumb %}
-<span class="nd_learning_current_breadcrumb">Showcase</span>
+<span class="nd_learning_current_breadcrumb"><a href="{% url 'showcase:student_list' %}">Showcase </a></span><i class="fa fa-angle-right" aria-hidden="true"></i>
 <span class="nd_learning_current_breadcrumb">{{ projects.name }}</span>
 {% endblock breadcrumb %}
 
@@ -22,20 +22,19 @@
     </div>
 </div>
 <hr>
-<h3>project yang diselesaikan :</h3>
+<h3>project yang diselesaikan : {{ project_lists.count }}</h3>
 <hr>
     {% for project in project_lists %}
 <div class="col-md-3">
 
     <div class="thumbnail">
         {% if project.image %}
-         <a href="{{ project.url }}" target="_blank"><img src='{{ project.image.url }}' class='img-responsive' /></a>
+         <a href='{% url "showcase:student_project_detail" projects.slug project.slug  %}'><img src='{{ project.image.url }}' class='img-responsive' /></a>
         {% endif %}
       <div class="caption">
-        <h3><a href="{{ project.url }}" target="_blank">{{ project.title }}</a></h3>
+        <h3><a href='{% url "showcase:student_project_detail" projects.slug project.slug  %}'>{{ project.title }}</a></h3>
       </div>
     </div>
-
 </div>
     {% endfor %}
 {% endblock body_block %}

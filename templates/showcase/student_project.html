@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{% block title %}Showcase{% endblock %}
+
+{% block breadcrumb %}
+<span class="nd_learning_current_breadcrumb"><a href="{% url 'showcase:student_list' %}">Showcase </a></span><i class="fa fa-angle-right" aria-hidden="true"></i>
+<span class="nd_learning_current_breadcrumb"><a href="{% url 'showcase:student_detail' projects_student.slug %}">{{ student_projects.project }} </a></span><i class="fa fa-angle-right" aria-hidden="true"></i>
+<span class="nd_learning_current_breadcrumb">{{ student_projects.title }}</span>
+{% endblock breadcrumb %}
+
+
+{% block body_block %}
+<div class="col-md-6 col-md-offset-3">
+	{% if student_projects.image %}
+    <img src='{{ student_projects.image.url }}' class='img-responsive' />
+    {% endif %}
+	<h1>{{ student_projects.title }}</h1>
+	<hr>
+	<p>{{ student_projects.description }}</p>
+	<a href="{{ student_projects.url }}" class="btn btn-default">lihat</a>
+
+</div>
+{% endblock body_block %}

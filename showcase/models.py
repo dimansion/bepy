@@ -20,6 +20,7 @@ class UserProject(models.Model):
     project = models.ForeignKey(UserProfile, related_name="profile")
     title = models.CharField(max_length=200)
     image = models.ImageField (upload_to="project_images/",null=True,blank=True)
+    description = models.TextField(null=True,blank=True)
     url = models.CharField(max_length=200)
     slug = models.SlugField(unique=True)
 
