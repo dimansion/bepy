@@ -24,8 +24,9 @@
 <hr>
 <h3>project yang diselesaikan :</h3>
 <hr>
-<div class="col-md-3">
     {% for project in project_lists %}
+<div class="col-md-3">
+
     <div class="thumbnail">
         {% if project.image %}
          <a href="{{ project.url }}" target="_blank"><img src='{{ project.image.url }}' class='img-responsive' /></a>
@@ -34,7 +35,7 @@
         <h3><a href="{{ project.url }}" target="_blank">{{ project.title }}</a></h3>
       </div>
     </div>
-    {% endfor %}
-</div>
 
+</div>
+    {% endfor %}
 {% endblock body_block %}
