@@ -5,8 +5,16 @@
 {% endblock breadcrumb %}
 
 {% block body_block %}
-
-<p><h4>Username:</h4>{{ user.username }}</p>
-<p><h4>Email:</h4> {{ user.email }}</p> 
-
+<div class="col-md-3">
+	{% if userdetails.profile_image %}
+	<img src="{{ userdetails.profile_image.url }}" alt="{{ userdetails.name }}" class="img-responsive">
+	{% endif %}
+</div>
+<div class="col-md-6">
+	<p><h4>Username:</h4>{{ user.username }}</p>
+	<p><h4>Name:</h4>{{ userdetails.name }}</p>
+	<!-- <p><h4>Email:</h4> {{ user.email }}</p>  -->
+	<a href="{% url 'dashboard:projects' %}" class="btn btn-default">Open Project</a>
+</div>
+<a href="{% url 'dashboard:update' userdetails.slug %}" class='btn btn-custom'>edit</a></div>
 {% endblock %}

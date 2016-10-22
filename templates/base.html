@@ -316,6 +316,7 @@ jQuery(document).ready(function() {
                           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:#fff;">{{request.user.username}} <span class="caret"></span></a>
                           <ul class="dropdown-menu">
                             <li><a href="{% url 'dashboard:user_dashboard' %}">My Profile</a></li>
+                            <li><a href="{% url 'dashboard:projects' %}">My Project</a></li>
                             <li role="separator" class="divider"></li>
                             <li><a href="/logout">Sign Out</a></li>
                           </ul>
@@ -323,7 +324,7 @@ jQuery(document).ready(function() {
                     {% else %}                                  
                     <div class="  nd_options_display_table nd_options_float_right">
                         <div class="nd_options_display_table_cell nd_options_vertical_align_middle    ">
-                            <a href="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/learning-account/"><img alt="" width="15" height="15" class="nd_options_margin_left_20 nd_options_float_left" src="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-content/plugins/nd-shortcodes/addons/customizer/shortcodes/top-header/img/login-white.svg"></a>
+                            <a href="{% url 'registration_register' %}"><img alt="" width="15" height="15" class="nd_options_margin_left_20 nd_options_float_left" src="{% static 'image/login-white.svg' %}"></a>
                         </div>
                         <div class="nd_options_display_table_cell nd_options_vertical_align_middle    ">
                             <a style="color:#fff;" class="nd_options_margin_left_10" href="{% url 'registration_register' %}">REGISTER</a>
@@ -331,7 +332,7 @@ jQuery(document).ready(function() {
                     </div>
                     <div class="  nd_options_display_table nd_options_float_right">
                         <div class="nd_options_display_table_cell nd_options_vertical_align_middle    ">
-                            <a href="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/learning-account/"><img alt="" width="15" height="15" class="nd_options_margin_left_20 nd_options_float_left" src="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-content/plugins/nd-shortcodes/addons/customizer/shortcodes/top-header/img/user-white.svg"></a>
+                            <a href="{% url 'auth_login' %}"><img alt="" width="15" height="15" class="nd_options_margin_left_20 nd_options_float_left" src="{% static 'image/user-white.svg' %}"></a>
                         </div>
                         <div class="nd_options_display_table_cell nd_options_vertical_align_middle    ">
                             <a style="color:#fff;" class="nd_options_margin_left_10" href="{% url 'auth_login' %}">LOGIN</a>
@@ -401,7 +402,7 @@ jQuery(document).ready(function() {
 
                         <div class="nd_options_section">
                             <a class="nd_options_open_navigation_2_sidebar_content nd_options_open_navigation_2_sidebar_content" href="#">
-                                <img alt="" class="" width="25" src="http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-content/uploads/sites/7/2016/09/icon-menu-grey.png">
+                                <img alt="" class="" width="25" src="{% static 'image/icon-menu-grey.png' %}">
                             </a>
                         </div>
 
@@ -502,6 +503,10 @@ jQuery(document).ready(function() {
 	}
 	.title-heading {
 		padding: 20px 0;
+	}
+	.btn-custom {
+		background-color: #49c4af;
+		color: #fff;
 	}
 
 </style>
