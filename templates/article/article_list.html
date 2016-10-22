@@ -37,7 +37,7 @@
         <p>{{ obj.publish|date:"M d, Y" }}</p>
         <a href='{{ obj.get_absolute_url }}'><h3 style="padding: 15px 0">{{ obj.title }}</h3></a>
         {{ obj.get_markdown|truncatechars_html:100 }}
-        <p><a href="{{ obj.get_absolute_url }}" class="btn btn-custom" role="button">Baca</a></p>
+        <p><a href="{{ obj.get_absolute_url }}" class="btn btn-default" role="button">Baca</a></p>
         <!-- <hr>
         {% if obj.author.get_full_name %}<p>Author: {{ obj.author.get_full_name }}</p>{% endif %} -->
       </div>

@@ -2,12 +2,19 @@ from django.contrib import admin
 from showcase.models import UserProfile, UserProject
 
 
-# class UserProfileAdmin(admin.ModelAdmin):
-#     prepopulated_fields = {'slug':('user',)}
-
-class UserProjectAdmin(admin.ModelAdmin):
+class UserProjectInline(admin.TabularInline):
+    model = UserProject
     prepopulated_fields = {'slug':('title',)}
+    extra = 0
 
 
-admin.site.register(UserProfile) 	#,UserProfileAdmin
-admin.site.register(UserProject, UserProjectAdmin)
+class UserProfileAdmin(admin.ModelAdmin):
+    list_display = ('user', 'name')
+    fieldsets = [
+		(None,               {'fields': [ 'user', 'name', 'profile_image']}),
+	]
+    inlines = [UserProjectInline]
+
+
+admin.site.register(UserProfile, UserProfileAdmin)
+# admin.site.register(UserProject, UserProjectAdmin)
