@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'project',
     'article',
     'showcase',
+    'dashboard',
 
     #third party lib
     'django.contrib.sites',

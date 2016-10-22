@@ -1,5 +1,6 @@
 from django.contrib import admin
-from showcase.models import UserProfile, UserProject
+from showcase.models import UserProject
+from dashboard.models import UserProfile
 
 
 class UserProjectInline(admin.TabularInline):
@@ -17,4 +18,3 @@ class UserProfileAdmin(admin.ModelAdmin):
 
 
 admin.site.register(UserProfile, UserProfileAdmin)
-# admin.site.register(UserProject, UserProjectAdmin)
