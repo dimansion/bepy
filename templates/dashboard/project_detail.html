@@ -4,8 +4,8 @@
 {% block title %}{{ student_projects.title }} by {{ projects_student.name }}{% endblock %}
 
 {% block breadcrumb %}
-<span class="nd_learning_current_breadcrumb"><a href="{% url 'showcase:student_list' %}">Showcase </a></span><i class="fa fa-angle-right" aria-hidden="true"></i>
-<span class="nd_learning_current_breadcrumb"><a href="{% url 'showcase:student_detail' projects_student.slug %}">{{ student_projects.project }} </a></span><i class="fa fa-angle-right" aria-hidden="true"></i>
+<span class="nd_learning_current_breadcrumb"><a href="{% url 'dashboard:user_dashboard' %}">Dashboard </a></span><i class="fa fa-angle-right" aria-hidden="true"></i>
+<span class="nd_learning_current_breadcrumb"><a href="{% url 'dashboard:projects' %}">Projects </a></span><i class="fa fa-angle-right" aria-hidden="true"></i>
 <span class="nd_learning_current_breadcrumb">{{ student_projects.title }}</span>
 {% endblock breadcrumb %}
 
@@ -20,5 +20,8 @@
 	<p>{{ student_projects.description }}</p>
 	<hr>
 	<a href="{{ student_projects.url }}" target="popup" onclick="window.open('{{ student_projects.url }}','name','width=600,height=400')" class="btn btn-default">lihat</a>
+	<a href="#" class="btn btn-info">edit</a>
+	<a href="$" class="btn btn-danger">hapus</a>
+
 </div>
 {% endblock body_block %}

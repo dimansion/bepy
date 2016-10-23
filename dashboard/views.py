@@ -50,3 +50,11 @@ def user_project(request):
     project_list = UserProject.objects.filter(project=projects)
     context_dict = {'projects': projects, 'project_lists':project_list,}
     return render(request, 'dashboard/user_project.html', context_dict)
+
+@login_required
+def user_project_detail(request,user_slug, student_project_slug):
+    projects_student = UserProfile.objects.get(slug=user_slug)
+    student_project = UserProject.objects.get(slug=student_project_slug)
+    project_detail = UserProject.objects.all()
+    context_dict = {'student_projects': student_project, 'project_details': project_detail, 'projects_student': projects_student}
+    return render(request, 'dashboard/project_detail.html', context_dict)

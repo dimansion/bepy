@@ -26,10 +26,10 @@
 
     <div class="thumbnail">
         {% if project.image %}
-         <a href='{% url "showcase:student_project_detail" projects.slug project.slug  %}'><img src='{{ project.image.url }}' class='img-responsive' /></a>
+         <a href='{% url "dashboard:project_detail" projects.slug project.slug  %}'><img src='{{ project.image.url }}' class='img-responsive' /></a>
         {% endif %}
       <div class="caption">
-        <h3><a href='{% url "showcase:student_project_detail" projects.slug project.slug  %}'>{{ project.title }}</a></h3>
+        <h3><a href='{% url "dashboard:project_detail" projects.slug project.slug  %}'>{{ project.title }}</a></h3>
       </div>
     </div>
 </div>
