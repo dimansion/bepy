@@ -10,11 +10,13 @@
 	<img src="{{ userdetails.profile_image.url }}" alt="{{ userdetails.name }}" class="img-responsive">
 	{% endif %}
 </div>
+<div class="row">
 <div class="col-md-6">
 	<p><h4>Username:</h4>{{ user.username }}</p>
 	<p><h4>Name:</h4>{{ userdetails.name }}</p>
 	<!-- <p><h4>Email:</h4> {{ user.email }}</p>  -->
 	<a href="{% url 'dashboard:projects' %}" class="btn btn-default">Open Project</a>
 </div>
-<a href="{% url 'dashboard:update' userdetails.slug %}" class='btn btn-custom'>edit</a></div>
+<a href="{% url 'dashboard:update' userdetails.slug %}" class='btn btn-custom'>edit profile</a>
+<a href="{% url 'auth_password_change' %}" class='btn btn-custom'>Ubah Password</a></div>
 {% endblock %}
