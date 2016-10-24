@@ -20,8 +20,34 @@
 	<p>{{ student_projects.description }}</p>
 	<hr>
 	<a href="{{ student_projects.url }}" target="popup" onclick="window.open('{{ student_projects.url }}','name','width=600,height=400')" class="btn btn-default">lihat</a>
-	<a href="#" class="btn btn-info">edit</a>
-	<a href="$" class="btn btn-danger">hapus</a>
+	<a href="{% url 'dashboard:update_project' student_projects.slug %}" class="btn btn-info">edit</a>
+	<!-- <a href="{% url 'dashboard:delete' student_projects.slug %}" class="btn btn-danger">hapus</a> -->
+
+	<!-- Button trigger modal -->
+	<button type="button" class="btn btn-danger" data-toggle="modal" data-target="#myModal">
+	  hapus
+	</button>
+
+<!-- Modal -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	        <h4 class="modal-title" id="myModalLabel">Hapus {{ student_projects.title }} ?</h4>
+	      </div>
+	      <div class="modal-body">
+	        apakah anda benar-benar ingin menghapus {{ student_projects.title }} ?
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+	        <a href="{% url 'dashboard:delete' student_projects.slug %}" class="btn btn-danger">hapus</a>
+	      </div>
+	    </div>
+	  </div>
+	</div>
 
 </div>
 {% endblock body_block %}

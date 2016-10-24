@@ -5,6 +5,8 @@ from .views import (
 	user_project,
 	add_project,
 	user_project_detail,
+	user_project_update,
+	user_project_delete,
 
 	)
 
@@ -13,7 +15,9 @@ urlpatterns = [
         url(r'^(?P<slug>[\w-]+)/edit/$', user_update, name='update'),
         url(r'^projects$', user_project, name='projects'),
         url(r'^add/$', add_project, name='add_project'),
-        url(r'^(?P<user_slug>[\w\-]+)/(?P<student_project_slug>[\w\-]+)/$', user_project_detail, name='project_detail'),
+        url(r'^project/(?P<user_project_slug>[\w\-]+)/$', user_project_detail, name='project_detail'),
+        url(r'^project/(?P<slug>[\w-]+)/edit/$', user_project_update, name='update_project'),
+        url(r'^project/(?P<slug>[\w-]+)/delete/$', user_project_delete, name='delete'),
 
 
 ]
