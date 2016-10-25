@@ -162,8 +162,7 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 LOGIN_URL = "/login"
-LOGIN_REDIRECT_URL = "/dashboard"
-
+LOGIN_REDIRECT_URL = '/dashboard'
 ACCOUNT_ACTIVATION_DAYS = 7 
 
 #Host
@@ -172,6 +171,3 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = ''
 EMAIL_HOST_PASSWORD = ''
 EMAIL_PORT = 587
-
-ACCOUNT_USERNAME_REQUIRED =True
-
