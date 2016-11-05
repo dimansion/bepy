@@ -21,12 +21,12 @@
 <p>{% trans "Lupa Password" %}? <a href="{% url 'auth_password_reset' %}" class="text-primary">{% trans "Reset Password" %}</a>!</p>
 <p>{% trans "Belum punya akun?" %}? <a href="{% url 'registration_register' %}" class="text-primary">{% trans "Daftar disini" %}</a>!</p>
 </div>
-<div class="col-lg-6">
+<!-- <div class="col-lg-6">
 	<br>
 		<h4>atau kamu bisa login menggunakan</h4>
 		<a href="{% provider_login_url "facebook" %}" class="btn btn-primary btn-block" role="button">Facebook</a>
 		<a href="{% provider_login_url "google" %}" class="btn btn-danger btn-block" role="button">Google Account</a>
 		<a href="{% provider_login_url "twitter" %}" class="btn btn-info btn-block" role="button"  process="signup">Twitter</a>
 </div>
-
+ -->
 {% endblock %}
