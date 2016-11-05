@@ -37,6 +37,7 @@
         <p>{{ obj.publish|date:"M d, Y" }}</p>
         <a href='{{ obj.get_absolute_url }}'><h3 style="padding: 15px 0">{{ obj.title }}</h3></a>
         {{ obj.get_markdown|truncatechars_html:100 }}
+        <br>
         <p><a href="{{ obj.get_absolute_url }}" class="btn btn-default" role="button">Baca</a></p>
         <!-- <hr>
         {% if obj.author.get_full_name %}<p>Author: {{ obj.author.get_full_name }}</p>{% endif %} -->
@@ -47,7 +48,7 @@
 {% endfor %}
 </div>
 
-<div class="pagination">
+<!-- <div class="pagination">
     <span class="step-links">
         {% if object_list.has_previous %}
             <a href="?{{ page_request_var }}={{ object_list.previous_page_number }}{% if request.GET.q %}&q={{ request.GET.q }}{% endif %}">previous</a>
@@ -62,8 +63,24 @@
         {% endif %}
     </span>
 </div>
-
-
+ -->
+<nav aria-label="Page navigation">
+    <ul class="pagination">
+        {% if object_list.has_previous %}
+        <li>
+            <a href="?page={{ object_list.previous_page_number }}">previous</a>
+        </li>
+        {% endif %}
+        <li>
+            <a href="#">Page {{ object_list.number }} of {{ object_list.paginator.num_pages }}.</a>
+        </li>
+        <li>
+        {% if object_list.has_next %}
+            <a href="?page={{ object_list.next_page_number }}">next</a>
+        {% endif %}
+        </li>
+    </ul>
+</nav>
 
 
 
