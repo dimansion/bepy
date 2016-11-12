@@ -660,6 +660,7 @@ var _wpcf7 = {"loaderUrl":"http:\/\/www.nicdarkthemes.com\/themes\/education\/wp
 <script type='text/javascript' src='http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-includes/js/jquery/ui/effect-fade.min.js?ver=1.11.4'></script>
 <script type='text/javascript' src='http://www.nicdarkthemes.com/themes/education/wp/demo/e-learning-courses/wp-content/plugins/js_composer/assets/js/dist/js_composer_front.min.js?ver=4.12'></script>
 <!-- add script -->
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.5/marked.min.js'></script>
 
@@ -670,7 +671,7 @@ $(document).ready(function(){
             var markedContent = marked(content)
             $(this).html(markedContent)
     })
-    $(".post-detail-item img").each(function(){
+    $("p img").each(function(){
             $(this).addClass("img-responsive");
     })
 
